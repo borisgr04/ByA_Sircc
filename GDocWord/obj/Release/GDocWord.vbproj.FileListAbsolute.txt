@@ -1,0 +1,8 @@
+D:\Dev\SirccV2012-2\GDocWord\bin\Release\GDocWord.dll
+D:\Dev\SirccV2012-2\GDocWord\bin\Release\GDocWord.pdb
+D:\Dev\SirccV2012-2\GDocWord\bin\Release\GDocWord.xml
+D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.Resources.resources
+D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.vbproj.GenerateResource.Cache
+D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.dll
+D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.xml
+D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.pdb

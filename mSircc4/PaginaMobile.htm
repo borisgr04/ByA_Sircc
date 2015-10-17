@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SIRCC4 Mobile Beta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/byaSite.js"></script>
+    
+    <script type="text/javascript">
+        function CargarFuncionarios() {
+            //data: "{cod_con:'" + Cod_Con + "'}",
+            $.ajax({
+                type: "POST",
+                url: "Default.aspx/getEncargados",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("#lstProcEnc").empty();
+                    $.each(response.d, function (index, item) {
+                        crearItem("lstProcEnc", item.NOMBRE, "pagPEncargados.htm?IdeFun=" + item.IDE_TER);
+                    });
+                },
+                error: function (jqXHR, status, error) {
+                    //alert(error + "-" + jqXHR.responseText);
+                    alert("Ajax " + error + " - " + jqXHR.responseText);
+                    //alert(status);
+                }
+            });
+
+            function crearItem(lst, valor,url ) {
+                var parent = document.getElementById(lst);
+                var listItem = document.createElement('li');
+                listItem.setAttribute('id', 'listitem');
+                listItem.innerHTML = "<a href='" + url + "' data-ajax='false'>" + valor + "</a>";
+                parent.appendChild(listItem);
+                $(parent).listview('refresh');
+            }
+        }
+
+        function CargarEstados() {
+            //data: "{cod_con:'" + Cod_Con + "'}",
+            $.ajax({
+                type: "POST",
+                url: "Default.aspx/getxEstados",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("#lstporEstados").empty();
+                    $.each(response.d, function (index, item) {
+                        
+                        crearItem("lstporEstados", item);
+                    });
+                },
+                error: function (jqXHR, status, error) {
+                    //alert(error + "-" + jqXHR.responseText);
+                    alert("Ajax " + error + " - " + jqXHR.responseText);
+                    //alert(status);
+                }
+            });
+
+            function crearItem(lst, item) {
+                var parent = document.getElementById(lst);
+                var listItem = document.createElement('li');
+                listItem.setAttribute('id', 'listitem');
+                var str = "<a href='pagPEstados.htm?Estado=" + item.NOM_EST + "' data-ajax='false'>" + item.NOM_EST + "</a>";
+                str += '<span class="ui-li-count">' + item.CANT + '</span>';
+                listItem.innerHTML = str;
+                parent.appendChild(listItem);
+                $(parent).listview('refresh');
+            }
+        }
+
+        function CargarProcesos() {
+            $.ajax({
+                type: "POST",
+                data: "{DepDel:'" + "06" + "'}",
+                url: "Default.aspx/getProcesosDD",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("#lstProc").empty();
+                    $.each(response.d, function (index, item) {
+
+                        crearItem("lstProc", item);
+                    });
+                    $("#lstProc").listview('refresh');
+                },
+                error: function (jqXHR, status, error) {
+                    alert("Ajax " + error + " - " + jqXHR.responseText);
+                }
+            });
+
+            function crearItem(lst, item) {
+                var parent = document.getElementById(lst);
+                var listItem = document.createElement('li');
+                str = "<a href='pagPCronogramas.htm?NroPro=" + item.PRO_SEL_NRO + "' data-ajax='false'><h3>" + item.PRO_SEL_NRO + "</h3>";
+                str += '<p><strong>' + item.OBJ_CON + '</strong></p>';
+                str += '<p><b>MODALIDAD</b> : ' + item.MODALIDAD + '</p>';
+                str += '<p><b>SOLICITANTE</b> : ' + item.DEP_NEC + '</p>';
+                str += '<p><b>DELEGACIÓN</b> : ' + item.DEP_DEL + '</p>';
+                str += '<p><b>ENCARGADO</b> :' + item.ENCARGADO + '</p>';
+                //                str += '<span class="ui-li-count">' + item.ESTADO + '</span>';
+                str += '<p class="ui-li-aside"><strong>' + item.ESTADO + '</strong></p></a>';
+
+                listItem.setAttribute('id', 'listitem');
+                listItem.innerHTML = str;
+                parent.appendChild(listItem);
+
+            }
+        }
+
+        function CargarDependencias() {
+            $.ajax({
+                type: "POST",
+                url: "Default.aspx/getDependencias",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("#lstDep").empty();
+                    $.each(response.d, function (index, item) {
+
+                        crearItem("lstDep", item);
+                    });
+                    $("#lstDep").listview('refresh');
+                },
+                error: function (jqXHR, status, error) {
+                    alert("Ajax " + error + " - " + jqXHR.responseText);
+                }
+            });
+
+
+            function crearItem(lst, item) {
+                var parent = document.getElementById(lst);
+                var listItem = document.createElement('li');
+                listItem.setAttribute('id', 'listitem');
+                var str = "<a href='pagPDep.htm?CodDep=" + item.COD_DEP + "' data-ajax='false'>" + item.NOM_DEP + "</a>";
+                str += '<span class="ui-li-count">' + item.CANT_PROC + '</span>';
+                listItem.innerHTML = str;
+                parent.appendChild(listItem);
+                $(parent).listview('refresh');
+            }
+        }
+        
+        $('#pagEncargado').live('pageshow', function (event, ui) {
+            $("#PiePaginaFuncionarios").html(byaSite.PiePagina());
+            CargarFuncionarios();
+        });
+        $('#pgEstado').live('pageshow', function (event, ui) {
+            $("#PiePaginaEstados").html(byaSite.PiePagina());
+            CargarEstados();
+        });
+        $('#pagProcesos').live('pageshow', function (event, ui) {
+            $("#PiePaginaProcesos").html(byaSite.PiePagina());
+            CargarProcesos();
+        });
+        $('#pagDependencias').live('pageshow', function (event, ui) {
+            $("#PiePaginaDependencias").html(byaSite.PiePagina());
+            CargarDependencias();
+        });
+
+        $('[data-role=page]').live('pageshow', function (event, ui) {
+            $("#PiePagina").html(byaSite.PiePagina());
+            $.mobile.pageLoadErrorMessage = 'Esta pagina no esxiste, el mensaje de error ha sido cambiado';
+
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" data-theme="c" id="ppal">
+        <div data-role="header" data-theme="c">
+            <h1>
+                Sircc - Menu</h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content">
+            <h4>Opciones de Busqueda</h4>
+            <ul data-role="listview" data-inset="true" data-filter="true" id="lst">
+                <li><a href="#pgEstado">Estado</a></li>
+                <li><a href="#pagEncargado" class="fun">Encargados</a></li>
+                <li><a href="#pagDependencias">Dependencias</a></li>
+                <li><a href="#pagProcesos">Proceso</a></li>
+            </ul>
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-theme="c">
+            <h4 id="PiePagina"> </h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page -->
+
+
+
+    <!-- Start of second page: #pgEstado -->
+    <div data-role="page" id="pgEstado" data-theme="c">
+
+	<div data-role="header" data-theme="c">
+		<h1>SIRCC</h1>
+        <div data-role="navbar" id="Div1" >
+		        <ul>
+			        <li><a href="#pgEstado" id="A2">Estado</a></li>
+                    <li><a href="#pagEncargado" id="A3">Encargado</a></li>
+                    <li><a href="#" id="A4">Proceso</a></li>
+                    <li><a href="#" id="A5">Todos</a></li>
+		        </ul>
+	        </div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+		<h4>Por Estado</h4>
+		<ul data-role="listview" data-inset="true" data-filter="true" id="lstporEstados">
+                
+        </ul>
+        <p><a href="#ppal" data-direction="reverse" data-role="button" data-theme="b" data-icon="home">Ir a Pagina Prinicipal </a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="c">
+		<h4 id="PiePaginaEstados"></h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+    
+    <!-- Start of second page: #two -->
+
+<div data-role="page" id="pagEncargado" data-theme="c">
+	<div data-role="header" data-theme="c">
+		<h2>Encargados..</h2>
+            <div data-role="navbar" id="mnHeader" >
+		        <ul>
+			        <li><a href="#pgEstado" id="btnEstado">Estados</a></li>
+                    <li><a href="#pagEncargado" id="btnEncargado">Encargados</a></li>
+                    <li><a href="#" id="btnProceso">Procesos</a></li>
+                    <li><a href="#" id="btnTodos">Todos</a></li>
+		        </ul>
+	        </div><!-- /navbar -->
+	</div><!-- /header -->
+	<div data-role="content" data-theme="c">	
+		<h2>Funcionarios</h2>
+	        <ul data-role="listview" data-inset="true" data-filter="true" id="lstProcEnc">
+                
+            </ul>
+            <p><a href="#ppal" data-direction="reverse" data-role="button" data-theme="b" data-icon="home">Ir a Pagina Prinicipal </a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="c">
+		<h4 id="PiePaginaFuncionarios"></h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="pagProcesos" data-theme="c">
+	<div data-role="header" data-theme="c">
+		<h1>SIRCC</h1>
+            <div data-role="navbar" id="Div3" >
+		        <ul>
+			        <li><a href="#pgEstado" id="A1">Estados</a></li>
+                    <li><a href="#pagEncargado" id="A6">Encargados</a></li>
+                    <li><a href="#" id="A7">Procesos</a></li>
+                    <li><a href="#" id="A8">Todos</a></li>
+		        </ul>
+	        </div><!-- /navbar -->
+	</div><!-- /header -->
+	<div data-role="content" data-theme="c">	
+		<h4>Procesos...</h4>
+	        <ul data-role="listview" data-inset="true" data-filter="true" id="lstProc">
+                
+            </ul>
+            <p><a href="#ppal" data-direction="reverse" data-role="button" data-theme="b" data-icon="home">Ir a Pagina Prinicipal </a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="c">
+		<h4 id="PiePaginaProcesos"></h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<div data-role="page" id="pagDependencias" data-theme="c">
+	<div data-role="header" data-theme="c">
+		<h1>SIRCC</h1>
+            <div data-role="navbar" id="Div4" >
+		        <ul>
+			        <li><a href="#pgEstado" id="A9">Estados</a></li>
+                    <li><a href="#pagEncargado" id="A10">Encargados</a></li>
+                    <li><a href="#pagProcesos" id="A11">Procesos</a></li>
+                    <li><a href="#pagDependencias" id="A12">Todos</a></li>
+		        </ul>
+	        </div><!-- /navbar -->
+	</div><!-- /header -->
+	<div data-role="content" data-theme="c">	
+		<h4>Dependencias...</h4>
+	        <ul data-role="listview" data-inset="true" data-filter="true" id="lstDep">
+                
+            </ul>
+            <p><a href="#ppal" data-direction="reverse" data-role="button" data-icon="home" data-theme="b" data-icon="home">Ir a Pagina Prinicipal </a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="c">
+		<h4 id="PiePaginaDependencias"></h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+</body>
+</html>

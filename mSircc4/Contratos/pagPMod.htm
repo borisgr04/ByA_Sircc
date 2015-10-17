@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <div id="msg">    
+    </div>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              // Handler for .ready() called.
+              alert("Hola..");
+              $.ajax({
+                  type: "GET",
+                  dataType: "json",
+                  url: "http://localhost:8086/CustomerDB/webresources/entidades.persona/11&format=json&callback=?",
+                  success: function (data) {
+                      alert(data);
+                      $("#msg").html(data);
+                  },
+                  error: function (jqXHR, status, error) {
+                      //alert(error + "-" + jqXHR.responseText);
+                      alert("Ajax " + error + " - " + jqXHR.responseText);
+                      //alert(status);
+                  }
+              });
+
+          });
+    </script>
+</body>
+</html>
