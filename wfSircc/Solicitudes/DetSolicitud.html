@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="ModalTitle">Información Detallada de la Solicitud de Contratación</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="txtNSol" class="control-label">N° de Solicitud:</label>
+                            <input id='txtNSol' title="Número de Solicitud." class="form-control input-sm" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="txtEstado" class="control-label">Estado:</label>
+                            <input id='txtEstado' title="Estado." class="form-control input-sm" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="txtFecRec" class="control-label">Fecha Recibido:</label>
+                            <input id='txtFecRec' title="Fecha de Recibido por el abogado." class="form-control input-sm" />
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="txtPDepSol" class="control-label">Dependencia Delegada:</label>
+                                <input id='txtPDepSol' title="Dependencia delegada para la contratación" class="form-control input-sm" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtDepSol" class="control-label">Dependencia solicitante:</label>
+                                <input id='txtDepSol' title="Número de Solicitud." class="form-control input-sm" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="txtObjCon" class="control-label">Objeto a Contratar</label>
+                                <textarea id="txtObjCon" class="form-control" title="Objeto a contratar" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="txtMod" class="control-label">Modalidad de Selección:</label>
+                                <input id='txtMod' title="Modalidad de Selección" class="form-control input-sm" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtClase" class="control-label">Clase de Contrato:</label>
+                                <input id='txtClase' title="Tipo y Subtipo de contratación" class="form-control input-sm" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="txtValTot" class="control-label">Valor a Contratar:</label>
+
+                                <input id='txtValTot' class="form-control input-sm currency" />
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtFun" class="control-label">Funcionario Encargado:</label>
+                                <input id='txtFun' title="Funcionario encargado." class="form-control input-sm" />
+
+                            </div>
+
+                        </div>
+
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/DetSolicitud.js"></script>
+</body>
+</html>

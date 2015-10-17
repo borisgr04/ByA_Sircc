@@ -1,0 +1,39 @@
+﻿ .tbconborde
+        {
+            border-collapse: collapse;
+        }
+
+            .tbconborde td
+            {
+                border: 1px solid black;
+                padding: 2mm;
+            }
+
+            .tbconborde th
+            {
+                background-color: #f8f3f3;
+                border: 1px solid black;
+                padding: 2mm;
+            }
+
+        .profile-info-name
+        {
+            position: absolute;
+            width: 150px;
+            text-align: right;
+            padding: 6px 10px 6px 0px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            font-weight: normal;
+            color: rgb(102, 126, 153);
+            background-color: transparent;
+            border-top: 1px dotted rgb(213, 228, 241);
+        }
+
+        .profile-info-value
+        {
+            padding: 6px 4px 6px 6px;
+            margin-left: 150px;
+            border-top: 1px dotted rgb(213, 228, 241);
+        }

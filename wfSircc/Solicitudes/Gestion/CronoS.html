@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="/Content/bootstrap/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/jqwidgets/styles/jqx.base.css" />
+    <link rel="stylesheet" type="text/css" href="/jqwidgets/styles/jqx.arctic.css" />
+
+    <script src="/jqscripts/jquery-1.10.1.min.js"></script>
+
+    <script type="text/javascript" src="/jqwidgets/jqx-all.js"></script>
+
+
+    <link href="/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/jqscripts/gettheme.js"></script>
+
+    <script type="text/javascript" src="/jqscripts/jquery_ext.js"> </script>
+    <script type="text/javascript" src="/jqscripts/bya_page.js"></script>
+    <script src="/jqscripts/byaSite.js" type="text/javascript"></script>
+    <style type="text/css">
+        .editedRow
+        {
+            color: #ff6a00 !important;
+            font-style: italic;
+        }
+
+        .newRow
+        {
+            color: #0094ff !important;
+            font-style: italic;
+        }
+
+        .delRow
+        {
+            color: #b90f0f !important;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="container">
+                    <p class="navbar-text">
+                        <b>SIRCC &reg - Cronograma </b>
+                    </p>
+
+                    <ul class="nav navbar-nav" id="tabs">
+                        <li class="active"><a href="#">Configuración</a></li>
+                        <li><a href="#">Seguimiento</a></li>
+                    </ul>
+
+                    <!--<nav class="nav navbar-nav navbar-right">-->
+
+                    <p class="navbar-text">
+                        <button type="button" value="Nuevo" id="BtnGuardar" class="btn btn-success" title="Guardar Cambios">
+                            <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                        </button>
+                    </p>
+                    <!--</nav>-->
+                </div>
+            </div>
+        </nav>
+        
+        <br />
+        <br />
+        <br />
+
+        
+
+        <div class="row">
+            <div class="col-xs-12">
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="msgPpal"></div>
+            </div>
+        </div>
+
+        <div class="panel-group" id="accordion">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseProc">+ <b>PROCESO N°:</b> <span class="Nproc"></span>
+                    </a>
+                </div>
+                <div id="collapseProc" class="panel-collapse collapse out">
+                    <div class="panel-body">
+                        <div class="container">
+                            <div class="row">
+                                <div id="dvdProc" ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div id="jqxgrid">
+        </div>
+
+    </div>
+
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- src="//code.jquery.com/jquery.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/jqscripts//html5shiv.js"></script>
+      <script src="/jqscripts//respond.min.js"></script>
+    <![endif]-->
+    <script src="js/CronoS.js"></script>
+</body>
+</html>

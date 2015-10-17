@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalAsig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Asignación de Solicitudes  a Funcionarios</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="txtNSolAs" class="control-label">N° de Solicitud:</label>
+                            <input id='txtNSolAs' title="Número de Solicitud." class="form-control input-sm" disabled />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="txtEstadoAs" class="control-label">Estado:</label>
+                            <input id='txtEstadoAs' title="Estado." class="form-control input-sm" disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="txtFecRecAs" class="control-label">Fecha Recibido:</label>
+                            <input id='txtFecRecAs' title="Fecha de Recibido por el abogado." class="form-control input-sm" disabled />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="txtObjConAs" class="control-label">Objeto a Contratar</label>
+                            <textarea id="txtObjConAs" class="form-control" title="Objeto a contratar" rows="2" disabled></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="cboFun" class="control-label">
+                                Funcionario encargado:
+                            </label>
+                            <select id="cboFun" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="dvdMsg"></div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="BtnGuardar" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/Asignar.js"></script>
+</body>
+</html>

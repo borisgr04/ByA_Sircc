@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/jqwidgets/styles/jqx.base.css" />
+    <link rel="stylesheet" type="text/css" href="/jqwidgets/styles/jqx.arctic.css" />
+
+    <script src="/jqscripts/jquery-1.10.1.min.js"></script>
+
+    <script type="text/javascript" src="/jqwidgets/jqx-all.js"></script>
+
+
+    <link href="../../Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/jqscripts/gettheme.js"></script>
+
+    <script type="text/javascript" src="/jqscripts/jquery_ext.js"> </script>
+    <script type="text/javascript" src="/jqscripts/bya_page.js"></script>
+    <script src="/jqscripts/byaSite.js" type="text/javascript"></script>
+    <style type="text/css">
+        .ACT_VENCIDAS
+        {
+            color: #fff !important;
+            background-color: #000 !important;
+            font-style: italic;
+        }
+        .ACT_HOY
+        {
+            color: #fff  !important;
+            background-color: #b90f0f !important;
+            font-style: italic;
+        }
+
+        .ACT_POR_VENCER
+        {
+            color: #fff !important;
+            background-color: #ffd800 !important;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">SIRCC &reg - Consulta de Procesos</h3>
+        </div>
+        <div class="panel-body">
+            
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-toolbar">
+
+                            <button type="button" value="Consultar" id="BtnConsulta" data-loading-text="Loading..." class="btn btn-success">
+                                <span class="glyphicon glyphicon-search"></span>Actualizar
+                            </button>
+                            
+                            <button type="button" value="Consultar" id="BtnDetalle" data-loading-text="Loading..." class="btn btn-warning">
+                                <span class="glyphicon glyphicon-search"></span>Detalle
+                            </button>
+
+                            <button type="button" value="Consultar" id="BtnCronograma" data-loading-text="Loading..." class="btn btn-primary">
+                                <span class="glyphicon glyphicon-search"></span>Cronograma
+                            </button>
+
+                            <button type="button" value="Consultar" id="Button1" data-loading-text="Loading..." class="btn btn-primary">
+                                <span class="glyphicon glyphicon-search"></span>Quitar Filtros
+                            </button>
+
+                            <button type="button" value="Editar" id="BtnExcel" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-export"></span>Excel
+                            </button>
+                            <input type="checkbox" id="chkAgrupar" />
+                            Agrupar
+
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+                <div id="jqxgridSol">
+                </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="H2">Actividades del Proceso</h4>
+                </div>
+                <div class="modal-body">
+                        <div id="gridCrono">
+                        </div>        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- src="//code.jquery.com/jquery.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/jqscripts//html5shiv.js"></script>
+      <script src="/jqscripts//respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/GesMisProcesos.js"></script>
+
+
+
+</body>
+</html>
