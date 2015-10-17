@@ -1,0 +1,41 @@
+D:\Programas\svnSircc\svnSircc_27092013\ByA\bin\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc_27092013\ByA\bin\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc_27092013\ByA\obj\Debug\ByA.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc_27092013\ByA\obj\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc_27092013\ByA\obj\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc4_12\ByA\bin\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc4_12\ByA\bin\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc4_12\ByA\obj\Debug\ByA.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\ByA\obj\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc4_12\ByA\obj\Debug\ByA.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\ByA\bin\Debug\ByA.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\ByA\bin\Debug\ByA.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\ByA\obj\Debug\ByA.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\ByA\obj\Debug\ByA.pdb
+D:\Dev\SirccV2012\ByA\bin\Debug\ByA.dll
+D:\Dev\SirccV2012\ByA\bin\Debug\ByA.pdb
+D:\Dev\SirccV2012\ByA\obj\Debug\ByA.dll
+D:\Dev\SirccV2012\ByA\obj\Debug\ByA.pdb
+D:\ByA\svnSircc4_11122014\ByA\bin\Debug\ByA.dll
+D:\ByA\svnSircc4_11122014\ByA\bin\Debug\ByA.pdb
+D:\ByA\svnSircc4_11122014\ByA\obj\Debug\ByA.dll
+D:\ByA\svnSircc4_11122014\ByA\obj\Debug\ByA.pdb
+D:\Dev\SirccV2012-2\ByA\bin\Debug\ByA.dll
+D:\Dev\SirccV2012-2\ByA\bin\Debug\ByA.pdb
+D:\Dev\SirccV2012-2\ByA\obj\Debug\ByA.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\ByA\obj\Debug\ByA.dll
+D:\Dev\SirccV2012-2\ByA\obj\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12\ByA\bin\Debug\ByA.dll
+D:\Dev\sircc4vs12-12\ByA\bin\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12\ByA\obj\Debug\ByA.dll
+D:\Dev\sircc4vs12-12\ByA\obj\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12_\ByA\bin\Debug\ByA.dll
+D:\Dev\sircc4vs12-12_\ByA\bin\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12_\ByA\obj\Debug\ByA.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\ByA\obj\Debug\ByA.dll
+D:\Dev\sircc4vs12-12_\ByA\obj\Debug\ByA.pdb
+D:\Dev\_Sircc4\_Sircc4\ByA\bin\Debug\ByA.dll
+D:\Dev\_Sircc4\_Sircc4\ByA\bin\Debug\ByA.pdb
+D:\Dev\_Sircc4\_Sircc4\ByA\obj\Debug\ByA.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\ByA\obj\Debug\ByA.dll
+D:\Dev\_Sircc4\_Sircc4\ByA\obj\Debug\ByA.pdb

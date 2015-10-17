@@ -1,0 +1,51 @@
+E:\ByA\Sircc4\Sircc4\Entidades\bin\Debug\Entidades.dll
+E:\ByA\Sircc4\Sircc4\Entidades\bin\Debug\Entidades.pdb
+E:\ByA\Sircc4\Sircc4\Entidades\obj\Debug\Entidades.dll
+E:\ByA\Sircc4\Sircc4\Entidades\obj\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\Entidades\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\Entidades\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\Entidades\obj\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\Entidades\obj\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc_27092013\Entidades\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc_27092013\Entidades\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc_27092013\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc_27092013\Entidades\obj\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc_27092013\Entidades\obj\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_12\Entidades\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_12\Entidades\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_12\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\Entidades\obj\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_12\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Entidades\bin\Debug\Entidades.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Entidades\obj\Debug\Entidades.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Entidades\obj\Debug\Entidades.pdb
+D:\Dev\SirccV2012\Entidades\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012\Entidades\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012\Entidades\obj\Debug\Entidades.dll
+D:\Dev\SirccV2012\Entidades\obj\Debug\Entidades.pdb
+D:\ByA\svnSircc4_11122014\Entidades\bin\Debug\Entidades.dll
+D:\ByA\svnSircc4_11122014\Entidades\bin\Debug\Entidades.pdb
+D:\ByA\svnSircc4_11122014\Entidades\obj\Debug\Entidades.dll
+D:\ByA\svnSircc4_11122014\Entidades\obj\Debug\Entidades.pdb
+D:\ByA\svnSircc4_11122014\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\Entidades\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012-2\Entidades\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012-2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\Entidades\obj\Debug\Entidades.dll
+D:\Dev\SirccV2012-2\Entidades\obj\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12\Entidades\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12\Entidades\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12\Entidades\obj\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12\Entidades\obj\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12_\Entidades\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12_\Entidades\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12_\Entidades\obj\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12_\Entidades\obj\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12_\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\Entidades\bin\Debug\Entidades.dll
+D:\Dev\_Sircc4\_Sircc4\Entidades\bin\Debug\Entidades.pdb
+D:\Dev\_Sircc4\_Sircc4\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\Entidades\obj\Debug\Entidades.dll
+D:\Dev\_Sircc4\_Sircc4\Entidades\obj\Debug\Entidades.pdb

@@ -1,0 +1,9 @@
+D:\Dev\SirccV2012-2\Financiero\bin\Release\AutoMapper.Net4.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Release\Financiero.dll.config
+D:\Dev\SirccV2012-2\Financiero\bin\Release\Financiero.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Release\Financiero.pdb
+D:\Dev\SirccV2012-2\Financiero\bin\Release\AutoMapper.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Release\AutoMapper.xml
+D:\Dev\SirccV2012-2\Financiero\obj\Release\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\Financiero\obj\Release\Financiero.dll
+D:\Dev\SirccV2012-2\Financiero\obj\Release\Financiero.pdb

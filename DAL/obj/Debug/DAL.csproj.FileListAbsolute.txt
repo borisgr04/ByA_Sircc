@@ -1,0 +1,88 @@
+E:\ByA\Sircc4\Sircc4\DAL\bin\Debug\DAL.dll.config
+E:\ByA\Sircc4\Sircc4\DAL\bin\Debug\DAL.dll
+E:\ByA\Sircc4\Sircc4\DAL\bin\Debug\DAL.pdb
+E:\ByA\Sircc4\Sircc4\DAL\bin\Debug\Entidades.dll
+E:\ByA\Sircc4\Sircc4\DAL\bin\Debug\Entidades.pdb
+E:\ByA\Sircc4\Sircc4\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\ByA\Sircc4\Sircc4\DAL\obj\Debug\DAL.dll
+E:\ByA\Sircc4\Sircc4\DAL\obj\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\bin\Debug\DAL.dll.config
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\obj\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\DAL\obj\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc_27092013\DAL\bin\Debug\DAL.dll.config
+D:\Programas\svnSircc\svnSircc_27092013\DAL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc_27092013\DAL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc_27092013\DAL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc_27092013\DAL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc_27092013\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc_27092013\DAL\obj\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc_27092013\DAL\obj\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_12\DAL\bin\Debug\DAL.dll.config
+D:\Programas\svnSircc\svnSircc4_12\DAL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_12\DAL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_12\DAL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_12\DAL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_12\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\DAL\obj\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_12\DAL\obj\Debug\DAL.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\bin\Debug\DAL.dll.config
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\bin\Debug\DAL.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\bin\Debug\DAL.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\bin\Debug\Entidades.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\bin\Debug\Entidades.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\obj\Debug\DAL.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\DAL\obj\Debug\DAL.pdb
+D:\Dev\SirccV2012\DAL\bin\Debug\DAL.dll.config
+D:\Dev\SirccV2012\DAL\bin\Debug\DAL.dll
+D:\Dev\SirccV2012\DAL\bin\Debug\DAL.pdb
+D:\Dev\SirccV2012\DAL\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012\DAL\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012\DAL\obj\Debug\DAL.dll
+D:\Dev\SirccV2012\DAL\obj\Debug\DAL.pdb
+D:\ByA\svnSircc4_11122014\DAL\bin\Debug\DAL.dll.config
+D:\ByA\svnSircc4_11122014\DAL\bin\Debug\DAL.dll
+D:\ByA\svnSircc4_11122014\DAL\bin\Debug\DAL.pdb
+D:\ByA\svnSircc4_11122014\DAL\bin\Debug\Entidades.dll
+D:\ByA\svnSircc4_11122014\DAL\bin\Debug\Entidades.pdb
+D:\ByA\svnSircc4_11122014\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\ByA\svnSircc4_11122014\DAL\obj\Debug\DAL.dll
+D:\ByA\svnSircc4_11122014\DAL\obj\Debug\DAL.pdb
+D:\Dev\SirccV2012-2\DAL\bin\Debug\DAL.dll.config
+D:\Dev\SirccV2012-2\DAL\bin\Debug\DAL.dll
+D:\Dev\SirccV2012-2\DAL\bin\Debug\DAL.pdb
+D:\Dev\SirccV2012-2\DAL\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012-2\DAL\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012-2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\DAL\obj\Debug\DAL.dll
+D:\Dev\SirccV2012-2\DAL\obj\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12\DAL\bin\Debug\DAL.dll.config
+D:\Dev\sircc4vs12-12\DAL\bin\Debug\DAL.dll
+D:\Dev\sircc4vs12-12\DAL\bin\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12\DAL\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12\DAL\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12\DAL\obj\Debug\DAL.dll
+D:\Dev\sircc4vs12-12\DAL\obj\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12_\DAL\bin\Debug\DAL.dll.config
+D:\Dev\sircc4vs12-12_\DAL\bin\Debug\DAL.dll
+D:\Dev\sircc4vs12-12_\DAL\bin\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12_\DAL\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12_\DAL\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12_\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\DAL\obj\Debug\DAL.dll
+D:\Dev\sircc4vs12-12_\DAL\obj\Debug\DAL.pdb
+D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\DAL.dll.config
+D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\DAL.dll
+D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\DAL.pdb
+D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\Entidades.dll
+D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\Entidades.pdb
+D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.dll
+D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,15 @@
+D:\Dev\sircc4vs12-12\ByAWordHTML\bin\Debug\ByAWordHTML.dll
+D:\Dev\sircc4vs12-12\ByAWordHTML\bin\Debug\ByAWordHTML.pdb
+D:\Dev\sircc4vs12-12\ByAWordHTML\obj\Debug\ByAWordHTML.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12\ByAWordHTML\obj\Debug\ByAWordHTML.dll
+D:\Dev\sircc4vs12-12\ByAWordHTML\obj\Debug\ByAWordHTML.pdb
+D:\Dev\sircc4vs12-12_\ByAWordHTML\bin\Debug\ByAWordHTML.dll
+D:\Dev\sircc4vs12-12_\ByAWordHTML\bin\Debug\ByAWordHTML.pdb
+D:\Dev\sircc4vs12-12_\ByAWordHTML\obj\Debug\ByAWordHTML.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\ByAWordHTML\obj\Debug\ByAWordHTML.dll
+D:\Dev\sircc4vs12-12_\ByAWordHTML\obj\Debug\ByAWordHTML.pdb
+D:\Dev\_Sircc4\_Sircc4\ByAWordHTML\bin\Debug\ByAWordHTML.dll
+D:\Dev\_Sircc4\_Sircc4\ByAWordHTML\bin\Debug\ByAWordHTML.pdb
+D:\Dev\_Sircc4\_Sircc4\ByAWordHTML\obj\Debug\ByAWordHTML.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\ByAWordHTML\obj\Debug\ByAWordHTML.dll
+D:\Dev\_Sircc4\_Sircc4\ByAWordHTML\obj\Debug\ByAWordHTML.pdb

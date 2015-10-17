@@ -1,0 +1,72 @@
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\bin\Debug\Financiero.dll.config
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\bin\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\bin\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\obj\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\obj\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc_27092013\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\Financiero\bin\Debug\Financiero.dll.config
+D:\Programas\svnSircc\svnSircc4_12\Financiero\bin\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc4_12\Financiero\bin\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc4_12\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\Financiero\obj\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc4_12\Financiero\obj\Debug\Financiero.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\bin\Debug\Financiero.dll.config
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\bin\Debug\Financiero.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\bin\Debug\Financiero.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\bin\Debug\AutoMapper.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\bin\Debug\AutoMapper.xml
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\obj\Debug\Financiero.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\Financiero\obj\Debug\Financiero.pdb
+D:\Dev\SirccV2012\Financiero\bin\Debug\Financiero.dll.config
+D:\Dev\SirccV2012\Financiero\bin\Debug\Financiero.dll
+D:\Dev\SirccV2012\Financiero\bin\Debug\Financiero.pdb
+D:\Dev\SirccV2012\Financiero\bin\Debug\AutoMapper.dll
+D:\Dev\SirccV2012\Financiero\bin\Debug\AutoMapper.xml
+D:\Dev\SirccV2012\Financiero\obj\Debug\Financiero.dll
+D:\Dev\SirccV2012\Financiero\obj\Debug\Financiero.pdb
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\Financiero.dll.config
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\Financiero.dll
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\Financiero.pdb
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\AutoMapper.dll
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\AutoMapper.xml
+D:\ByA\svnSircc4_11122014\Financiero\obj\Debug\Financiero.dll
+D:\ByA\svnSircc4_11122014\Financiero\obj\Debug\Financiero.pdb
+D:\ByA\svnSircc4_11122014\Financiero\bin\Debug\AutoMapper.Net4.dll
+D:\ByA\svnSircc4_11122014\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\Financiero.dll.config
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\Financiero.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\Financiero.pdb
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\AutoMapper.dll
+D:\Dev\SirccV2012-2\Financiero\bin\Debug\AutoMapper.xml
+D:\Dev\SirccV2012-2\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\Financiero\obj\Debug\Financiero.dll
+D:\Dev\SirccV2012-2\Financiero\obj\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\Financiero.dll.config
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\AutoMapper.dll
+D:\Dev\sircc4vs12-12\Financiero\bin\Debug\AutoMapper.xml
+D:\Dev\sircc4vs12-12\Financiero\obj\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12\Financiero\obj\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\Financiero.dll.config
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\AutoMapper.dll
+D:\Dev\sircc4vs12-12_\Financiero\bin\Debug\AutoMapper.xml
+D:\Dev\sircc4vs12-12_\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\Financiero\obj\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12_\Financiero\obj\Debug\Financiero.pdb
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\Financiero.dll.config
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\Financiero.dll
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\Financiero.pdb
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\AutoMapper.dll
+D:\Dev\_Sircc4\_Sircc4\Financiero\bin\Debug\AutoMapper.xml
+D:\Dev\_Sircc4\_Sircc4\Financiero\obj\Debug\Financiero.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\Financiero\obj\Debug\Financiero.dll
+D:\Dev\_Sircc4\_Sircc4\Financiero\obj\Debug\Financiero.pdb

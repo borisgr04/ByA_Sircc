@@ -1,0 +1,8 @@
+D:\Dev\SirccV2012-2\DAL\bin\Release\DAL.dll.config
+D:\Dev\SirccV2012-2\DAL\bin\Release\DAL.dll
+D:\Dev\SirccV2012-2\DAL\bin\Release\DAL.pdb
+D:\Dev\SirccV2012-2\DAL\bin\Release\Entidades.dll
+D:\Dev\SirccV2012-2\DAL\bin\Release\Entidades.pdb
+D:\Dev\SirccV2012-2\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\DAL\obj\Release\DAL.dll
+D:\Dev\SirccV2012-2\DAL\obj\Release\DAL.pdb

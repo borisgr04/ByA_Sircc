@@ -1,0 +1,5 @@
+D:\Dev\SirccV2012-2\ByA\bin\Release\ByA.dll
+D:\Dev\SirccV2012-2\ByA\bin\Release\ByA.pdb
+D:\Dev\SirccV2012-2\ByA\obj\Release\ByA.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\ByA\obj\Release\ByA.dll
+D:\Dev\SirccV2012-2\ByA\obj\Release\ByA.pdb
