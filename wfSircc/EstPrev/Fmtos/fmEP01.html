@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+            /*body {font-family:Arial;font-size:10pt;}*/
+         .tbconborde {border-collapse: collapse;font-family:Arial;font-size:10pt;}
+         .tbconborde td{border: 1px solid black;padding: 2mm;}
+         .tbconborde tr{width:100%}
+         .tbconborde th {background-color: #f8f3f3;border: 1px solid black;padding: 2mm;}
+         .thSubtitulos {text-align: left;}
+         .thTitulos {text-align: center;}
+         .tdtitulo {font-weight:bold;width:30%;}
+         .tdtitulo2 {font-weight:bold;width:30%;}
+    </style>
+</head>
+<body>
+
+    
+<!--primera seccion-->
+    <table class="tbconborde">
+        <tbody><tr >
+            <th colspan="3" class="thTitulos">ESTUDIO PREVIO<br />
+                1.DESCRIPCIÓN GENERAL</th>
+        </tr>
+            <tr><td class="tdtitulo">Tipo de Presupuesto Asignado</td>
+            <td>Esta necesidad corresponde a un presupuesto de Gasto de {TIPO_PPTO}</td>
+        </tr>
+            <tr>
+            <th colspan="3" class="thSubtitulos">1.1 Plan Anual de Adquisiciones</th>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Código </td>
+            <td colspan="2">{PAA_CODIGO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Descripción</td>
+            <td colspan="2">{PAA_DESCRIPCION}</td>
+        </tr>
+         <tr>
+            <th colspan="3" class="thSubtitulos">1.2 Proyecto</th>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Código<br></td>
+            <td colspan="2">{PROYECTO_CODIGO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Nombre</td>
+            <td colspan="2">{PROYECTO_NOMBRE}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo" >Código BPIN</td>
+            <td colspan="2">{PROYECTO_BPIN}<br></td>
+        </tr>
+        
+        <tr>
+            <th colspan="3" class="thSubtitulos">2. DATOS DE LA CONTRATACION</th>
+        </tr>
+        <tr><td class="tdtitulo">Fecha de elaboración del estudio previo:</td>
+            <td colspan="2">{FEC_ELABORACION}</td>
+        </tr>
+        
+        <tr><td class="tdtitulo">Nombre del funcionario que diligencia el estudio previo</td>
+            <td colspan="2">{NOM_DILIGENCIADO_POR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Dependencia solicitante</td>         
+            <td colspan="2">{DEP_SOLICITANTE}</td>
+        </tr>
+        <tr><td class="tdtitulo">Tipo de Contrato:</td>
+            <td colspan="2">{CLASE_CONTRATO}</td>
+        </tr>
+        
+    </tbody></table>
+    <!--fin primera seccion-->
+
+       <!--<table class="tbconborde">
+        <tbody><tr >
+            <th colspan="3" class="thTitulos">ESTUDIO PREVIO.<br />
+(Artículo 20 del Decreto 1510 de 2013).
+</th>
+        </tr>
+            <tr>
+            <th colspan="3" class="thSubtitulos">1. DATOS GENERALES DE LA CONTRATACION</th>
+        </tr>
+        <tr><td class="tdtitulo" rowspan="2">Plan Anual de Adquisiciones</td>
+            <td class="tdtitulo2">Código </td>
+            <td>{PAA_CODIGO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Descripción</td>
+            <td>{PAA_DESCRIPCION}</td>
+        </tr>
+        <tr><td class="tdtitulo">Tipo de Presupuesto Asignado</td>
+            <td colspan="2">Esta necesidad corresponde a un prespuesto de Gasto de {TIPO_PPTO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo" rowspan="2" >Proyecto</td>
+            <td class="tdtitulo2">Código<br></td>
+            <td >{PROYECTO_NOMBRE}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo2">Nombre</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo" >Código BPIN</td>
+            <td colspan="2">{PROYECTO_BPIN}<br></td>
+        </tr>
+        
+        <tr>
+            <th colspan="3" class="thSubtitulos">2. DATOS DE LA CONTRATACION</th>
+        </tr>
+        <tr><td class="tdtitulo">Fecha de elaboración del estudio previo:</td>
+            <td colspan="2">{FEC_ELABORACION}</td>
+        </tr>
+        
+        <tr><td class="tdtitulo">Nombre del funcionario que diligencia el estudio previo</td>
+            <td colspan="2">{NOM_DILIGENCIADO_POR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Dependencia solicitante</td>         
+            <td colspan="2">{DEP_SOLICITANTE}</td>
+        </tr>
+        <tr><td class="tdtitulo">Tipo de Contrato:</td>
+            <td colspan="2">{CLASE_CONTRATO}</td>
+        </tr>
+    </tbody></table>-->
+    <!--segunda seccion-->
+    <br>
+<table class="tbconborde">
+        <tbody><tr>
+            <th colspan="3" class="thTitulos">3. ELEMENTOS DEL ESTUDIO (Articulo 20 Decreto 1510 De 2013)</th>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Descripción de la necesidad</td>
+            <td colspan="2"> <i>complete el dsadsadsadsa documento</i> </td>
+        </tr>
+        <tr><th colspan="3" class="thSubtitulos">3.1 Objeto a Contratar, Especificaciones, Autorizaciones, Permisos y Licencias</th>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Objeto a Contratar</td>
+            <td colspan="2">{OBJETO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Clasificación UNSPSC</td>
+            <td colspan="2">{UNSPSC}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Especificaciones del Objeto a Contratar</td>
+            <td colspan="2">{ESPECIFICACIONES_OBJETO}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Autorizaciones, permisos y Licencias Requeridos para la Ejecución del Objeto a Contratar</td>
+            <td colspan="2">{AUT_PER_LIC}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Documentos técnicos para el desarrollo del proyecto.</td>
+            <td colspan="2">{DOCUMENTOS_TECNICOS}</td>
+        </tr>
+        <tr><th colspan="3" class="thSubtitulos">3.2 Condiciones de la Contratación</th>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Obligaciones del Contratista</td>
+            <td colspan="2">{OBLIG_CTISTA}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Obligaciones Entidad Contrante</td>
+            <td colspan="2">{OBLIG_ENTIDAD}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Lugar de ejecución del contrato</td>
+            <td colspan="2">{LUGAR_EJECUCION}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Plazo de ejecución del contrato</td>
+            <td colspan="2">{PLAZO_EJECUCIÓN}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Plazo de Liquidación</td>
+            <td colspan="2">De conformidad con lo dispuesto en el Artículo 60 de la Ley 80 de 1993, el presente contrato deberá liquidarse a más tardar antes del vencimiento de los
+                {PLAZO_LIQUIDACION_TEXTO} ({PLAZO_LIQUIDACION}) meses siguientes a la ejecución del mismo </td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Modalidad de Selección</td>
+            <td colspan="2">{MODALIDAD_SELECCION}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Justificación y fundamentos jurídicos de la Modalidad de Selección</td>
+            <td colspan="2">{JUSTIFICACION_MODALIDAD}</td>
+        </tr>
+        <tr><th colspan="2" class="thSubtitulos">3.3 Interventoria o Supervisión</th>
+        </tr>
+        <tr>
+            
+            <td class="tdtitulo">Nombre del Supervisor</td>
+            <td colspan="2">{NOMBRE_SUPERVISOR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Identificación del Supervisor</td>
+            <td colspan="2">{IDENTIFICACION_SUPERVISOR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Cargo delSupervidor</td>
+            <td colspan="2">{CARGO_SUPERVISOR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Dependencia del Supervisor</td>
+            <td colspan="2">{DEPENDENCIA_SUPERVISOR}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">Necesidad de contratar con interventor cuando los contratos superen la menor cuantía</td>
+            <td colspan="2">{NEC_INTERVENTOR_EXTERNO}</td>
+        </tr>
+    </tbody></table>
+
+    <!-- inicio tercera seccion -->
+    <br />
+    <table class="tbconborde">
+        <tbody><tr>
+            <th colspan="4" class="thTitulos">
+                4. DESCRIPCIÓN FINANCIERA
+            </th>
+        </tr>
+        <tr >
+            <th colspan="4" class="thSubtitulos">
+                4.1 Soporte técnico y económico del valor estimado del contrato
+            </th>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> 
+                Presupuesto Oficial ($)
+            </td>
+            <td colspan="3">
+                El Presupuesto Oficial para la ejecución de las actividades objeto del presente Contrato ascienden a la suma de <b>{TOTAL_LETRAS}.</b>
+                {VALOR_A_CONTRATAR} respaldado con: {CDP} expedido por el Líder del Programa de Presupuesto del Departamento del Cesar.
+            </td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">
+                Variables consideradas para calcular el presupuesto oficial:
+            </td>
+            <td colspan="3">
+                {VARIABLES_PPTO}    ??ACA NO SE SI VA UNA TABLA INDICANDO EL PRESPUESTO
+            </td>
+        </tr>
+        <tr>
+            <td class="tdtitulo">
+                Forma de pago y Requisitos:
+            </td>
+            <td colspan="3">
+                {FORMA_PAGO}
+            </td>
+        </tr>
+</tbody></table>
+<!---fin tercera sección -->
+    
+<!--inicio de cuarta seccion-->
+    <br />
+    <table class="tbconborde">
+        <tbody><tr>
+            <th colspan="3" class="thTitulos" >
+               5. CRITERIOS PARA SELECCIONAR LA OFERTA MÁS FAVORABLE
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3" class="thSubtitulos">
+                    5.1 Requisitos Habilitantes
+            </th>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Capacidad jurídica
+            </td>
+            <td colspan="2">{CAP_JURIDICA}
+            </td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Capacidad Financiera</td>
+            <td colspan="2">{CAP_FINANCIERA}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Experiencia</td>
+            <td colspan="2">{EXPERIENCIA}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Idoneidad</td>
+            <td colspan="2">{IDONEIDAD}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Capacidad Organizacional</td>
+            <td colspan="2">{CAP_ORGANIZACIONAL}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Capacidad Residual</td>
+            <td colspan="2">{CAP_RESIDUAL}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Factores de Evaluación</td>
+            <td colspan="2">{FAC_EVALUACION}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Reglas de Desempates de Ofertas</td>
+            <td colspan="2">{REGLAS_DESEMPATES}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Analisis de Riesgos y la Forma de Mitigarlo</td>
+            <td colspan="2">La {ENTIDAD}, de acuerdo con las disposiciones del artículo 4 de la ley 1150 de 2007 y de los artículos 3, 15, 17 y el numeral 2 del artículo 159 del decreto 1510 de 2013 y con base en la Metodología para identificar y clasificar los riesgos elaborado por Colombia Compra Eficiente procede a tipificar, estimar y asignar los riesgos de la presente contratación. Ver Anexo A. Matriz de Riegos.
+            </td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Garantías</td>
+            <td colspan="2">{POLIZAS}</td>
+        </tr>
+            <tr>
+            <th colspan="3" class="thSubtitulos">
+                    5.2 Otros Aspectos 
+            </th>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Sometimiento a un acuerdo comercial.</td>
+            <td colspan="2">{ACUERDO_COMERCIAL}</td>
+        </tr>
+        <tr>
+            <td class="tdtitulo"> Constancia de cumplimiento del deber de las entidades estatales</td>
+            <td colspan="2">{CONSTANCIA_CUMPLIMIENTO}</td>
+        </tr>            
+            <tr>
+            <td class="tdtitulo"> Analisis del sector, Perspectiva legal</td>
+            <td colspan="2">{PERSPECTIVA_LEGAL}</td>
+        </tr>            
+            <tr>
+            <td class="tdtitulo"> Analisis del sector, Perpectiva Organizacional</td>
+            <td colspan="2">{PERSPECTIVA_ORGANIZACIONAL}</td>
+        </tr>            
+        <tr>
+            <th colspan="3" class="thSubtitulos">
+                    &nbsp
+            </th>
+        </tr>            
+        <tr>
+            <td class="tdtitulo"> Firma</td>
+            <td colspan="2"><br /><br /><br /></td>
+        </tr>            
+        <tr>
+            <td class="tdtitulo"> Nombre</td>
+            <td colspan="2">{NOM_RESPONSABLE_EP}</td>
+        </tr>   
+         <tr>
+            <td class="tdtitulo"> Cargo </td>
+            <td colspan="2">{CARGO_RESPONSABLE}</td>
+        </tr>            
+             <tr>
+            <td class="tdtitulo"> Proyecto</td>
+            <td colspan="2">{NOM_DILIGENCIADO_POR}</td>
+        </tr>            
+   </tbody></table>
+
+</body>
+</html>

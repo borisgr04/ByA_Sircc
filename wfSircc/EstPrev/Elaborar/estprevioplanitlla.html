@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <style>
+        
+        @page { 
+        @top-left {
+	    content: "TOP SECRET";
+	    color: red
+        }
+    @bottom-right { 
+        content: counter(page);
+	font-style: italic
+    }
+}
+    </style>
+
+    <table class="tbconborde">
+        <tbody>
+            <tr>
+                <th colspan="3" style="text-align: center">Capítulo I: DESCRIPCIÓN GENERAL</th>
+            </tr>
+            <tr>
+                <th style="width: 30%">1. Certificado de inclusión en el Banco de Proyectos / Plan de Compras</th>
+                <td>{BANCO_PROYECTO_PLAN_COMPRAS}</td>
+                <td rowspan="5" style="width: 30%">{LOGO}</td>
+            </tr>
+            <tr>
+                <th>2. Fecha de elaboración del estudio previo:</th>
+                <td>{FEC_ELABORACION}</td>
+            </tr>
+            <tr>
+                <th>3. Nombre del funcionario que diligencia el estudio previo</th>
+                <td>{NOM_DILIGENCIADO_POR}</td>
+            </tr>
+            <tr>
+                <th>4. Dependencia solicitante</th>
+                <td>{DEP_SOLICITANTE}</td>
+            </tr>
+            <tr>
+                <th>5. Tipo de Contrato:</th>
+                <td>{CLASE_CONTRATO}</td>
+            </tr>
+        </tbody>
+    </table>
+                    <br />
+
+                    <br>
+                    <table class="tbconborde">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">TITULO II CAPÍTULO I ARTÍCULO 2.1.1. NUMERAL 1 - DECRETO 734 DE 2012 Descripción de la Necesidad</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 30%">6. Descripción de la necesidad</th>
+                                <td><i>complete el documento</i> </td>
+                            </tr>
+                            <tr>
+                                <th>7. Descripción del objeto a contratar</th>
+                                <td><i><strong>... sfs</strong></i></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">-8. Especificaciones del objeto a contratar</th>
+                            </tr>
+                            <tr>
+                                <th>8.1. Objeto del contrato</th>
+                                <td>{OBJETO}</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">8.2. Condiciones de la Contratación:</th>
+                            </tr>
+                            <tr>
+                                <th>8.2.1. Características del bien, obra o servicio a contratar (Especificaciones Técnicas) incluyendo los códigos SICE de cada uno de los ítems a contratar:</th>
+                                <td>{ESPECIFICACIONES_TECNICAS}</td>
+                            </tr>
+                            <tr>
+                                <th>8.3. Plazo de ejecución del contrato</th>
+                                <td>{PLAZO_EJECUCIÓN}</td>
+                            </tr>
+                            <tr>
+                                <th>8.4. Lugar de ejecución del contrato</th>
+                                <td>{LUGAR_EJECUCION}</td>
+                            </tr>
+                            <tr>
+                                <th>8.5. Obligaciones del contratista </th>
+                                <td>{OBLIG_CTISTA}</td>
+                            </tr>
+                            <tr>
+                                <th>8.6. Obligaciones del Departamento</th>
+                                <td>{OBLIG_ENTIDAD}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- inicio tercera seccion -->
+                    <table class="tbconborde">
+                        <tbody>
+                            <tr>
+                                <th colspan="3">TITULO II CAPÍTULO I ARTÍCULO 2.1.1. NUMERAL 2 DECRETO 734 DE 2012
+                 La descripción del objeto a contratar, con sus especificaciones y la identificación del contrato a celebrar
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Plazo de liquidación del contrato:
+                                </th>
+                                <td colspan="2">De conformidad con lo dispuesto en el Artículo 60 de la Ley 80 de 1993, el presente contrato deberá liquidarse a más tardar antes del vencimiento de los
+                PLAZO_LIQUIDACION_TEXTO ({PLAZO_LIQUIDACION}) meses siguientes a la ejecución del mismo
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>10. Fundamentos Jurídicos de la modalidad de selección:
+                                </th>
+                                <td colspan="2">
+                                    <i>aca se digitan los fundamentos juridcios</i></td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">SUPERVISÓN
+                                </th>
+                                <td>CARGO:
+                                </td>
+                                <td>{CARGO_SUPERVISOR}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DEPENDENCIA:
+                                </th>
+                                <td>{DEP_SUPERVISION}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!---fin tercera sección -->
+
+                    <!-- inicio -->
+                    <table class="tbconborde">
+                        <tbody>
+                            <tr>
+                                <th colspan="4">Capítulo III: Descripción financiera
+                                </th>
+                            </tr>
+                            <tr style="width: '30%'">
+                                <th colspan="4">12. Soporte técnico y económico del valor estimado del contrato
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>12.1 Presupuesto oficial ($)
+                                </th>
+                                <td colspan="3">El Presupuesto Oficial para la ejecución de las actividades objeto del presente Contrato ascienden a la suma de <b>{TOTAL_LETRAS}.</b>
+                                    {VALOR_A_CONTRATAR} respaldado con: {CDP} expedido por el Líder del Programa de Presupuesto del Departamento del Cesar.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>12.2 Variables consideradas para calcular el presupuesto oficial:
+                                </th>
+                                <td colspan="3">
+                                    <i>digite las variables consideradas para el presupuesto PRUEBA</i></td>
+                            </tr>
+                            <tr>
+                                <th>13. Forma de pago y requisitos:
+                                </th>
+                                <td colspan="3">{FORMA_PAGO}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--- fin -->
+                    <table class="tbconborde">
+                        <tbody>
+                            <tr>
+                                <th colspan="5">Capítulo IV: Bases para la Evaluación de Propuestas
+                                </th>
+                            </tr>
+                            <tr>
+                                <th style="width: 30%">14. Justificación de los factores de selección
+                                </th>
+                                <td colspan="4" class="auto-style1">digite justificacion de factores de selección
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">14.1. Requisitos Habilitantes
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>14.1. 1. Capacidad jurídica
+                                </th>
+                                <td colspan="4">digite la capacitdad juridica
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>14.1.2.Capacidad Financiera</th>
+                                <td colspan="4">especfique la capacidad financiera
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Condiciones de experiencia
+                                </th>
+                                <td colspan="4">digite las condiciones de experienes
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>14.1.4. Capacidad residual de contratación 
+                                </th>
+                                <td colspan="4">especifique la capacidad residual</td>
+                            </tr>
+                            <tr>
+                                <th>14.2. Factores de escogencia y calificación
+                                </th>
+                                <td colspan="4">especifique los factores de selección</td>
+                            </tr>
+                            <tr>
+                                <th>15. Análisis de exigencias de garantías destinadas a amparar los perjuicios de naturaleza contractual
+                o extracontractual, derivados del cumplimiento del ofrecimiento o del contrato, así como la pertinencia división de las mismas.
+                                </th>
+                                <td colspan="4">{POLIZAS}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">NOMBRE:{NOM_RESPONSABLE_EP}<br />
+                                    CARGO:{CARGO_RESPONSABLE}
+                                </td>
+                                <td colspan="3">FIRMA:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">PROYECTO: {NOM_DILIGENCIADO_POR}
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+</body>
+</html>

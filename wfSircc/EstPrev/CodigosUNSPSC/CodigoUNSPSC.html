@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .Separar {
+            margin-top:4px
+        }
+    </style>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalCodigos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Clasificador de Bienes y Servicios</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row  Separar">
+                        <div class="col-md-2">
+                            <label>Grupos: </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="cboGrupos"  ></select>
+                        </div>
+                    </div>
+                    <div class="row  Separar">
+                        <div class="col-md-2">
+                            <label>Segmentos: </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="cboSegmentos" multiple="multiple" size="4" ></select>
+                        </div>
+                    </div>
+                    <div class="row Separar">
+                        <div class="col-md-2">
+                            <label>Familias: </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="cboFamilias" multiple="multiple" size="4" ></select>
+                        </div>
+                    </div>
+                    <div class="row Separar">
+                        <div class="col-md-2">
+                            <label>Clases: </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="cboClases" multiple="multiple" size="4" ></select>
+                        </div>
+                    </div>
+                    <div class="row Separar">
+                        <div class="col-md-2">
+                            <label>Productos: </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="cboProductos" multiple="multiple" size="4" ></select>
+                        </div>
+                    </div>
+                    <div class="Separar row text-center">
+                        <div class="col-md-12">
+                            <div class="well well-sm"><strong id="txtCodigoUNSPSC"> Código UNSPSC </strong></div>
+                            
+                        </div>                        
+                    </div>
+                </div>
+                <div class="modal-footer">                    
+                    <button type="button" id="btnSeleccinarCodigo" class="btn btn-primary">Seleccionar Código</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--<script src="../../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../jqscripts/bya_Page.js"></script>
+    <script src="../../jqscripts/jquery_ext.js"></script>-->
+    <script src="../CodigosUNSPSC/js/AppCodigosUNSPSC.js"></script>
+    <script src="../CodigosUNSPSC/js/CodigosUNSPSC.js"></script>
+</body>
+</html>

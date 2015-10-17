@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .Separar {
+            margin:4px
+        }
+    </style>
+    <script src="/DatosBasicosG/Terceros/js/Tercerosh.js"></script>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalTerceros" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog custom-class">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Terceros</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs">
+                            <li class="active" id="gesTer"><a href="#tabGTerceros" data-toggle="tab">Gestión</a></li>
+                            <li id="ediTer"><a href="#tabRTerceros" id="btnEditarTercero" data-toggle="tab">Editar</a></li>
+                            <li id="newTer"><a href="#tabRTerceros" id="btnNuevoTercero" data-toggle="tab">Nuevo</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tabGTerceros" class="tab-pane in active">
+                                <h4 class="modal-title" id="H5">Consulta de Terceros</h4>
+                                <div class="row" style="margin:15px;">
+                                    <h5>Tercero Seleccionado: </h5>
+                                    <strong id="tercero_seleccionado"></strong>
+                                </div>
+                                <div id="jqxgridTer">
+                                </div>
+                            </div>
+                            <div id="tabRTerceros" class="tab-pane in">
+                                <div class="row Separar">
+                                    <div class="col-lg-3 text-right">
+                                        <label for='CboClasf'>Tipo de persona </label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                     <select id="CboClasfM" class="form-control"></select>
+                                    </div>
+                                </div>  
+                                <div class="row Separar">
+                                    <div class="col-lg-3 text-right"> 
+                                        <label for="CboTipNro" >Tipo  Identificación</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <select id="CboTipNroM" class="form-control"></select>
+                                    </div>
+                                </div>                   
+                                <div class="row Separar">
+                                    <div class="col-lg-3 text-right"> 
+                                        <label for='txtNroDoc'>N° Identificación</label>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <input id='txtNroDocM' type="text" placeholder="No de documento" class="form-control"/>
+                                    </div>
+                                </div>
+                               <div class="row Separar">
+                                   <div class="col-lg-3 text-right"> 
+                                        <label for='txtLugExp'>Lugar de Expedición </label>
+                                       </div>
+                                        <div class="col-sm-7">
+                                           <input id='txtLugExpM' type="text" class="form-control" autocomplete="off"/>
+                                        </div>
+                                       </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtPrimApe'>Primer Apellido </label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                        <input id='txtPrimApeM' type="text" class="form-control" autocomplete="off"/>
+                                    </div>
+                                    </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtSegApe' >Segundo Apellido </label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                      <input id='txtSegApeM' type="text" class="form-control" autocomplete="off"/>
+                                    </div>
+                                   </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtPrimNom'>Primer Nombre </label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                      <input id='txtPrimNomM' type="text" class="form-control" autocomplete="off"/>
+                                    </div>
+                                    </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtSegNom'>Segundo Nombre </label>
+                                   </div>
+                                      <div class="col-sm-7">
+                                        <input id='txtSegNomM' type="text" class="form-control" autocomplete="off"/>
+                                      </div>
+                                    </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for="txtFecNac">Fecha de nacimiento</label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                        <input type="date" class="form-control" id="txtFecNacM" />
+                                     </div>
+                                    </div> 
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtRazSoc'>Razón Social </label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                        <input id='txtRazSocM' type="text" class="form-control" autocomplete="off"/>
+                                    </div>
+                                </div>               
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for='txtDir'>Dirección </label>
+                                   </div>
+                                    <div class="col-sm-7">
+                                        <input id='txtDirM' type="text" class="form-control" autocomplete="off"/>
+                                    </div>
+                                </div>
+                            <div class="row Separar">
+                                <div class="col-lg-3 text-right"> 
+                               <label for='txtTel' >Telefono </label>
+                                    </div>
+                                <div class="col-sm-7">
+                                   <span class="input-icon input-icon-right">
+                                      <input id='txtTelM' type="text" class="form-control" />
+                                       <i class="icon-phone"></i>
+                                    </span>
+                                </div>
+                            </div>
+                           <div class="row Separar">
+                               <div class="col-lg-3 text-right"> 
+                                    <label for="txtEma">Email</label>
+                                   </div>
+                                     <div class="col-sm-7">
+                                        <span class="input-icon input-icon-right">
+                                            <input type="email" id="txtEmaM" class="form-control" placeholder="alguien@gmail.com" />
+                                            <i class="icon-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>               
+                            <div class="row Separar">
+                                <div class="col-lg-3 text-right"> 
+                               <label for='txtcargo'>Cargo </label>
+                                    </div>
+                                <div class="col-sm-7">
+                                 <input id='txtcargoM' type="text" class="form-control" autocomplete="off"/>
+                              </div>
+                            </div>  
+                       <!--<div class="row Separar">
+                           <div class="col-lg-3 text-right"> 
+                              <label for='CboDepNec' class="col-sm-3 control-label">Dependecia Contratante </label>
+                               </div>
+                                <div class="col-sm-7">
+                                   <select id="CboDepNecM" class="form-control"></select>
+                                </div>
+                            </div>  -->                
+                       <div class="row Separar" style="display:none;">
+                           <div class="col-lg-3 text-right"> 
+                          <label for='CboEst'>Estado </label>
+                               </div>
+                             <div class="col-sm-7">
+                                 <select id="cbotEstM" class="form-control"></select>
+                                </div>
+                             </div>
+                       <div class="row Separar">
+                           <div class="col-lg-3 text-right"> 
+                                <label for='CboTpTer' >Tipo de Tercero </label>
+                               </div>
+                                <div class="col-sm-7">
+                                  <select id="CboTpTerM" class="form-control"></select>
+                                </div>
+                             </div>               
+                       <div class="row Separar">
+                           <div class="col-lg-3 text-right"> 
+                                <label for='txtObs'>Observación </label>
+                               </div>
+                                <div class="col-sm-7">
+                                    <textarea id='txtObsM' rows="3" class="form-control"></textarea>
+                                </div>
+                             </div> 
+                                <div class="row Separar">
+                                    <div class="col-lg-12 text-center">
+                                        <button type="button" class="btn btn-sm btn-success" id="btnGuardarTercero">
+                                        <span class="glyphicon glyphicon-floppy-saved"></span>
+                                        Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="modal-footer">                    
+                    <button type="button" id="btnSeleccinarCodigo" class="btn btn-primary">Seleccionar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+        <style>
+        @media screen and (min-width: 768px) {
+            .custom-class {
+                width: 60%; /* either % (e.g. 60%) or px (400px) */
+            }
+        }
+    </style>
+
+</body>
+</html>
