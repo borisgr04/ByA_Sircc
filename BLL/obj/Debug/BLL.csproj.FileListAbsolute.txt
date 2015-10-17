@@ -1,0 +1,193 @@
+E:\ByA\Sircc4\Sircc4\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\BLL.dll
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\BLL.pdb
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\DAL.dll
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\Entidades.dll
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\DAL.pdb
+E:\ByA\Sircc4\Sircc4\BLL\bin\Debug\Entidades.pdb
+E:\ByA\Sircc4\Sircc4\BLL\obj\Debug\BLL.dll
+E:\ByA\Sircc4\Sircc4\BLL\obj\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\AutoMapper.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\GDocWord.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\GDocWord.pdb
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\GDocWord.xml
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\bin\Debug\AutoMapper.xml
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\obj\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc4_10102013_5\BLL\obj\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\AutoMapper.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\GDocWord.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\GDocWord.pdb
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\GDocWord.xml
+D:\Programas\svnSircc\svnSircc_27092013\BLL\bin\Debug\AutoMapper.xml
+D:\Programas\svnSircc\svnSircc_27092013\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc_27092013\BLL\obj\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc_27092013\BLL\obj\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\BLL.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\AutoMapper.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\ByA.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\DAL.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\Entidades.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\Financiero.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\GDocWord.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\ByA.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\DAL.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\Entidades.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\Financiero.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\GDocWord.pdb
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\GDocWord.xml
+D:\Programas\svnSircc\svnSircc4_12\BLL\bin\Debug\AutoMapper.xml
+D:\Programas\svnSircc\svnSircc4_12\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Programas\svnSircc\svnSircc4_12\BLL\obj\Debug\BLL.dll
+D:\Programas\svnSircc\svnSircc4_12\BLL\obj\Debug\BLL.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\BLL.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\BLL.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\ByA.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\DAL.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\Entidades.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\Financiero.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\GDocWord.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\ByA.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\DAL.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\Entidades.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\Financiero.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\GDocWord.pdb
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\GDocWord.xml
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\obj\Debug\BLL.dll
+C:\Users\Kevinhmendoza\Documents\Visual Studio 2012\Projects\Sircc4_Kevin\BLL\obj\Debug\BLL.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\BLL.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\BLL.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\AutoMapper.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\ByA.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\DAL.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\Financiero.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\GDocWord.dll
+D:\Dev\SirccV2012\BLL\bin\Debug\ByA.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\DAL.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\Financiero.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\GDocWord.pdb
+D:\Dev\SirccV2012\BLL\bin\Debug\GDocWord.xml
+D:\Dev\SirccV2012\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012\BLL\obj\Debug\BLL.dll
+D:\Dev\SirccV2012\BLL\obj\Debug\BLL.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\BLL.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\BLL.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\AutoMapper.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\ByA.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\DAL.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\Entidades.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\Financiero.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\GDocWord.dll
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\ByA.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\DAL.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\Entidades.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\Financiero.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\GDocWord.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\GDocWord.xml
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\AutoMapper.xml
+D:\ByA\svnSircc4_11122014\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\ByA\svnSircc4_11122014\BLL\obj\Debug\BLL.dll
+D:\ByA\svnSircc4_11122014\BLL\obj\Debug\BLL.pdb
+D:\ByA\svnSircc4_11122014\BLL\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\BLL.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\BLL.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\AutoMapper.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\ByA.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\DAL.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\Entidades.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\Financiero.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\GDocWord.dll
+D:\Dev\SirccV2012-2\BLL\bin\Debug\ByA.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\DAL.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\Entidades.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\Financiero.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\GDocWord.pdb
+D:\Dev\SirccV2012-2\BLL\bin\Debug\GDocWord.xml
+D:\Dev\SirccV2012-2\BLL\bin\Debug\AutoMapper.xml
+D:\Dev\SirccV2012-2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Dev\SirccV2012-2\BLL\obj\Debug\BLL.dll
+D:\Dev\SirccV2012-2\BLL\obj\Debug\BLL.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\BLL.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\BLL.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\AutoMapper.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\ByA.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\DAL.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\GDocWord.dll
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\GDocWord.pdb
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\GDocWord.xml
+D:\Dev\sircc4vs12-12\BLL\bin\Debug\AutoMapper.xml
+D:\Dev\sircc4vs12-12\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12\BLL\obj\Debug\BLL.dll
+D:\Dev\sircc4vs12-12\BLL\obj\Debug\BLL.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\BLL.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\BLL.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\AutoMapper.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\ByA.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\DAL.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\Entidades.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\Financiero.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\GDocWord.dll
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\ByA.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\DAL.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\Entidades.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\Financiero.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\GDocWord.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\AutoMapper.xml
+D:\Dev\sircc4vs12-12_\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Dev\sircc4vs12-12_\BLL\obj\Debug\BLL.dll
+D:\Dev\sircc4vs12-12_\BLL\obj\Debug\BLL.pdb
+D:\Dev\sircc4vs12-12_\BLL\bin\Debug\GDocWord.xml
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\AutoMapper.Net4.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\BLL.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\BLL.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\AutoMapper.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\ByA.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\DAL.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\Entidades.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\Financiero.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\GDocWord.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\ByA.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\DAL.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\Entidades.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\Financiero.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\GDocWord.pdb
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\GDocWord.xml
+D:\Dev\_Sircc4\_Sircc4\BLL\bin\Debug\AutoMapper.xml
+D:\Dev\_Sircc4\_Sircc4\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\BLL\obj\Debug\BLL.dll
+D:\Dev\_Sircc4\_Sircc4\BLL\obj\Debug\BLL.pdb
