@@ -1,0 +1,6 @@
+D:\Dev\_Sircc4\_Sircc4\TestConsole\bin\Debug\TestConsole.exe.config
+D:\Dev\_Sircc4\_Sircc4\TestConsole\bin\Debug\TestConsole.exe
+D:\Dev\_Sircc4\_Sircc4\TestConsole\bin\Debug\TestConsole.pdb
+D:\Dev\_Sircc4\_Sircc4\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\TestConsole\obj\Debug\TestConsole.exe
+D:\Dev\_Sircc4\_Sircc4\TestConsole\obj\Debug\TestConsole.pdb

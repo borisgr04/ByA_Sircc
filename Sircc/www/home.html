@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery Mobile: Theme Download</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet" href="css/byaElecciones.min.css" />
+        <link rel="stylesheet" href="css/uikit.css" />
+       
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css" />  
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="css/jquery.mobile-1.4.3.min.js"></script>          
+        <script type="text/javascript" src="js/CallApis/ApiEncargados.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>      
+        <script type="text/javascript" src="js/bya_Page.js"></script>       
+        <script type="text/javascript" src="js/PushNotification.js"></script>
+        <script type="text/javascript" src="js/uikit.min.js"></script>
+        <script type="application/javascript" src="js/fastclick.js"></script> 
+        
+    </head>
+    <body>
+        <div data-role="page" data-theme="a" class="body">
+            <div data-role="panel" id="pVigencias" data-position="left" data-display="overlay" data-theme="a">
+                <div align="center" style="padding-top:15px">
+                    <div align="center"><h3 style="-webkit-box-shadow: 0 10px 6px -6px #337ab7;-moz-box-shadow: 0 10px 6px -6px #337ab7;box-shadow: 0 10px 6px -6px #337ab7;">Vigencia:</h3></div>
+                    <select data-theme="a" data-rel="close" name="select-native-1" id="cboVigencias" data-native-menu="false">
+                    </select>                    
+                </div>
+                <div style="padding-top:15px" align="center">
+                    <div ><h3 id="txtUsuario" style="-webkit-box-shadow: 0 10px 6px -6px #337ab7;-moz-box-shadow: 0 10px 6px -6px #337ab7;box-shadow: 0 10px 6px -6px #337ab7;"></h3></div>
+                    <a id="btnCerrarSesion" class="ui-btn ui-btn-b ui-icon-action ui-btn-icon-right ui-shadow ui-corner-all">Cerrar Sesion</a>
+                </div>          
+            </div>
+            <div data-role="panel" id="pOpciones" data-position="right" data-display="overlay" data-theme="d">
+                <ul data-role="listview">      
+                    <li data-role="list-divider"><a class="ui-btn ui-btn-a ui-icon-comment ui-btn-icon-right ui-shadow ui-corner-all">Solicitudes</a></li>
+                    <li><a id="btnSolicitudesPorRecibir" data-rel="close" class="ui-btn ui-shadow ui-corner-all">Por Recibir<span class="ui-li-count" id="countPorRecibir"></span></a></li>
+                    <li><a id="btnSolicitudesPorRevisar" data-rel="close" class="ui-btn ui-shadow ui-corner-all">Por Revisar<span class="ui-li-count" id="countPorRevisar"></span></a></li>       
+                    <li data-role="list-divider"><a class="ui-btn ui-btn-a ui-icon-bullets ui-btn-icon-right ui-shadow ui-corner-all" title=" Navigation ">Actividades</a></li>
+                    <li><a id="btnIrVencidas" data-rel="close" class="ui-btn ui-shadow ui-corner-all">Vencidas<span class="ui-li-count" id="countVencidas"></span></a></li>
+                    <li><a id="btnIrHoy" data-rel="close" class="ui-btn ui-shadow ui-corner-all">Hoy<span class="ui-li-count" id="countHoy"></span></a></li>               
+                    <li><a id="btnIrProximas" data-rel="close" class="ui-btn ui-shadow ui-corner-all">Proximas<span class="ui-li-count" id="countProximas"></span></a></li>
+                </ul>  
+            </div>
+            <div data-role="header" data-position="fixed" data-theme="a">                
+                <a href="#pVigencias" class="ui-btn-left ui-btn-corner-all ui-btn ui-btn-a ui-icon-grid ui-btn-icon-notext ui-shadow" title="" data-form="ui-icon" data-role="button" role="button"></a>
+                <h1 id="btnIrPrincipal" style="color: white">SIRCC</h1>
+                <a href="#pOpciones" class="ui-btn-right ui-btn-corner-all ui-btn ui-btn-a ui-icon-bullets ui-btn-icon-notext ui-shadow" title="" data-form="ui-icon" data-role="button" role="button"></a>
+            </div>
+            <div data-role="content">                              
+                <div id="Home">
+                    <div id="secPrincipal">
+                        <ul data-theme="d" id="Ul1" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">                            
+	                        <li>
+                                <div id="secConsolidadoSolicitudes">
+                                </div>
+	                        </li>
+                            <li>
+                                <div id="secConsolidadoActividades">
+                                </div>
+	                        </li>
+                        </ul>
+                        
+                    </div> 
+                    <div id="secActividades"  style="display:none">                                                 
+                        <div id="pageActVencidas" style="display:none">   
+                            <h3 align="center" style="-webkit-box-shadow: 0 10px 6px -6px #d9534f;-moz-box-shadow: 0 10px 6px -6px #d9534f;box-shadow: 0 10px 6px -6px #d9534f;">Actividades Vencidas</h3>                      
+                            <div id="lstActVen">                                
+                            </div>
+                        </div>
+                        <div id="pageActHoy">
+                            <h3 align="center" style="-webkit-box-shadow: 0 10px 6px -6px #337ab7;-moz-box-shadow: 0 10px 6px -6px #337ab7;box-shadow: 0 10px 6px -6px #337ab7;">Actividades Hoy</h3>                      
+                            <div id="lstActHoy">                            
+	                        </div>
+                        </div>
+                        <div id="pageActProximas" style="display:none">
+                            <h3 align="center" style="-webkit-box-shadow: 0 10px 6px -6px #5cb85c;-moz-box-shadow: 0 10px 6px -6px #5cb85c;box-shadow: 0 10px 6px -6px #5cb85c;">Actividades Proximas</h3>                      
+                            <div id="lstActPro">                            
+	                        </div>
+                        </div>
+                    </div>
+                    <div id="secSolicitudes" style="display:none">
+                        <div id="pageSolicitudesPorRecibir">
+                            <h3 align="center" style="-webkit-box-shadow: 0 10px 6px -6px #5cb85c;-moz-box-shadow: 0 10px 6px -6px #5cb85c;box-shadow: 0 10px 6px -6px #5cb85c;">Solicitudes Por Recibir</h3>                      
+                            <div id="lstSolicitudesPorRecebir">                            
+	                        </div>
+                        </div>
+                        <div id="pageSolicitudesPorRevisar" style="display:none">
+                            <h3 align="center" style="-webkit-box-shadow: 0 10px 6px -6px #337ab7;-moz-box-shadow: 0 10px 6px -6px #337ab7;box-shadow: 0 10px 6px -6px #337ab7;">Solicitudes Por Revisar</h3>
+                            <div id="lstSolicitudesPorRevisar">                            
+	                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="popup" id="popDetalleActividad" data-theme="a">
+                    <div align="justify" style="margin:20px 20px 20px 20px">
+                        <div align="right">
+                            <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only" id="cerraPopDetalleProceso">
+                        </div>
+                        <h3 align="center" id="txtProceso"></h3>                        
+                        <p id="txtActividad"></p> 
+                        <p id="txtFecha"></p>  
+                        <div id="secObjetoProceso"><p id="txtObjeto"></p></div>       
+                        <p><strong>Observacion:</strong></p>   
+                        <textarea data-theme="a" id="txtObsSeg"></textarea>              
+                        <button id="btnActividadCompletada" class="ui-btn ui-btn-a ui-icon-check ui-btn-icon-right ui-shadow ui-corner-all">Completada</button>
+                        <!--<a id="btnVerDetallesProceso" class="ui-btn ui-btn-b ui-btn-inline ui-icon-plus ui-btn-icon-left">Ver mas</a>-->
+                    </div>
+                </div>
+                <div data-role="popup" id="popFechaActividad" data-theme="a">
+                    <div align="justify" style="margin:20px 20px 20px 20px">
+                        <div align="right">
+                            <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only" id="btnCerrarPopFecha">
+                        </div>
+                        <h2>Nueva Fecha</h2>
+                        <div id="secFechaInicial">
+                            <label><strong>Fecha inicial:</strong></label>
+                            <input id="txtFechaInicial" type="date" data-role="date" data-inline="true">   
+                        </div>
+                        <div id="secHoraInicial">
+                            <label><strong>Hora inicial:</strong></label>  
+                            <select name="select-native-1" id="txtHoraInicial" data-native-menu="false">
+                                <option value="0">00:00</option>
+                                <option value="1">01:00</option>
+                                <option value="">02:00</option>
+                                <option value="3">03:00</option>
+                                <option value="4">04:00</option>
+                                <option value="5">05:00</option>
+                                <option value="6">06:00</option>
+                                <option value="7">07:00</option>
+                                <option value="8" selected>08:00</option>
+                                <option value="9">09:00</option>
+                                <option value="10">10:00</option>
+                                <option value="11">11:00</option>
+                                <option value="12">12:00</option>
+                                <option value="13">13:00</option>
+                                <option value="14">14:00</option>
+                                <option value="15">15:00</option>
+                                <option value="16">16:00</option>
+                                <option value="17">17:00</option>
+                                <option value="18">18:00</option>
+                                <option value="19">19:00</option>
+                                <option value="20">20:00</option>
+                                <option value="21">21:00</option>
+                                <option value="22">22:00</option>
+                                <option value="23">23:00</option>
+                            </select>
+                        </div>    
+                        <div id="secFechaFinal">
+                            <label><strong>Fecha final:</strong></label>
+                            <input id="txtFechaFinal" type="date" data-role="date" data-inline="true">   
+                        </div>
+                        <div id="secHoraFinal">
+                            <label><strong>Hora final:</strong></label>  
+                            <select name="select-native-1" id="txtHoraFinal" data-native-menu="false">
+                                <option value="0">00:00</option>
+                                <option value="1">01:00</option>
+                                <option value="">02:00</option>
+                                <option value="3">03:00</option>
+                                <option value="4">04:00</option>
+                                <option value="5">05:00</option>
+                                <option value="6">06:00</option>
+                                <option value="7">07:00</option>
+                                <option value="8" selected>08:00</option>
+                                <option value="9">09:00</option>
+                                <option value="10">10:00</option>
+                                <option value="11">11:00</option>
+                                <option value="12">12:00</option>
+                                <option value="13">13:00</option>
+                                <option value="14">14:00</option>
+                                <option value="15">15:00</option>
+                                <option value="16">16:00</option>
+                                <option value="17">17:00</option>
+                                <option value="18">18:00</option>
+                                <option value="19">19:00</option>
+                                <option value="20">20:00</option>
+                                <option value="21">21:00</option>
+                                <option value="22">22:00</option>
+                                <option value="23">23:00</option>
+                            </select>
+                        </div>     
+                        <div style="display:none">
+                            <a id="btnVerObservacion" class="ui-btn ui-btn-a ui-btn-inline ui-icon-plus ui-btn-icon-left">Observacion</a>  
+                            <div id="secObservacionPosponer" style="display:none">
+                                <textarea data-theme="a" id="txtObservacionPosponer"></textarea>    
+                            </div>       
+                        </div>    
+                        <button id="btnPosActividad" class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-right ui-shadow ui-corner-all">Posponer actividad</button>
+                    </div>
+                </div>
+                <div data-role="popup" id="popDetalleSolicitudPorRecibir">
+                    <div align="justify" style="margin:20px 20px 20px 20px">
+                        <div align="right">
+                            <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only" id="btnCerrarDetalleSolicitudPorRecibir">
+                        </div>
+                        <h3 align="center" id="txtNumero"></h3>
+                        <label>Observacion</label>
+                        <textarea id="txtObservacionSolicitudPorRecibir"></textarea>
+                        <div data-role="navbar" style="padding-bottom:10px">
+			                <ul>			                    
+			                    <li><a data-theme="b" id="btnRecibirSolicitud" style="-webkit-box-shadow: 0 10px 6px -6px #777;-moz-box-shadow: 0 10px 6px -6px #777;box-shadow: 0 10px 6px -6px #777;" class='ui-btn ui-btn-icon-right ui-icon-check'>Recibir</a></li>
+			                </ul>
+		                </div>                    
+                    </div>
+                </div>
+                <div data-role="popup" id="popDetalleSolicitudPorRevisar">
+                    <div align="justify" style="margin:20px 20px 20px 20px">
+                        <div align="right">
+                            <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only" id="btnCerrarDetalleSolicitudPorRevisar">
+                        </div>
+                        <h3 align="center" id="txtNumeroSolicitudPorRevisar"></h3>
+                        <p align="center" id="txtProximoNumero"></p>
+                        <strong>Observacion</strong>
+                        <textarea id="txtObsSolicitudPorRevisar"></textarea>
+                        <div data-role="navbar" style="padding-bottom:10px">
+			                <ul>
+			                    <li><a data-theme="b" id="btnListoRevisarSolicitud" style="-webkit-box-shadow: 0 10px 6px -6px #777;-moz-box-shadow: 0 10px 6px -6px #777;box-shadow: 0 10px 6px -6px #777;" class="ui-btn ui-btn-icon-right ui-icon-check">Listo</a></li>
+			                </ul>
+		                </div>
+                        <p id="txtObjetoSolicitudPorRevisar"></p> 
+                        <p id="txtDepNecesidadSolicitudPorRevisar"></p>
+                        <p id="txtDepDelegadaSolicitudPorRevisar"></p>                        
+                        <p id="txtModalidadSolicitudPorRevisar"></p>
+                        <p id="txtClaseSolicitudPorRevisar"></p>
+                        <p id="txtValorAContratarSolicitudPorRevisar"></p>
+                        <p id="txtFechaRecibidoSolicitudPorRevisar"></p>
+                        <p id="txtEncargadoSolicitudPorRevisar"></p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </body>  
+    </html> 

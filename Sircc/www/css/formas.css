@@ -1,0 +1,9 @@
+.circle-green {
+    position:absolute; 
+    height:100%; 
+    width:100%;
+    background: #008040;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
