@@ -1,0 +1,2 @@
+UPDATE ESTADOS SET NOM_EST = 'Terminación Bilateral' WHERE COD_EST = '12';
+COMMIT;

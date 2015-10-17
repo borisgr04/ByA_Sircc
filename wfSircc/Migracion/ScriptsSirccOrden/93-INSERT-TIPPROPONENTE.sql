@@ -1,0 +1,5 @@
+Insert into TIPPROPONENTE
+   (COD_TIPPROP, NOM_TIPPROP)
+ Values
+   ('NI', 'NINGUNA');
+COMMIT;
