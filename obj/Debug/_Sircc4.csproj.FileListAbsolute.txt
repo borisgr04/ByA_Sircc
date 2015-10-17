@@ -1,0 +1,5 @@
+D:\Dev\_Sircc4\_Sircc4\_Sircc4\bin\_Sircc4.dll
+D:\Dev\_Sircc4\_Sircc4\_Sircc4\bin\_Sircc4.pdb
+D:\Dev\_Sircc4\_Sircc4\_Sircc4\obj\Debug\_Sircc4.csprojResolveAssemblyReference.cache
+D:\Dev\_Sircc4\_Sircc4\_Sircc4\obj\Debug\_Sircc4.dll
+D:\Dev\_Sircc4\_Sircc4\_Sircc4\obj\Debug\_Sircc4.pdb
