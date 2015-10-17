@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Print sample</title>
+
+    <style>
+        div.header
+        {
+            display: none;
+        }
+
+        @media print
+        {
+            div.header
+            {
+                display: block;
+                position: running(header);
+            }
+
+            @page
+            {
+                @top-center
+                {
+                    content: element(header, first-except);
+                }
+            }
+
+            @page
+            {
+                @top-center
+                {
+                    content: element(header, first);
+                }
+            }
+
+            .header
+            {
+                position: running(header);
+            }
+
+            .once
+            {
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">Introduction</div>
+    <div class="chapter">An introduction</div>
+
+    <div class="header">Not now</div>
+    <p>
+        Da di ha di da di ...
+  <span class="header once">NOW!</span>
+        <span class="header">Not now</span>
+        ... da di ha di hum.
+    </p>
+    f its only for IE 7+, you can use the following meta tag:
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    Following css:
+
+@media print 
+{
+    body {margin: 0 0 25mm 0;} // to leave some gap at the bottom for the footer
+    .footer-ie {position: fixed; bottom: 0; width: 100%;)
+}
+And following javascript to stop other browsers from reacting oddly:
+
+if (!$.browser.msie){
+    $("#footer").removeClass("footer-ie");
+}
+      f its only for IE 7+, you can use the following meta tag:
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    Following css:
+
+@media print 
+{
+    body {margin: 0 0 25mm 0;} // to leave some gap at the bottom for the footer
+    .footer-ie {position: fixed; bottom: 0; width: 100%;)
+}
+And following javascript to stop other browsers from reacting oddly:
+
+if (!$.browser.msie){
+    $("#footer").removeClass("footer-ie");
+}
+      f its only for IE 7+, you can use the following meta tag:
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    Following css:
+
+@media print 
+{
+    body {margin: 0 0 25mm 0;} // to leave some gap at the bottom for the footer
+    .footer-ie {position: fixed; bottom: 0; width: 100%;)
+}
+And following javascript to stop other browsers from reacting oddly:
+
+if (!$.browser.msie){
+    $("#footer").removeClass("footer-ie");
+}
+       <!--SECCION 1-->
+    <table border="1">
+        <tr>
+            <th colspan="3" style="text-align: center">Capítulo I: DESCRIPCIÓN GENERAL</th>
+        </tr>
+        <tr>
+            <th style="width: 30%">1. Certificado de inclusión en el Banco de Proyectos / Plan de Compras</th>
+            <td>{BANCO_PROYECTO_PLAN_COMPRAS}</td>
+            <td rowspan="5" style="width: 30%">{IMAGEN}</td>
+        </tr>
+        <tr>
+            <th>2. Fecha de elaboración del estudio previo:</th>
+            <td>{FEC_ELABORACION}</td>
+        </tr>
+        <tr>
+            <th>3. Nombre del funcionario que diligencia el estudio previo</th>
+            <td>{DILIGENCIADO_POR}</td>
+        </tr>
+        <tr>
+            <th>4. Dependencia solicitante</th>
+            <td>{DEPENDENCIA_NEC}</td>
+        </tr>
+        <tr>
+            <td>5. Tipo de Contrato:</td>
+            <td>{IDENTIFICACION_CONTRATO}</td>
+        </tr>
+    </table>
+    <!--FSECCION 1-->
+
+    <!-- segunda seccion -->
+    <table class="tbconborde">
+        <tr>
+            <th colspan="2">TITULO II CAPÍTULO I ARTÍCULO 2.1.1. NUMERAL 1 - DECRETO 734 DE 2012 Descripción de la Necesidad</th>
+        </tr>
+        <tr>
+            <th style="width: 30%">6. Descripción de la necesidad</th>
+            <td>..... </td>
+        </tr>
+        <tr>
+            <th>7. Descripción del objeto a contratar</th>
+            <td>....</td>
+        </tr>
+        <tr>
+            <th colspan="2">-8. Especificaciones del objeto a contratar</th>
+        </tr>
+        <tr>
+            <th>8.1. Objeto del contrato</th>
+            <td>{OBJETO}</td>
+        </tr>
+        <tr>
+            <th colspan="2">8.2. Condiciones de la Contratación:</th>
+        </tr>
+        <tr>
+            <th>8.2.1. Características del bien, obra o servicio a contratar (Especificaciones Técnicas) incluyendo los códigos SICE de cada uno de los ítems a contratar:</th>
+            <td>{ESPECIFICACIONES_TECNICAS}</td>
+        </tr>
+        <tr>
+            <th>8.3. Plazo de ejecución del contrato</th>
+            <td>{PLAZO_EJECUCION}</td>
+        </tr>
+        <tr>
+            <th>8.4. Lugar de ejecución del contrato</th>
+            <td>{LUGAR_EJECUCION}</td>
+        </tr>
+        <tr>
+            <th>8.5. Obligaciones del contratista </th>
+            <td>{OBLIGACIONES_C}</td>
+        </tr>
+        <tr>
+            <th>8.6. Obligaciones del Departamento</th>
+            <td>{OBLIGACIONES_E}</td>
+        </tr>
+    </table>
+    <!--- fin segundo seccion -->
+
+    <!-- inicio tercera seccion -->
+    <table class="tbconborde">
+        <tr>
+            <th colspan="3">TITULO II CAPÍTULO I ARTÍCULO 2.1.1. NUMERAL 2 DECRETO 734 DE 2012
+                 La descripción del objeto a contratar, con sus especificaciones y la identificación del contrato a celebrar
+            </th>
+        </tr>
+        <tr>
+            <th>9.   Plazo de liquidación del contrato:
+            </th>
+            <td colspan="2">De conformidad con lo dispuesto en el Artículo 60 de la Ley 80 de 1993, el presente contrato deberá liquidarse a más tardar antes del vencimiento de los
+                PLAZO_LIQUIDACION_TEXTO ({PLAZO_LIQUIDACION}) meses siguientes a la ejecución del mismo
+            </td>
+        </tr>
+        <tr>
+            <th>10. Fundamentos Jurídicos de la modalidad de selección:
+            </th>
+            <td colspan="2">{FUNDAMENTOS_JURIDICOS}
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2">SUPERVISÓN
+            </th>
+            <td>Cargo:
+            </td>
+            <td>{CARGO_SUPERVISOR}
+            </td>
+        </tr>
+        <tr>
+            <td>Dependencia:
+            </td>
+            <td>{DEPENDENCIA_SUPERVISOR}
+            </td>
+        </tr>
+    </table>
+    <!---fin tercera sección -->
+
+    <!-- inicio cuarta -->
+    <table class="tbconborde">
+        <tr>
+            <th colspan="4">Capítulo III: Descripción financiera
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4">12. Soporte técnico y económico del valor estimado del contrato
+            </th>
+        </tr>
+        <tr>
+            <th>12.1 Presupuesto oficial ($)
+            </th>
+            <td>El Presupuesto Oficial para la ejecución de las actividades objeto del presente Contrato ascienden a la suma de <b>{VALOR EN LETRAS }.</b>
+                {VALOR EN PESOS} respaldado con: {CDP} expedido por el Líder del Programa de Presupuesto del Departamento del Cesar.
+            </td>
+        </tr>
+        <tr>
+            <th>12.2 Variables consideradas para calcular el presupuesto oficial:
+            </th>
+            <td>digite las variables consideradas para el ppto
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">13. Forma de pago y requisitos:
+            </th>
+            <td>{FORMA_PAGO}
+            </td>
+        </tr>
+    </table>
+    <!--- fin -->
+
+    <!-- inicio quinta -->
+    <table>
+        <tr>
+            <td>Capítulo IV: Bases para la Evaluación de Propuestas
+            </td>
+        </tr>
+        <tr>
+            <td>14. Justificación de los factores de selección
+            </td>
+            <td>digite justificacion de factores de selección
+            </td>
+        </tr>
+        <tr>
+            <td>14.1. Requisitos Habilitantes
+            </td>
+        </tr>
+        <tr>
+            <td>14.1. 1. Capacidad jurídica
+            </td>
+            <td colspan="3">digite la capacitdad juridica
+            </td>
+        </tr>
+        <tr>
+            <td>14.1.2.</td>
+            <td>capacidad financiera
+            </td>
+        </tr>
+        <tr>
+            <td>Condiciones de experiencia
+            </td>
+            <td>digite las condiciones de experienes
+            </td>
+        </tr>
+        <tr>
+            <td>14.1.4. Capacidad residual de contratación 
+            </td>
+            <td>capacitdad residual
+            </td>
+        </tr>
+        <tr>
+            <td>14.2. Factores de escogencia y calificación
+            </td>
+            <td>factores de escogencia
+            </td>
+        </tr>
+        <tr>
+            <td>15. Análisis de exigencias de garantías destinadas a amparar los perjuicios de naturaleza contractual
+                o extracontractual, derivados del cumplimiento del ofrecimiento o del contrato, así como la pertinencia división de las mismas.
+            </td>
+            <td colspan="3">{POLIZAS}
+            </td>
+        </tr>
+        <tr>
+            <td>NOMBRE:
+                {NOM_RESPONSABLE}
+                {CARGO_RESPONSABLE}
+            </td>
+            <td>FIRMA:
+            </td>
+        </tr>
+        <tr>
+            <td>{DILIGENCIADO_POR}
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">APOYO TECNICO:
+                        {NOMBRE_APOYO_TECNICO}
+                        CARGO: {CARGO_APOYO_TECNICO}
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

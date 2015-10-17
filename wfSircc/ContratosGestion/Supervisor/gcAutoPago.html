@@ -1,0 +1,89 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="modalGesAct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Acta de Autorización de Pago</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="txtIdActa">
+                            Id Acta
+                        </label>
+                        <input id='txtIdActa' readonly="true" type="number" class="form-control input-sm" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtTipo">
+                            Tipo
+                        </label>
+                        <input id='txtTipo' readonly="true" type="text" class="form-control input-sm" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="txtFecAct">
+                            Fecha del Acta 
+                        </label>
+                        <input id='txtFecAct' type="date" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="txtFecIni">
+                            Fecha Inicial
+                        </label>
+                        <input id='txtFecIni' type="date" class="form-control input-sm" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="txtFecFin">
+                            Fecha Final
+                        </label>
+                        <input id='txtFecFin' type="date" class="form-control input-sm" disabled />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="CboAutPag">
+                            Autoriza pago
+                        </label>
+                        <select id="CboAutPag" class="form-control input-sm" disabled>
+                            <option value="">Seleccione..</option>
+                            <option value="SI">SI</option>
+                            <option value="NO">NO</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="txtValPago">
+                            Valor Autorizado a Pagar 
+                        </label>
+                        <input id='txtValPago' type="text" class="form-control input-sm currency" disabled />
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="txtObjAct">
+                            Observaciones
+                        </label>
+                        <textarea id="txtObjAct" class="form-control input-sm" rows="3" placeholder="Observaciones del Documento"></textarea>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="BtnGuardar" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script src="js/gcAutoPago.js"></script>
