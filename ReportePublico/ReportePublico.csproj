@@ -613,6 +613,7 @@
     <Content Include="jqscripts\loader.css" />
     <Content Include="jqscripts\qunit-git.js" />
     <Content Include="jqscripts\respond.min.js" />
+    <Content Include="LogoBYA.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\datajs-1.1.3.js" />

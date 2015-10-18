@@ -1683,8 +1683,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Migracion\BaseDatosMigracion\ImportarSirccMigracion.bat" />
-    <Content Include="Migracion\ImportarSircc.bat" />
-    <Content Include="Migracion\SIRCCMar2012.DMP" />
     <Content Include="Migracion\BaseDatosMigracion\SIRCC_MIG.DMP" />
     <Content Include="Migracion\BaseDatosMigracion\SIRCC_MIG.LOG" />
     <Content Include="Migracion\SIRCCMar2012.LOG" />

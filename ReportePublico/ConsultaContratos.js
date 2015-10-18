@@ -17,6 +17,18 @@
         $("#btnBsqResultado").click(function () {
             VerificarConcidencias($("#txtBusquedaEnResultado").val());
         });
+        $("#txtVigencia").blur(function () {
+            _armarNumeroContrato();
+        });
+        $("#cboTipoContrato").change(function () {
+            _armarNumeroContrato();
+        });
+    };
+    var _armarNumeroContrato = function () {
+        var vig = $("#txtVigencia").val();
+        var tipo = $("#cboTipoContrato").val();
+        var num_con = vig + tipo;
+        $("#txtNumeroContrato").val(num_con);
     };
     var _crearElements = function () {
         var sourceTiposContratos = byaPage.getSource(urlToTiposContratos);

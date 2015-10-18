@@ -25,7 +25,7 @@ namespace BLL.Oracle
         {
             string Query = "SELECT " + CamposTraer() + " FROM CONTRATOS " + InnersJoins();
             Query = AgregarFiltro(Query, Reg.chkVigencia, "VIG_CON", "=", Reg.Vigencia);
-            Query = AgregarFiltro(Query, Reg.chkNumeroContrato, "CONTRATOS.COD_CON", "=", Reg.NumeroContrato);
+            Query = AgregarFiltro(Query, Reg.chkNumeroContrato, "CONTRATOS.COD_CON", " LIKE ", "%" + Reg.NumeroContrato + "%");
             Query = AgregarFiltro(Query, Reg.chkTipoContrato, "TIP_CON", "=", Reg.TipoContrato);
             Query = AgregarFiltro(Query, Reg.chkDependenciaNecesidad, "DEP_PCON", "=", Reg.DependenciaNecesidad);
             Query = AgregarFiltro(Query, Reg.chkCedulaNitContratista, "IDE_CON", "=", Reg.CedulaNitContratista);
