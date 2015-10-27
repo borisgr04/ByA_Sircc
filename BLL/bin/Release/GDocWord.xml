@@ -6,17 +6,17 @@ GDocWord
 </name>
 </assembly>
 <members>
-<member name="T:GDocWord.GDWord">
-	<summary>
- Clase para Cruzar Documentos en Word basados en Una plantilla''' 
- </summary>
-	<remarks></remarks>
-</member><member name="M:GDocWord.Util.FormatCVS(System.String)">
+<member name="M:GDocWord.Util.FormatCVS(System.String)">
 	<summary>
  pasa 1,2 a '1','2'
  </summary>
 	<param name="Cad"></param>
 	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:GDocWord.GDWord">
+	<summary>
+ Clase para Cruzar Documentos en Word basados en Una plantilla''' 
+ </summary>
 	<remarks></remarks>
 </member><member name="P:GDocWord.My.Resources.Resources.ResourceManager">
 	<summary>

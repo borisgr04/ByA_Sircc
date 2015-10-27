@@ -6,3 +6,11 @@ D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.vbproj.GenerateResource.Cache
 D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.dll
 D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.xml
 D:\Dev\SirccV2012-2\GDocWord\obj\Release\GDocWord.pdb
+D:\Dev\Sircc4\GDocWord\bin\Release\GDocWord.dll
+D:\Dev\Sircc4\GDocWord\bin\Release\GDocWord.pdb
+D:\Dev\Sircc4\GDocWord\bin\Release\GDocWord.xml
+D:\Dev\Sircc4\GDocWord\obj\Release\GDocWord.Resources.resources
+D:\Dev\Sircc4\GDocWord\obj\Release\GDocWord.vbproj.GenerateResource.Cache
+D:\Dev\Sircc4\GDocWord\obj\Release\GDocWord.dll
+D:\Dev\Sircc4\GDocWord\obj\Release\GDocWord.xml
+D:\Dev\Sircc4\GDocWord\obj\Release\GDocWord.pdb

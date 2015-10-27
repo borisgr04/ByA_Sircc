@@ -3,3 +3,8 @@ D:\Dev\SirccV2012-2\Entidades\bin\Release\Entidades.pdb
 D:\Dev\SirccV2012-2\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
 D:\Dev\SirccV2012-2\Entidades\obj\Release\Entidades.dll
 D:\Dev\SirccV2012-2\Entidades\obj\Release\Entidades.pdb
+D:\Dev\Sircc4\Entidades\bin\Release\Entidades.dll
+D:\Dev\Sircc4\Entidades\bin\Release\Entidades.pdb
+D:\Dev\Sircc4\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
+D:\Dev\Sircc4\Entidades\obj\Release\Entidades.dll
+D:\Dev\Sircc4\Entidades\obj\Release\Entidades.pdb

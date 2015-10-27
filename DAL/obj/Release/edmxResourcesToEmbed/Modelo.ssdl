@@ -1,39 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="ModelStoreContainer">
-    <EntitySet Name="ACTAPARCIAL" EntityType="Model.Store.ACTAPARCIAL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ADICIONES" EntityType="Model.Store.ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="AN_PCONTRATO" EntityType="Model.Store.AN_PCONTRATO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ANX_CONTRATOS" EntityType="Model.Store.ANX_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ASEGURADORAS" EntityType="Model.Store.ASEGURADORAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="AUDI_CONTRATOS" EntityType="Model.Store.AUDI_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="AUDITORIA" EntityType="Model.Store.AUDITORIA" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="C_FORMA_PAGO" EntityType="Model.Store.C_FORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="C_POLIZAS2" EntityType="Model.Store.C_POLIZAS2" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CAL_VIG_POL" EntityType="Model.Store.CAL_VIG_POL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CALCULOPOL" EntityType="Model.Store.CALCULOPOL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CDP_ADICIONES" EntityType="Model.Store.CDP_ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CDP_CONTRATOS" EntityType="Model.Store.CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CDP_GPROCESOS" EntityType="Model.Store.CDP_GPROCESOS" store:Type="Tables" store:Schema="SIRCC" store:Name="CDP_GPROCESOS">
+    <EntitySet Name="ACTAPARCIAL" EntityType="Model.Store.ACTAPARCIAL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ADICIONES" EntityType="Model.Store.ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="AN_PCONTRATO" EntityType="Model.Store.AN_PCONTRATO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ANX_CONTRATOS" EntityType="Model.Store.ANX_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ASEGURADORAS" EntityType="Model.Store.ASEGURADORAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="AUDI_CONTRATOS" EntityType="Model.Store.AUDI_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="AUDITORIA" EntityType="Model.Store.AUDITORIA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="C_FORMA_PAGO" EntityType="Model.Store.C_FORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="C_POLIZAS2" EntityType="Model.Store.C_POLIZAS2" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="C_RUBROS_CDP" EntityType="Model.Store.C_RUBROS_CDP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CAL_VIG_POL" EntityType="Model.Store.CAL_VIG_POL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CALCULOPOL" EntityType="Model.Store.CALCULOPOL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CDP_ADICIONES" EntityType="Model.Store.CDP_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CDP_CONTRATOS" EntityType="Model.Store.CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CDP_GPROCESOS" EntityType="Model.Store.CDP_GPROCESOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CDP_GPROCESOS">
       <DefiningQuery>SELECT 
       "CDP_GPROCESOS"."NRO_CDP" AS "NRO_CDP", 
       "CDP_GPROCESOS"."NUM_GPROC" AS "NUM_GPROC", 
       "CDP_GPROCESOS"."FEC_CDP" AS "FEC_CDP", 
       "CDP_GPROCESOS"."VAL_CDP" AS "VAL_CDP", 
       "CDP_GPROCESOS"."GRUPO" AS "GRUPO"
-      FROM "SIRCC"."CDP_GPROCESOS" "CDP_GPROCESOS"</DefiningQuery>
+      FROM "SIRCC2"."CDP_GPROCESOS" "CDP_GPROCESOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CDP_PCONTRATOS" EntityType="Model.Store.CDP_PCONTRATOS" store:Type="Tables" store:Schema="SIRCC" store:Name="CDP_PCONTRATOS">
+    <EntitySet Name="CDP_PCONTRATOS" EntityType="Model.Store.CDP_PCONTRATOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CDP_PCONTRATOS">
       <DefiningQuery>SELECT 
       "CDP_PCONTRATOS"."NRO_CDP" AS "NRO_CDP", 
       "CDP_PCONTRATOS"."NUM_PCON" AS "NUM_PCON", 
       "CDP_PCONTRATOS"."FEC_CDP" AS "FEC_CDP", 
       "CDP_PCONTRATOS"."VAL_CDP" AS "VAL_CDP"
-      FROM "SIRCC"."CDP_PCONTRATOS" "CDP_PCONTRATOS"</DefiningQuery>
+      FROM "SIRCC2"."CDP_PCONTRATOS" "CDP_PCONTRATOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CESIONES" EntityType="Model.Store.CESIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CFORMA_PAGO" EntityType="Model.Store.CFORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CMINUTAS" EntityType="Model.Store.CMINUTAS" store:Type="Tables" store:Schema="SIRCC" store:Name="CMINUTAS">
+    <EntitySet Name="CESIONES" EntityType="Model.Store.CESIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CFORMA_PAGO" EntityType="Model.Store.CFORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CMINUTAS" EntityType="Model.Store.CMINUTAS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CMINUTAS">
       <DefiningQuery>SELECT 
       "CMINUTAS"."CMIN_CODI" AS "CMIN_CODI", 
       "CMINUTAS"."CMIN_NOMB" AS "CMIN_NOMB", 
@@ -47,24 +48,26 @@
       "CMINUTAS"."CMIN_ESTA" AS "CMIN_ESTA", 
       "CMINUTAS"."CMIN_FREG" AS "CMIN_FREG", 
       "CMINUTAS"."CMIN_FNOV" AS "CMIN_FNOV"
-      FROM "SIRCC"."CMINUTAS" "CMINUTAS"</DefiningQuery>
+      FROM "SIRCC2"."CMINUTAS" "CMINUTAS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="COBLIGACIONES" EntityType="Model.Store.COBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CON_POLIZAS" EntityType="Model.Store.CON_POLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CONMUN" EntityType="Model.Store.CONMUN" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CONS_PROC" EntityType="Model.Store.CONS_PROC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CONSORCIOSUT" EntityType="Model.Store.CONSORCIOSUT" store:Type="Tables" store:Schema="SIRCC" store:Name="CONSORCIOSUT">
+    <EntitySet Name="COBLIGACIONES" EntityType="Model.Store.COBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CON_POLIZAS" EntityType="Model.Store.CON_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CONFIGURACION" EntityType="Model.Store.CONFIGURACION" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CONMUN" EntityType="Model.Store.CONMUN" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CONS_PROC" EntityType="Model.Store.CONS_PROC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CONSORCIOSUT" EntityType="Model.Store.CONSORCIOSUT" store:Type="Tables" store:Schema="SIRCC2" store:Name="CONSORCIOSUT">
       <DefiningQuery>SELECT 
       "CONSORCIOSUT"."IDE_TER" AS "IDE_TER", 
       "CONSORCIOSUT"."ID_MIEMBROS" AS "ID_MIEMBROS", 
       "CONSORCIOSUT"."ID_ESTADO" AS "ID_ESTADO", 
       "CONSORCIOSUT"."PORC_PART" AS "PORC_PART"
-      FROM "SIRCC"."CONSORCIOSUT" "CONSORCIOSUT"</DefiningQuery>
+      FROM "SIRCC2"."CONSORCIOSUT" "CONSORCIOSUT"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CONTRATOS" EntityType="Model.Store.CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CORREOSE" EntityType="Model.Store.CORREOSE" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CPROYECTOS" EntityType="Model.Store.CPROYECTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="CTRL_ENTIDAD" EntityType="Model.Store.CTRL_ENTIDAD" store:Type="Tables" store:Schema="SIRCC" store:Name="CTRL_ENTIDAD">
+    <EntitySet Name="CONSORCIOSUTXC" EntityType="Model.Store.CONSORCIOSUTXC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CONTRATOS" EntityType="Model.Store.CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CORREOSE" EntityType="Model.Store.CORREOSE" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CPROYECTOS" EntityType="Model.Store.CPROYECTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="CTRL_ENTIDAD" EntityType="Model.Store.CTRL_ENTIDAD" store:Type="Tables" store:Schema="SIRCC2" store:Name="CTRL_ENTIDAD">
       <DefiningQuery>SELECT 
       "CTRL_ENTIDAD"."COD_SECPRINCIPAL" AS "COD_SECPRINCIPAL", 
       "CTRL_ENTIDAD"."NOM_SECPRINCIPAL" AS "NOM_SECPRINCIPAL", 
@@ -79,46 +82,56 @@
       "CTRL_ENTIDAD"."CIUDAD" AS "CIUDAD", 
       "CTRL_ENTIDAD"."MUNICIPIO" AS "MUNICIPIO", 
       "CTRL_ENTIDAD"."LOGO_RPT" AS "LOGO_RPT"
-      FROM "SIRCC"."CTRL_ENTIDAD" "CTRL_ENTIDAD"</DefiningQuery>
+      FROM "SIRCC2"."CTRL_ENTIDAD" "CTRL_ENTIDAD"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CUBRIMIENTO" EntityType="Model.Store.CUBRIMIENTO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="DEPENDENCIA" EntityType="Model.Store.DEPENDENCIA" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="DOCPCONTRATOS" EntityType="Model.Store.DOCPCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="DOCU_PROC" EntityType="Model.Store.DOCU_PROC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="DT_UNIDADES" EntityType="Model.Store.DT_UNIDADES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_CAP_JUR" EntityType="Model.Store.EP_CAP_JUR" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_CARGO" EntityType="Model.Store.EP_CARGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_CDP" EntityType="Model.Store.EP_CDP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_CLAUSULAS" EntityType="Model.Store.EP_CLAUSULAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_CONMUN" EntityType="Model.Store.EP_CONMUN" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_DT_CAP_JUR" EntityType="Model.Store.EP_DT_CAP_JUR" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_DT_UNIDADES" EntityType="Model.Store.EP_DT_UNIDADES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_ESPTEC" EntityType="Model.Store.EP_ESPTEC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_ESTADOS" EntityType="Model.Store.EP_ESTADOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_ESTFLU" EntityType="Model.Store.EP_ESTFLU" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_FORMA_PAGO" EntityType="Model.Store.EP_FORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_HESTADOEP" EntityType="Model.Store.EP_HESTADOEP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_OBLIGACIONESC" EntityType="Model.Store.EP_OBLIGACIONESC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_OBLIGACIONESE" EntityType="Model.Store.EP_OBLIGACIONESE" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_POLIZAS" EntityType="Model.Store.EP_POLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_POLIZAS2" EntityType="Model.Store.EP_POLIZAS2" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_PROYECTOS" EntityType="Model.Store.EP_PROYECTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EP_RUBROS_CDP" EntityType="Model.Store.EP_RUBROS_CDP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="EST_RUTA" EntityType="Model.Store.EST_RUTA" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ESTADOS" EntityType="Model.Store.ESTADOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ESTADOSGENERALES" EntityType="Model.Store.ESTADOSGENERALES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ESTCONTRATOS" EntityType="Model.Store.ESTCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ESTPREV" EntityType="Model.Store.ESTPREV" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ETAPAS" EntityType="Model.Store.ETAPAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GD_DDOCUMENTOS" EntityType="Model.Store.GD_DDOCUMENTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GD_DOC_ACTAS" EntityType="Model.Store.GD_DOC_ACTAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GD_DOCUMENTOS" EntityType="Model.Store.GD_DOCUMENTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GPOBLIGACIONES" EntityType="Model.Store.GPOBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GPPOLIZAS" EntityType="Model.Store.GPPOLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GPPROPONENTES" EntityType="Model.Store.GPPROPONENTES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GPPROYECTOS" EntityType="Model.Store.GPPROYECTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="GPROCESOS" EntityType="Model.Store.GPROCESOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HAUDITORIA" EntityType="Model.Store.HAUDITORIA" store:Type="Tables" store:Schema="SIRCC" store:Name="HAUDITORIA">
+    <EntitySet Name="CUBRIMIENTO" EntityType="Model.Store.CUBRIMIENTO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DEPENDENCIA" EntityType="Model.Store.DEPENDENCIA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DOC_PLANTILLA" EntityType="Model.Store.DOC_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DOC_SECCIONES" EntityType="Model.Store.DOC_SECCIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DOCPCONTRATOS" EntityType="Model.Store.DOCPCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DOCU_PROC" EntityType="Model.Store.DOCU_PROC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="DT_PARAMETROS" EntityType="Model.Store.DT_PARAMETROS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CAP_JUR" EntityType="Model.Store.EP_CAP_JUR" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CARGO" EntityType="Model.Store.EP_CARGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CDP" EntityType="Model.Store.EP_CDP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CLAUSULAS" EntityType="Model.Store.EP_CLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CODIGOSUNSPSC" EntityType="Model.Store.EP_CODIGOSUNSPSC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_CONMUN" EntityType="Model.Store.EP_CONMUN" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_DT_CAP_JUR" EntityType="Model.Store.EP_DT_CAP_JUR" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_DT_UNIDADES" EntityType="Model.Store.EP_DT_UNIDADES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_ESPTEC" EntityType="Model.Store.EP_ESPTEC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_ESTADOS" EntityType="Model.Store.EP_ESTADOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_ESTFLU" EntityType="Model.Store.EP_ESTFLU" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_FORMA_PAGO" EntityType="Model.Store.EP_FORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_HESTADOEP" EntityType="Model.Store.EP_HESTADOEP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_MPAA" EntityType="Model.Store.EP_MPAA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_OBLIGACIONESC" EntityType="Model.Store.EP_OBLIGACIONESC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_OBLIGACIONESE" EntityType="Model.Store.EP_OBLIGACIONESE" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_PAA" EntityType="Model.Store.EP_PAA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_PAA_UNSPSC" EntityType="Model.Store.EP_PAA_UNSPSC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_POLIZAS" EntityType="Model.Store.EP_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_POLIZAS2" EntityType="Model.Store.EP_POLIZAS2" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_PROYECTOS" EntityType="Model.Store.EP_PROYECTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_RIESGOS" EntityType="Model.Store.EP_RIESGOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_RUBROS_CDP" EntityType="Model.Store.EP_RUBROS_CDP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EP_UNSPSC" EntityType="Model.Store.EP_UNSPSC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="EST_RUTA" EntityType="Model.Store.EST_RUTA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ESTADOS" EntityType="Model.Store.ESTADOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ESTADOSGENERALES" EntityType="Model.Store.ESTADOSGENERALES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ESTCONTRATOS" EntityType="Model.Store.ESTCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ESTPREV" EntityType="Model.Store.ESTPREV" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ETAPAS" EntityType="Model.Store.ETAPAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GD_CT_OFICIOS" EntityType="Model.Store.GD_CT_OFICIOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GD_DDOCUMENTOS" EntityType="Model.Store.GD_DDOCUMENTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GD_DOC_ACTAS" EntityType="Model.Store.GD_DOC_ACTAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GD_DOCUMENTOS" EntityType="Model.Store.GD_DOCUMENTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GPOBLIGACIONES" EntityType="Model.Store.GPOBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GPPOLIZAS" EntityType="Model.Store.GPPOLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GPPROPONENTES" EntityType="Model.Store.GPPROPONENTES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GPPROYECTOS" EntityType="Model.Store.GPPROYECTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GPROCESOS" EntityType="Model.Store.GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="GR_TIP_OFI" EntityType="Model.Store.GR_TIP_OFI" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HAUDITORIA" EntityType="Model.Store.HAUDITORIA" store:Type="Tables" store:Schema="SIRCC2" store:Name="HAUDITORIA">
       <DefiningQuery>SELECT 
       "HAUDITORIA"."HAUDCODI" AS "HAUDCODI", 
       "HAUDITORIA"."HAUDTABL" AS "HAUDTABL", 
@@ -128,15 +141,15 @@
       "HAUDITORIA"."HAUDUSER" AS "HAUDUSER", 
       "HAUDITORIA"."HAUDFESI" AS "HAUDFESI", 
       "HAUDITORIA"."HAUDUSBD" AS "HAUDUSBD"
-      FROM "SIRCC"."HAUDITORIA" "HAUDITORIA"</DefiningQuery>
+      FROM "SIRCC2"."HAUDITORIA" "HAUDITORIA"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="HCONTRATOS" EntityType="Model.Store.HCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HDEP_ABOGADOS" EntityType="Model.Store.HDEP_ABOGADOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HMOD_CONTRATOS" EntityType="Model.Store.HMOD_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HOJAS_RUTAS" EntityType="Model.Store.HOJAS_RUTAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HORAS" EntityType="Model.Store.HORAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HREVISADO" EntityType="Model.Store.HREVISADO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="HREVSOLADI" EntityType="Model.Store.HREVSOLADI" store:Type="Tables" store:Schema="SIRCC" store:Name="HREVSOLADI">
+    <EntitySet Name="HCONTRATOS" EntityType="Model.Store.HCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HDEP_ABOGADOS" EntityType="Model.Store.HDEP_ABOGADOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HMOD_CONTRATOS" EntityType="Model.Store.HMOD_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HOJAS_RUTAS" EntityType="Model.Store.HOJAS_RUTAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HORAS" EntityType="Model.Store.HORAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HREVISADO" EntityType="Model.Store.HREVISADO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="HREVSOLADI" EntityType="Model.Store.HREVSOLADI" store:Type="Tables" store:Schema="SIRCC2" store:Name="HREVSOLADI">
       <DefiningQuery>SELECT 
       "HREVSOLADI"."NUM_SOL_ADI" AS "NUM_SOL_ADI", 
       "HREVSOLADI"."FECHA_RECIBIDO" AS "FECHA_RECIBIDO", 
@@ -154,58 +167,38 @@
       "HREVSOLADI"."USAP" AS "USAP", 
       "HREVSOLADI"."USBD" AS "USBD", 
       "HREVSOLADI"."FEC_MOD" AS "FEC_MOD"
-      FROM "SIRCC"."HREVSOLADI" "HREVSOLADI"</DefiningQuery>
+      FROM "SIRCC2"."HREVSOLADI" "HREVSOLADI"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="IMP_ADICIONES" EntityType="Model.Store.IMP_ADICIONES" store:Type="Tables" store:Schema="SIRCC" store:Name="IMP_ADICIONES">
+    <EntitySet Name="IMP_ADICIONES" EntityType="Model.Store.IMP_ADICIONES" store:Type="Tables" store:Schema="SIRCC2" store:Name="IMP_ADICIONES">
       <DefiningQuery>SELECT 
       "IMP_ADICIONES"."NRO_ADI" AS "NRO_ADI", 
       "IMP_ADICIONES"."NRO_IMP" AS "NRO_IMP", 
       "IMP_ADICIONES"."NRO_COM" AS "NRO_COM"
-      FROM "SIRCC"."IMP_ADICIONES" "IMP_ADICIONES"</DefiningQuery>
+      FROM "SIRCC2"."IMP_ADICIONES" "IMP_ADICIONES"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="IMP_CONTRATOS" EntityType="Model.Store.IMP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="IMPUESTOS" EntityType="Model.Store.IMPUESTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_CONTROL_DOC" EntityType="Model.Store.INT_CONTROL_DOC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_DETCUENTA" EntityType="Model.Store.INT_DETCUENTA" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_DETTRASLADO" EntityType="Model.Store.INT_DETTRASLADO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_CLA_EST" EntityType="Model.Store.INT_GP_CLA_EST" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_EST" EntityType="Model.Store.INT_GP_EST" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_RP_OP" EntityType="Model.Store.INT_GP_RP_OP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_RUT_EST" EntityType="Model.Store.INT_GP_RUT_EST" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_SEG_DOC" EntityType="Model.Store.INT_GP_SEG_DOC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_GP_USU_ROL" EntityType="Model.Store.INT_GP_USU_ROL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_INCO_SOP" EntityType="Model.Store.INT_INCO_SOP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_INFOCONT" EntityType="Model.Store.INT_INFOCONT" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_PAGOSS" EntityType="Model.Store.INT_PAGOSS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_PAGOSST" EntityType="Model.Store.INT_PAGOSST" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_PPLANTILLAS_URL" EntityType="Model.Store.INT_PPLANTILLAS_URL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INT_TRASLADOS" EntityType="Model.Store.INT_TRASLADOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INTANT_CONT" EntityType="Model.Store.INTANT_CONT" store:Type="Tables" store:Schema="SIRCC" store:Name="INTANT_CONT">
-      <DefiningQuery>SELECT 
-      "INTANT_CONT"."ID_CONT" AS "ID_CONT", 
-      "INTANT_CONT"."COD_INVAN" AS "COD_INVAN", 
-      "INTANT_CONT"."VAL_INVAN" AS "VAL_INVAN", 
-      "INTANT_CONT"."VPORCENT" AS "VPORCENT", 
-      "INTANT_CONT"."EST_INVAN_CONT" AS "EST_INVAN_CONT"
-      FROM "SIRCC"."INTANT_CONT" "INTANT_CONT"</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="INTDOCACTAS" EntityType="Model.Store.INTDOCACTAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INTENTSEGSOCIAL" EntityType="Model.Store.INTENTSEGSOCIAL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INTERVENTORES_CONTRATO" EntityType="Model.Store.INTERVENTORES_CONTRATO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INTINVAN" EntityType="Model.Store.INTINVAN" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="INTTIPO_ESS" EntityType="Model.Store.INTTIPO_ESS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MENU" EntityType="Model.Store.MENU" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MENU_PERFIL" EntityType="Model.Store.MENU_PERFIL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MENU2" EntityType="Model.Store.MENU2" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MENUMB" EntityType="Model.Store.MENUMB" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MIN_MOD_CONTRATO" EntityType="Model.Store.MIN_MOD_CONTRATO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CDP_CONTRATOS" EntityType="Model.Store.MOD_CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CFORMA_PAGO" EntityType="Model.Store.MOD_CFORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_COBLIGACIONES" EntityType="Model.Store.MOD_COBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CON_POLIZAS" EntityType="Model.Store.MOD_CON_POLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CONMUN" EntityType="Model.Store.MOD_CONMUN" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CONTRATOS" EntityType="Model.Store.MOD_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MOD_CPROYECTOS" EntityType="Model.Store.MOD_CPROYECTOS" store:Type="Tables" store:Schema="SIRCC" store:Name="MOD_CPROYECTOS">
+    <EntitySet Name="IMP_CONTRATOS" EntityType="Model.Store.IMP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="IMPUESTOS" EntityType="Model.Store.IMPUESTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_CONTROL_DOC" EntityType="Model.Store.INT_CONTROL_DOC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_DETCUENTA" EntityType="Model.Store.INT_DETCUENTA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_DETTRASLADO" EntityType="Model.Store.INT_DETTRASLADO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_INFOCONT" EntityType="Model.Store.INT_INFOCONT" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_PAGOSST" EntityType="Model.Store.INT_PAGOSST" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_PPLANTILLAS_URL" EntityType="Model.Store.INT_PPLANTILLAS_URL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INT_TRASLADOS" EntityType="Model.Store.INT_TRASLADOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INTERVENTORES_CONTRATO" EntityType="Model.Store.INTERVENTORES_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="INTTIPO_ESS" EntityType="Model.Store.INTTIPO_ESS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MENU" EntityType="Model.Store.MENU" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MENU_PERFIL" EntityType="Model.Store.MENU_PERFIL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MENU2" EntityType="Model.Store.MENU2" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MENUMB" EntityType="Model.Store.MENUMB" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MIN_MOD_CONTRATO" EntityType="Model.Store.MIN_MOD_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CDP_CONTRATOS" EntityType="Model.Store.MOD_CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CFORMA_PAGO" EntityType="Model.Store.MOD_CFORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_COBLIGACIONES" EntityType="Model.Store.MOD_COBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CON_POLIZAS" EntityType="Model.Store.MOD_CON_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CONMUN" EntityType="Model.Store.MOD_CONMUN" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CONTRATOS" EntityType="Model.Store.MOD_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_CPROYECTOS" EntityType="Model.Store.MOD_CPROYECTOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="MOD_CPROYECTOS">
       <DefiningQuery>SELECT 
       "MOD_CPROYECTOS"."NUM_SOL_ADI" AS "NUM_SOL_ADI", 
       "MOD_CPROYECTOS"."PROYECTO" AS "PROYECTO", 
@@ -216,107 +209,128 @@
       "MOD_CPROYECTOS"."FEC_MOD" AS "FEC_MOD", 
       "MOD_CPROYECTOS"."USBD_MOD" AS "USBD_MOD", 
       "MOD_CPROYECTOS"."USAP_MOD" AS "USAP_MOD"
-      FROM "SIRCC"."MOD_CPROYECTOS" "MOD_CPROYECTOS"</DefiningQuery>
+      FROM "SIRCC2"."MOD_CPROYECTOS" "MOD_CPROYECTOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="MOD_PROPONENTES" EntityType="Model.Store.MOD_PROPONENTES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MODULOS" EntityType="Model.Store.MODULOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="MUNICIPIOS" EntityType="Model.Store.MUNICIPIOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="NROCONVIG" EntityType="Model.Store.NROCONVIG" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="NUMPROP" EntityType="Model.Store.NUMPROP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_APPLICATIONS" EntityType="Model.Store.ORA_ASPNET_APPLICATIONS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_MEMBERSHIP" EntityType="Model.Store.ORA_ASPNET_MEMBERSHIP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_PATHS" EntityType="Model.Store.ORA_ASPNET_PATHS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_PERSONALIZNALLUSERS" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNALLUSERS" store:Type="Tables" store:Schema="SIRCC" store:Name="ORA_ASPNET_PERSONALIZNALLUSERS">
+    <EntitySet Name="MOD_PROPONENTES" EntityType="Model.Store.MOD_PROPONENTES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MOD_TIP_PLA" EntityType="Model.Store.MOD_TIP_PLA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MODULOS" EntityType="Model.Store.MODULOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="MUNICIPIOS" EntityType="Model.Store.MUNICIPIOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="NROCONVIG" EntityType="Model.Store.NROCONVIG" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="NUMPROP" EntityType="Model.Store.NUMPROP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_APPLICATIONS" EntityType="Model.Store.ORA_ASPNET_APPLICATIONS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_MEMBERSHIP" EntityType="Model.Store.ORA_ASPNET_MEMBERSHIP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_PATHS" EntityType="Model.Store.ORA_ASPNET_PATHS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_PERSONALIZNALLUSERS" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNALLUSERS" store:Type="Tables" store:Schema="SIRCC2" store:Name="ORA_ASPNET_PERSONALIZNALLUSERS">
       <DefiningQuery>SELECT 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."PATHID" AS "PATHID", 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."PAGESETTINGS" AS "PAGESETTINGS", 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."LASTUPDATEDDATE" AS "LASTUPDATEDDATE"
-      FROM "SIRCC"."ORA_ASPNET_PERSONALIZNALLUSERS" "ORA_ASPNET_PERSONALIZNALLUSERS"</DefiningQuery>
+      FROM "SIRCC2"."ORA_ASPNET_PERSONALIZNALLUSERS" "ORA_ASPNET_PERSONALIZNALLUSERS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="ORA_ASPNET_PERSONALIZNPERUSER" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNPERUSER" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_PROFILE" EntityType="Model.Store.ORA_ASPNET_PROFILE" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_ROLES" EntityType="Model.Store.ORA_ASPNET_ROLES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_SESSIONAPPLICATIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONAPPLICATIONS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_SESSIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_SITEMAP" EntityType="Model.Store.ORA_ASPNET_SITEMAP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_USERS" EntityType="Model.Store.ORA_ASPNET_USERS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="ORA_ASPNET_USERSINROLES" EntityType="Model.Store.ORA_ASPNET_USERSINROLES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PACTIVIDADES" EntityType="Model.Store.PACTIVIDADES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PAGAUT" EntityType="Model.Store.PAGAUT" store:Type="Tables" store:Schema="SIRCC" store:Name="PAGAUT">
+    <EntitySet Name="ORA_ASPNET_PERSONALIZNPERUSER" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNPERUSER" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_PROFILE" EntityType="Model.Store.ORA_ASPNET_PROFILE" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_ROLES" EntityType="Model.Store.ORA_ASPNET_ROLES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_SESSIONAPPLICATIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONAPPLICATIONS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_SESSIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_SITEMAP" EntityType="Model.Store.ORA_ASPNET_SITEMAP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_USERS" EntityType="Model.Store.ORA_ASPNET_USERS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="ORA_ASPNET_USERSINROLES" EntityType="Model.Store.ORA_ASPNET_USERSINROLES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PACTIVIDADES" EntityType="Model.Store.PACTIVIDADES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PAGAUT" EntityType="Model.Store.PAGAUT" store:Type="Tables" store:Schema="SIRCC2" store:Name="PAGAUT">
       <DefiningQuery>SELECT 
       "PAGAUT"."MENUID" AS "MENUID", 
       "PAGAUT"."NOMPAG" AS "NOMPAG"
-      FROM "SIRCC"."PAGAUT" "PAGAUT"</DefiningQuery>
+      FROM "SIRCC2"."PAGAUT" "PAGAUT"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="PAGOS_GPROCESOS" EntityType="Model.Store.PAGOS_GPROCESOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PAGOS_PARCIALES" EntityType="Model.Store.PAGOS_PARCIALES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PCLAUSULAS" EntityType="Model.Store.PCLAUSULAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PCONMUN" EntityType="Model.Store.PCONMUN" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PCONTRATOS" EntityType="Model.Store.PCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PCRONO_DIAS" EntityType="Model.Store.PCRONO_DIAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PCRONOGRAMAS" EntityType="Model.Store.PCRONOGRAMAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PESTADOS" EntityType="Model.Store.PESTADOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PESTADOSACT" EntityType="Model.Store.PESTADOSACT" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PGCONTRATOSM" EntityType="Model.Store.PGCONTRATOSM" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PLANTILLAPPAL" EntityType="Model.Store.PLANTILLAPPAL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="POBLIGACIONES" EntityType="Model.Store.POBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="POLIZAS" EntityType="Model.Store.POLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="POLIZAS_ADICIONES" EntityType="Model.Store.POLIZAS_ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="POLIZAS_CONTRATO" EntityType="Model.Store.POLIZAS_CONTRATO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PPLANTILLAS" EntityType="Model.Store.PPLANTILLAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PPLANTILLAS_CAMPOS" EntityType="Model.Store.PPLANTILLAS_CAMPOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PPLANTILLAS_FORMATO_TABLAS" EntityType="Model.Store.PPLANTILLAS_FORMATO_TABLAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PPOLIZAS" EntityType="Model.Store.PPOLIZAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PPROPONENTES" EntityType="Model.Store.PPROPONENTES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PR_DB_CLAUSULAS" EntityType="Model.Store.PR_DB_CLAUSULAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PROYECTOS" EntityType="Model.Store.PROYECTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PSOLICITUDES" EntityType="Model.Store.PSOLICITUDES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="PUNIDADES" EntityType="Model.Store.PUNIDADES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RP" EntityType="Model.Store.RP" store:Type="Tables" store:Schema="SIRCC" store:Name="RP">
+    <EntitySet Name="PAGOS_GPROCESOS" EntityType="Model.Store.PAGOS_GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PAGOS_PARCIALES" EntityType="Model.Store.PAGOS_PARCIALES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PCLAUSULAS" EntityType="Model.Store.PCLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PCONMUN" EntityType="Model.Store.PCONMUN" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PCONTRATOS" EntityType="Model.Store.PCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PCRONO_DIAS" EntityType="Model.Store.PCRONO_DIAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PCRONOGRAMAS" EntityType="Model.Store.PCRONOGRAMAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PESTADOS" EntityType="Model.Store.PESTADOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PESTADOSACT" EntityType="Model.Store.PESTADOSACT" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PGCONTRATOSM" EntityType="Model.Store.PGCONTRATOSM" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PL_PLANTILLA" EntityType="Model.Store.PL_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PL_SECCIONES" EntityType="Model.Store.PL_SECCIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PL_TIPOS_PLANTILLA" EntityType="Model.Store.PL_TIPOS_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PLANTILLAPPAL" EntityType="Model.Store.PLANTILLAPPAL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="POBLIGACIONES" EntityType="Model.Store.POBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="POLIZAS" EntityType="Model.Store.POLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="POLIZAS_ADICIONES" EntityType="Model.Store.POLIZAS_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="POLIZAS_CONTRATO" EntityType="Model.Store.POLIZAS_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPLANTILLAS" EntityType="Model.Store.PPLANTILLAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPLANTILLAS_CAMPOS" EntityType="Model.Store.PPLANTILLAS_CAMPOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPLANTILLAS_FORMATO_TABLAS" EntityType="Model.Store.PPLANTILLAS_FORMATO_TABLAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPOLIZAS" EntityType="Model.Store.PPOLIZAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPROPONENTES" EntityType="Model.Store.PPROPONENTES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PPROPONENTESS" EntityType="Model.Store.PPROPONENTESS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PR_DB_CLAUSULAS" EntityType="Model.Store.PR_DB_CLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PROYECTOS" EntityType="Model.Store.PROYECTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PSOLICITUDES" EntityType="Model.Store.PSOLICITUDES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="PUNIDADES" EntityType="Model.Store.PUNIDADES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RP" EntityType="Model.Store.RP" store:Type="Tables" store:Schema="SIRCC2" store:Name="RP">
       <DefiningQuery>SELECT 
       "RP"."NRO_RP" AS "NRO_RP", 
       "RP"."TIP_RP" AS "TIP_RP"
-      FROM "SIRCC"."RP" "RP"</DefiningQuery>
+      FROM "SIRCC2"."RP" "RP"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="RP_ADICIONES" EntityType="Model.Store.RP_ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RP_CONTRATOS" EntityType="Model.Store.RP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RP_CONTRATOS_A" EntityType="Model.Store.RP_CONTRATOS_A" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RPT_CONTROL" EntityType="Model.Store.RPT_CONTROL" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RUBROS" EntityType="Model.Store.RUBROS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RUBROS_ADICIONES" EntityType="Model.Store.RUBROS_ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RUBROS_CONTRATOS" EntityType="Model.Store.RUBROS_CONTRATOS" store:Type="Tables" store:Schema="SIRCC" store:Name="RUBROS_CONTRATOS">
+    <EntitySet Name="RP_ADICIONES" EntityType="Model.Store.RP_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RP_CONTRATOS" EntityType="Model.Store.RP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RP_CONTRATOS_A" EntityType="Model.Store.RP_CONTRATOS_A" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RPT_CONTROL" EntityType="Model.Store.RPT_CONTROL" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS" EntityType="Model.Store.RUBROS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_ADICIONES" EntityType="Model.Store.RUBROS_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_CONTRATOS" EntityType="Model.Store.RUBROS_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_CONTRATOS_2008_2010" EntityType="Model.Store.RUBROS_CONTRATOS_2008_2010" store:Type="Tables" store:Schema="SIRCC2" store:Name="RUBROS_CONTRATOS_2008_2010">
       <DefiningQuery>SELECT 
-      "RUBROS_CONTRATOS"."COD_RUB" AS "COD_RUB", 
-      "RUBROS_CONTRATOS"."COD_CON" AS "COD_CON", 
-      "RUBROS_CONTRATOS"."NOM_RUB" AS "NOM_RUB", 
-      "RUBROS_CONTRATOS"."VAL_COMPROMISO" AS "VAL_COMPROMISO", 
-      "RUBROS_CONTRATOS"."NRO_RP" AS "NRO_RP", 
-      "RUBROS_CONTRATOS"."FEC_REG" AS "FEC_REG", 
-      "RUBROS_CONTRATOS"."USBD" AS "USBD"
-      FROM "SIRCC"."RUBROS_CONTRATOS" "RUBROS_CONTRATOS"</DefiningQuery>
+      "RUBROS_CONTRATOS_2008_2010"."COD_RUB" AS "COD_RUB", 
+      "RUBROS_CONTRATOS_2008_2010"."COD_CON" AS "COD_CON", 
+      "RUBROS_CONTRATOS_2008_2010"."NOM_RUB" AS "NOM_RUB", 
+      "RUBROS_CONTRATOS_2008_2010"."VAL_COMPROMISO" AS "VAL_COMPROMISO", 
+      "RUBROS_CONTRATOS_2008_2010"."NRO_RP" AS "NRO_RP", 
+      "RUBROS_CONTRATOS_2008_2010"."FEC_REG" AS "FEC_REG", 
+      "RUBROS_CONTRATOS_2008_2010"."USBD" AS "USBD", 
+      "RUBROS_CONTRATOS_2008_2010"."VIGENCIA" AS "VIGENCIA", 
+      "RUBROS_CONTRATOS_2008_2010"."ID" AS "ID"
+      FROM "SIRCC2"."RUBROS_CONTRATOS_2008_2010" "RUBROS_CONTRATOS_2008_2010"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="RUBROS_GPROCESOS" EntityType="Model.Store.RUBROS_GPROCESOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RUBROS_PCONTRATOS" EntityType="Model.Store.RUBROS_PCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="RUBROS_RCONTRATOS" EntityType="Model.Store.RUBROS_RCONTRATOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="SOL_ADICIONES" EntityType="Model.Store.SOL_ADICIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="SUBTIPOS" EntityType="Model.Store.SUBTIPOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="SUPERVISORES_CONTRATO" EntityType="Model.Store.SUPERVISORES_CONTRATO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TERCEROS" EntityType="Model.Store.TERCEROS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TERCEROSDESKTOP" EntityType="Model.Store.TERCEROSDESKTOP" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIP_DOC" EntityType="Model.Store.TIP_DOC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPO_ADCIONES" EntityType="Model.Store.TIPO_ADCIONES" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPO_AGENT" EntityType="Model.Store.TIPO_AGENT" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPO_INTERVENTOR" EntityType="Model.Store.TIPO_INTERVENTOR" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPO_PAGO" EntityType="Model.Store.TIPO_PAGO" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPO_PLAZOS" EntityType="Model.Store.TIPO_PLAZOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPOSCONT" EntityType="Model.Store.TIPOSCONT" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPOSGASTOS" EntityType="Model.Store.TIPOSGASTOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPOSPROC" EntityType="Model.Store.TIPOSPROC" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPPLANTILLAS" EntityType="Model.Store.TIPPLANTILLAS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="TIPPROPONENTE" EntityType="Model.Store.TIPPROPONENTE" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="USUARIOS" EntityType="Model.Store.USUARIOS" store:Type="Tables" Schema="SIRCC" />
-    <EntitySet Name="VIGENCIAS" EntityType="Model.Store.VIGENCIAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_CONTRATOS_X" EntityType="Model.Store.RUBROS_CONTRATOS_X" store:Type="Tables" store:Schema="SIRCC2" store:Name="RUBROS_CONTRATOS_X">
+      <DefiningQuery>SELECT 
+      "RUBROS_CONTRATOS_X"."COD_RUB" AS "COD_RUB", 
+      "RUBROS_CONTRATOS_X"."COD_CON" AS "COD_CON", 
+      "RUBROS_CONTRATOS_X"."NOM_RUB" AS "NOM_RUB", 
+      "RUBROS_CONTRATOS_X"."VAL_COMPROMISO" AS "VAL_COMPROMISO", 
+      "RUBROS_CONTRATOS_X"."NRO_RP" AS "NRO_RP", 
+      "RUBROS_CONTRATOS_X"."FEC_REG" AS "FEC_REG", 
+      "RUBROS_CONTRATOS_X"."USBD" AS "USBD", 
+      "RUBROS_CONTRATOS_X"."VIGENCIA" AS "VIGENCIA", 
+      "RUBROS_CONTRATOS_X"."ID" AS "ID"
+      FROM "SIRCC2"."RUBROS_CONTRATOS_X" "RUBROS_CONTRATOS_X"</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RUBROS_GPROCESOS" EntityType="Model.Store.RUBROS_GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_PCONTRATOS" EntityType="Model.Store.RUBROS_PCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_RCONTRATOS" EntityType="Model.Store.RUBROS_RCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="SOL_ADICIONES" EntityType="Model.Store.SOL_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="SUBTIPOS" EntityType="Model.Store.SUBTIPOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="SUPERVISORES_CONTRATO" EntityType="Model.Store.SUPERVISORES_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TERCEROS" EntityType="Model.Store.TERCEROS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TERCEROSDESKTOP" EntityType="Model.Store.TERCEROSDESKTOP" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIP_DOC" EntityType="Model.Store.TIP_DOC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPO_ADCIONES" EntityType="Model.Store.TIPO_ADCIONES" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPO_AGENT" EntityType="Model.Store.TIPO_AGENT" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPO_INTERVENTOR" EntityType="Model.Store.TIPO_INTERVENTOR" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPO_PAGO" EntityType="Model.Store.TIPO_PAGO" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPO_PLAZOS" EntityType="Model.Store.TIPO_PLAZOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPOSCONT" EntityType="Model.Store.TIPOSCONT" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPOSGASTOS" EntityType="Model.Store.TIPOSGASTOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPOSPROC" EntityType="Model.Store.TIPOSPROC" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPPLANTILLAS" EntityType="Model.Store.TIPPLANTILLAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="TIPPROPONENTE" EntityType="Model.Store.TIPPROPONENTE" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="USUARIOS" EntityType="Model.Store.USUARIOS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="VIGENCIAS" EntityType="Model.Store.VIGENCIAS" store:Type="Tables" Schema="SIRCC2" />
     <AssociationSet Name="ACTAPARCIAL_FK" Association="Model.Store.ACTAPARCIAL_FK">
       <End Role="ESTCONTRATOS" EntitySet="ESTCONTRATOS" />
       <End Role="ACTAPARCIAL" EntitySet="ACTAPARCIAL" />
@@ -328,10 +342,6 @@
     <AssociationSet Name="ANPCONTRATO_FK" Association="Model.Store.ANPCONTRATO_FK">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="AN_PCONTRATO" EntitySet="AN_PCONTRATO" />
-    </AssociationSet>
-    <AssociationSet Name="ANX_CONTRATOS_CONTRATOS_FK1" Association="Model.Store.ANX_CONTRATOS_CONTRATOS_FK1">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="ANX_CONTRATOS" EntitySet="ANX_CONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="ANX_CONTRATOS_TIP_DOC_FK1" Association="Model.Store.ANX_CONTRATOS_TIP_DOC_FK1">
       <End Role="TIP_DOC" EntitySet="TIP_DOC" />
@@ -353,6 +363,14 @@
       <End Role="POLIZAS" EntitySet="POLIZAS" />
       <End Role="C_POLIZAS2" EntitySet="C_POLIZAS2" />
     </AssociationSet>
+    <AssociationSet Name="C_RUBROS_CDP_FK" Association="Model.Store.C_RUBROS_CDP_FK">
+      <End Role="RUBROS" EntitySet="RUBROS" />
+      <End Role="C_RUBROS_CDP" EntitySet="C_RUBROS_CDP" />
+    </AssociationSet>
+    <AssociationSet Name="C_RUBROS_CDP_FKCDP" Association="Model.Store.C_RUBROS_CDP_FKCDP">
+      <End Role="CDP_CONTRATOS" EntitySet="CDP_CONTRATOS" />
+      <End Role="C_RUBROS_CDP" EntitySet="C_RUBROS_CDP" />
+    </AssociationSet>
     <AssociationSet Name="CDP_CONTRATOS_CONTRATOS_FK1" Association="Model.Store.CDP_CONTRATOS_CONTRATOS_FK1">
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
       <End Role="CDP_CONTRATOS" EntitySet="CDP_CONTRATOS" />
@@ -361,10 +379,6 @@
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="CDP_PCONTRATOS" EntitySet="CDP_PCONTRATOS" />
     </AssociationSet>
-    <AssociationSet Name="CESIONES_R01" Association="Model.Store.CESIONES_R01">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="CESIONES" EntitySet="CESIONES" />
-    </AssociationSet>
     <AssociationSet Name="COD_ASE" Association="Model.Store.COD_ASE">
       <End Role="ASEGURADORAS" EntitySet="ASEGURADORAS" />
       <End Role="POLIZAS_CONTRATO" EntitySet="POLIZAS_CONTRATO" />
@@ -372,10 +386,6 @@
     <AssociationSet Name="COD_ASE_ADI" Association="Model.Store.COD_ASE_ADI">
       <End Role="ASEGURADORAS" EntitySet="ASEGURADORAS" />
       <End Role="POLIZAS_ADICIONES" EntitySet="POLIZAS_ADICIONES" />
-    </AssociationSet>
-    <AssociationSet Name="COD_CON" Association="Model.Store.COD_CON">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="POLIZAS_CONTRATO" EntitySet="POLIZAS_CONTRATO" />
     </AssociationSet>
     <AssociationSet Name="COD_POL" Association="Model.Store.COD_POL">
       <End Role="POLIZAS" EntitySet="POLIZAS" />
@@ -389,17 +399,21 @@
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
       <End Role="SUPERVISORES_CONTRATO" EntitySet="SUPERVISORES_CONTRATO" />
     </AssociationSet>
-    <AssociationSet Name="CONMUN_R01" Association="Model.Store.CONMUN_R01">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="CONMUN" EntitySet="CONMUN" />
-    </AssociationSet>
     <AssociationSet Name="CONS_PROC_R01" Association="Model.Store.CONS_PROC_R01">
       <End Role="DEPENDENCIA" EntitySet="DEPENDENCIA" />
       <End Role="CONS_PROC" EntitySet="CONS_PROC" />
     </AssociationSet>
-    <AssociationSet Name="CONS_PROC_R02" Association="Model.Store.CONS_PROC_R02">
-      <End Role="VIGENCIAS" EntitySet="VIGENCIAS" />
-      <End Role="CONS_PROC" EntitySet="CONS_PROC" />
+    <AssociationSet Name="CONSORCIOSUTXC_MIEM" Association="Model.Store.CONSORCIOSUTXC_MIEM">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
+      <End Role="CONSORCIOSUTXC" EntitySet="CONSORCIOSUTXC" />
+    </AssociationSet>
+    <AssociationSet Name="CONSORCIOSUTXC_PROP" Association="Model.Store.CONSORCIOSUTXC_PROP">
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
+      <End Role="CONSORCIOSUTXC" EntitySet="CONSORCIOSUTXC" />
+    </AssociationSet>
+    <AssociationSet Name="CONSORCIOSUTXC_TER" Association="Model.Store.CONSORCIOSUTXC_TER">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
+      <End Role="CONSORCIOSUTXC" EntitySet="CONSORCIOSUTXC" />
     </AssociationSet>
     <AssociationSet Name="CONT_FK_TER" Association="Model.Store.CONT_FK_TER">
       <End Role="TERCEROS" EntitySet="TERCEROS" />
@@ -441,6 +455,18 @@
       <End Role="INT_INFOCONT" EntitySet="INT_INFOCONT" />
       <End Role="GD_DOC_ACTAS" EntitySet="GD_DOC_ACTAS" />
     </AssociationSet>
+    <AssociationSet Name="DOC_PLANTILLA_TIP_FK" Association="Model.Store.DOC_PLANTILLA_TIP_FK">
+      <End Role="PL_TIPOS_PLANTILLA" EntitySet="PL_TIPOS_PLANTILLA" />
+      <End Role="DOC_PLANTILLA" EntitySet="DOC_PLANTILLA" />
+    </AssociationSet>
+    <AssociationSet Name="DOC_PLANTILLLA_PCON_FK" Association="Model.Store.DOC_PLANTILLLA_PCON_FK">
+      <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
+      <End Role="DOC_PLANTILLA" EntitySet="DOC_PLANTILLA" />
+    </AssociationSet>
+    <AssociationSet Name="DOC_SECCIONES_FK" Association="Model.Store.DOC_SECCIONES_FK">
+      <End Role="DOC_PLANTILLA" EntitySet="DOC_PLANTILLA" />
+      <End Role="DOC_SECCIONES" EntitySet="DOC_SECCIONES" />
+    </AssociationSet>
     <AssociationSet Name="EP_APR_EP" Association="Model.Store.EP_APR_EP">
       <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="ESTPREV" EntitySet="ESTPREV" />
@@ -464,6 +490,10 @@
     <AssociationSet Name="EP_CLAUSULAS_EP" Association="Model.Store.EP_CLAUSULAS_EP">
       <End Role="ESTPREV" EntitySet="ESTPREV" />
       <End Role="EP_CLAUSULAS" EntitySet="EP_CLAUSULAS" />
+    </AssociationSet>
+    <AssociationSet Name="EP_CODIGOSUNSPSC_R01" Association="Model.Store.EP_CODIGOSUNSPSC_R01">
+      <End Role="EP_CODIGOSUNSPSC" EntitySet="EP_CODIGOSUNSPSC" />
+      <End Role="EP_CODIGOSUNSPSC1" EntitySet="EP_CODIGOSUNSPSC" />
     </AssociationSet>
     <AssociationSet Name="EP_CONMUN_EP" Association="Model.Store.EP_CONMUN_EP">
       <End Role="ESTPREV" EntitySet="ESTPREV" />
@@ -525,6 +555,18 @@
       <End Role="ESTPREV" EntitySet="ESTPREV" />
       <End Role="EP_OBLIGACIONESE" EntitySet="EP_OBLIGACIONESE" />
     </AssociationSet>
+    <AssociationSet Name="EP_PAA_R02" Association="Model.Store.EP_PAA_R02">
+      <End Role="EP_MPAA" EntitySet="EP_MPAA" />
+      <End Role="EP_PAA" EntitySet="EP_PAA" />
+    </AssociationSet>
+    <AssociationSet Name="EP_PAA_UNSPSC_FK" Association="Model.Store.EP_PAA_UNSPSC_FK">
+      <End Role="EP_CODIGOSUNSPSC" EntitySet="EP_CODIGOSUNSPSC" />
+      <End Role="EP_PAA_UNSPSC" EntitySet="EP_PAA_UNSPSC" />
+    </AssociationSet>
+    <AssociationSet Name="EP_PAA_UNSPSC_FK_EP_PAA" Association="Model.Store.EP_PAA_UNSPSC_FK_EP_PAA">
+      <End Role="EP_PAA" EntitySet="EP_PAA" />
+      <End Role="EP_PAA_UNSPSC" EntitySet="EP_PAA_UNSPSC" />
+    </AssociationSet>
     <AssociationSet Name="EP_PO_CALPOL" Association="Model.Store.EP_PO_CALPOL">
       <End Role="CALCULOPOL" EntitySet="CALCULOPOL" />
       <End Role="EP_POLIZAS" EntitySet="EP_POLIZAS" />
@@ -565,6 +607,10 @@
       <End Role="EP_HESTADOEP" EntitySet="EP_HESTADOEP" />
       <End Role="ESTPREV" EntitySet="ESTPREV" />
     </AssociationSet>
+    <AssociationSet Name="EP_RIESGOS_FK_ESTPREV" Association="Model.Store.EP_RIESGOS_FK_ESTPREV">
+      <End Role="ESTPREV" EntitySet="ESTPREV" />
+      <End Role="EP_RIESGOS" EntitySet="EP_RIESGOS" />
+    </AssociationSet>
     <AssociationSet Name="EP_RUBROS_CDP_R02" Association="Model.Store.EP_RUBROS_CDP_R02">
       <End Role="RUBROS" EntitySet="RUBROS" />
       <End Role="EP_RUBROS_CDP" EntitySet="EP_RUBROS_CDP" />
@@ -580,6 +626,14 @@
     <AssociationSet Name="EP_TPLAZO2" Association="Model.Store.EP_TPLAZO2">
       <End Role="TIPO_PLAZOS" EntitySet="TIPO_PLAZOS" />
       <End Role="ESTPREV" EntitySet="ESTPREV" />
+    </AssociationSet>
+    <AssociationSet Name="EP_UNSPSC_FK" Association="Model.Store.EP_UNSPSC_FK">
+      <End Role="EP_CODIGOSUNSPSC" EntitySet="EP_CODIGOSUNSPSC" />
+      <End Role="EP_UNSPSC" EntitySet="EP_UNSPSC" />
+    </AssociationSet>
+    <AssociationSet Name="EP_UNSPSC_FK_EP" Association="Model.Store.EP_UNSPSC_FK_EP">
+      <End Role="ESTPREV" EntitySet="ESTPREV" />
+      <End Role="EP_UNSPSC" EntitySet="EP_UNSPSC" />
     </AssociationSet>
     <AssociationSet Name="EST_RUTA_INI" Association="Model.Store.EST_RUTA_INI">
       <End Role="ESTADOS" EntitySet="ESTADOS" />
@@ -611,6 +665,14 @@
     </AssociationSet>
     <AssociationSet Name="ESTPREV_EFLU_FK" Association="Model.Store.ESTPREV_EFLU_FK">
       <End Role="EP_ESTFLU" EntitySet="EP_ESTFLU" />
+      <End Role="ESTPREV" EntitySet="ESTPREV" />
+    </AssociationSet>
+    <AssociationSet Name="ESTPREV_PAA" Association="Model.Store.ESTPREV_PAA">
+      <End Role="EP_PAA" EntitySet="EP_PAA" />
+      <End Role="ESTPREV" EntitySet="ESTPREV" />
+    </AssociationSet>
+    <AssociationSet Name="ESTPREV_R01" Association="Model.Store.ESTPREV_R01">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="ESTPREV" EntitySet="ESTPREV" />
     </AssociationSet>
     <AssociationSet Name="ESTPREV_RES" Association="Model.Store.ESTPREV_RES">
@@ -649,10 +711,6 @@
       <End Role="TIPO_PAGO" EntitySet="TIPO_PAGO" />
       <End Role="C_FORMA_PAGO" EntitySet="C_FORMA_PAGO" />
     </AssociationSet>
-    <AssociationSet Name="FK_C_OBLIGACIONES" Association="Model.Store.FK_C_OBLIGACIONES">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="COBLIGACIONES" EntitySet="COBLIGACIONES" />
-    </AssociationSet>
     <AssociationSet Name="FK_CFORMA_PAGO" Association="Model.Store.FK_CFORMA_PAGO">
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
       <End Role="CFORMA_PAGO" EntitySet="CFORMA_PAGO" />
@@ -664,10 +722,6 @@
     <AssociationSet Name="FK_CODEP_P" Association="Model.Store.FK_CODEP_P">
       <End Role="DEPENDENCIA" EntitySet="DEPENDENCIA" />
       <End Role="PSOLICITUDES" EntitySet="PSOLICITUDES" />
-    </AssociationSet>
-    <AssociationSet Name="FK_CON_POLIZAS" Association="Model.Store.FK_CON_POLIZAS">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="CON_POLIZAS" EntitySet="CON_POLIZAS" />
     </AssociationSet>
     <AssociationSet Name="FK_CTIPOPAGO" Association="Model.Store.FK_CTIPOPAGO">
       <End Role="TIPO_PAGO" EntitySet="TIPO_PAGO" />
@@ -681,9 +735,9 @@
       <End Role="DEPENDENCIA" EntitySet="DEPENDENCIA" />
       <End Role="PSOLICITUDES" EntitySet="PSOLICITUDES" />
     </AssociationSet>
-    <AssociationSet Name="FK_ENTSEGSOCIAL2" Association="Model.Store.FK_ENTSEGSOCIAL2">
-      <End Role="INTTIPO_ESS" EntitySet="INTTIPO_ESS" />
-      <End Role="INTENTSEGSOCIAL" EntitySet="INTENTSEGSOCIAL" />
+    <AssociationSet Name="FK_DOC_PLA" Association="Model.Store.FK_DOC_PLA">
+      <End Role="PL_PLANTILLA" EntitySet="PL_PLANTILLA" />
+      <End Role="DOC_PLANTILLA" EntitySet="DOC_PLANTILLA" />
     </AssociationSet>
     <AssociationSet Name="FK_EP_ESTPRE" Association="Model.Store.FK_EP_ESTPRE">
       <End Role="ESTPREV" EntitySet="ESTPREV" />
@@ -729,21 +783,13 @@
       <End Role="SOL_ADICIONES" EntitySet="SOL_ADICIONES" />
       <End Role="MIN_MOD_CONTRATO" EntitySet="MIN_MOD_CONTRATO" />
     </AssociationSet>
-    <AssociationSet Name="FK_MOD_CFORMA_PAGO" Association="Model.Store.FK_MOD_CFORMA_PAGO">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_CFORMA_PAGO" EntitySet="MOD_CFORMA_PAGO" />
-    </AssociationSet>
-    <AssociationSet Name="FK_MOD_COBLIGACIONES" Association="Model.Store.FK_MOD_COBLIGACIONES">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_COBLIGACIONES" EntitySet="MOD_COBLIGACIONES" />
-    </AssociationSet>
     <AssociationSet Name="FK_MOD_COBLIGACIONES1" Association="Model.Store.FK_MOD_COBLIGACIONES1">
       <End Role="SOL_ADICIONES" EntitySet="SOL_ADICIONES" />
       <End Role="MOD_COBLIGACIONES" EntitySet="MOD_COBLIGACIONES" />
     </AssociationSet>
-    <AssociationSet Name="FK_MOD_CON_POLIZAS" Association="Model.Store.FK_MOD_CON_POLIZAS">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_CON_POLIZAS" EntitySet="MOD_CON_POLIZAS" />
+    <AssociationSet Name="FK_PACTI_TIP_PLA" Association="Model.Store.FK_PACTI_TIP_PLA">
+      <End Role="PL_TIPOS_PLANTILLA" EntitySet="PL_TIPOS_PLANTILLA" />
+      <End Role="PACTIVIDADES" EntitySet="PACTIVIDADES" />
     </AssociationSet>
     <AssociationSet Name="FK_PAGOS_GPROCESOS" Association="Model.Store.FK_PAGOS_GPROCESOS">
       <End Role="GPROCESOS" EntitySet="GPROCESOS" />
@@ -753,6 +799,10 @@
       <End Role="ORA_ASPNET_APPLICATIONS" EntitySet="ORA_ASPNET_APPLICATIONS" />
       <End Role="ORA_ASPNET_PATHS" EntitySet="ORA_ASPNET_PATHS" />
     </AssociationSet>
+    <AssociationSet Name="FK_PCRONO_TIP_PLA" Association="Model.Store.FK_PCRONO_TIP_PLA">
+      <End Role="PL_TIPOS_PLANTILLA" EntitySet="PL_TIPOS_PLANTILLA" />
+      <End Role="PCRONOGRAMAS" EntitySet="PCRONOGRAMAS" />
+    </AssociationSet>
     <AssociationSet Name="FK_PROCESOS" Association="Model.Store.FK_PROCESOS">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="PPOLIZAS" EntitySet="PPOLIZAS" />
@@ -760,10 +810,6 @@
     <AssociationSet Name="FK_PROFILE_USERID" Association="Model.Store.FK_PROFILE_USERID">
       <End Role="ORA_ASPNET_USERS" EntitySet="ORA_ASPNET_USERS" />
       <End Role="ORA_ASPNET_PROFILE" EntitySet="ORA_ASPNET_PROFILE" />
-    </AssociationSet>
-    <AssociationSet Name="FK_RCON" Association="Model.Store.FK_RCON">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="RUBROS_RCONTRATOS" EntitySet="RUBROS_RCONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="FK_SITEMAP_APPID" Association="Model.Store.FK_SITEMAP_APPID">
       <End Role="ORA_ASPNET_APPLICATIONS" EntitySet="ORA_ASPNET_APPLICATIONS" />
@@ -785,10 +831,6 @@
       <End Role="ORA_ASPNET_APPLICATIONS" EntitySet="ORA_ASPNET_APPLICATIONS" />
       <End Role="ORA_ASPNET_USERS" EntitySet="ORA_ASPNET_USERS" />
     </AssociationSet>
-    <AssociationSet Name="FKINTINVAN_CONT1" Association="Model.Store.FKINTINVAN_CONT1">
-      <End Role="INTINVAN" EntitySet="INTINVAN" />
-      <End Role="INTANT_CONT" EntitySet="INTANT_CONT" />
-    </AssociationSet>
     <AssociationSet Name="FKNGPROP" Association="Model.Store.FKNGPROP">
       <End Role="TIPPROPONENTE" EntitySet="TIPPROPONENTE" />
       <End Role="GPPROPONENTES" EntitySet="GPPROPONENTES" />
@@ -796,6 +838,18 @@
     <AssociationSet Name="FKNPROP" Association="Model.Store.FKNPROP">
       <End Role="TIPPROPONENTE" EntitySet="TIPPROPONENTE" />
       <End Role="PPROPONENTES" EntitySet="PPROPONENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FKNPROPTIPO" Association="Model.Store.FKNPROPTIPO">
+      <End Role="TIPPROPONENTE" EntitySet="TIPPROPONENTE" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
+    </AssociationSet>
+    <AssociationSet Name="FKNTERCEROS" Association="Model.Store.FKNTERCEROS">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
+    </AssociationSet>
+    <AssociationSet Name="FKNTERCEROS_RP" Association="Model.Store.FKNTERCEROS_RP">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
     </AssociationSet>
     <AssociationSet Name="FKNUPDNUM_MOD_PROP" Association="Model.Store.FKNUPDNUM_MOD_PROP">
       <End Role="TIPPROPONENTE" EntitySet="TIPPROPONENTE" />
@@ -825,14 +879,6 @@
       <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="HDEP_ABOGADOS" EntitySet="HDEP_ABOGADOS" />
     </AssociationSet>
-    <AssociationSet Name="HESTADOEP_FK" Association="Model.Store.HESTADOEP_FK">
-      <End Role="ESTPREV" EntitySet="ESTPREV" />
-      <End Role="EP_HESTADOEP" EntitySet="EP_HESTADOEP" />
-    </AssociationSet>
-    <AssociationSet Name="HESTADOEP_TERCEROS" Association="Model.Store.HESTADOEP_TERCEROS">
-      <End Role="TERCEROS" EntitySet="TERCEROS" />
-      <End Role="EP_HESTADOEP" EntitySet="EP_HESTADOEP" />
-    </AssociationSet>
     <AssociationSet Name="HREV_FK_TER" Association="Model.Store.HREV_FK_TER">
       <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="HREVISADO" EntitySet="HREVISADO" />
@@ -848,10 +894,6 @@
     <AssociationSet Name="IDE_SUP_FK1" Association="Model.Store.IDE_SUP_FK1">
       <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="SUPERVISORES_CONTRATO" EntitySet="SUPERVISORES_CONTRATO" />
-    </AssociationSet>
-    <AssociationSet Name="IMP_CON_CC_FK" Association="Model.Store.IMP_CON_CC_FK">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="IMP_CONTRATOS" EntitySet="IMP_CONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="IMP_CON_FK" Association="Model.Store.IMP_CON_FK">
       <End Role="IMPUESTOS" EntitySet="IMPUESTOS" />
@@ -873,10 +915,6 @@
       <End Role="ESTCONTRATOS" EntitySet="ESTCONTRATOS" />
       <End Role="INT_DETCUENTA" EntitySet="INT_DETCUENTA" />
     </AssociationSet>
-    <AssociationSet Name="INT_DETCUENTA_RP" Association="Model.Store.INT_DETCUENTA_RP">
-      <End Role="RP_CONTRATOS" EntitySet="RP_CONTRATOS" />
-      <End Role="INT_DETCUENTA" EntitySet="INT_DETCUENTA" />
-    </AssociationSet>
     <AssociationSet Name="INT_DETTRAS_FK" Association="Model.Store.INT_DETTRAS_FK">
       <End Role="INT_CONTROL_DOC" EntitySet="INT_CONTROL_DOC" />
       <End Role="INT_DETTRASLADO" EntitySet="INT_DETTRASLADO" />
@@ -893,26 +931,6 @@
       <End Role="INT_CONTROL_DOC" EntitySet="INT_CONTROL_DOC" />
       <End Role="INT_DETCUENTA" EntitySet="INT_DETCUENTA" />
     </AssociationSet>
-    <AssociationSet Name="INT_GP_RUT_EST_CLA_RUT" Association="Model.Store.INT_GP_RUT_EST_CLA_RUT">
-      <End Role="INT_GP_CLA_EST" EntitySet="INT_GP_CLA_EST" />
-      <End Role="INT_GP_RUT_EST" EntitySet="INT_GP_RUT_EST" />
-    </AssociationSet>
-    <AssociationSet Name="INT_GP_RUT_EST_ESTDE" Association="Model.Store.INT_GP_RUT_EST_ESTDE">
-      <End Role="INT_GP_EST" EntitySet="INT_GP_EST" />
-      <End Role="INT_GP_RUT_EST" EntitySet="INT_GP_RUT_EST" />
-    </AssociationSet>
-    <AssociationSet Name="INT_GP_RUT_EST_ESTPARA" Association="Model.Store.INT_GP_RUT_EST_ESTPARA">
-      <End Role="INT_GP_EST" EntitySet="INT_GP_EST" />
-      <End Role="INT_GP_RUT_EST" EntitySet="INT_GP_RUT_EST" />
-    </AssociationSet>
-    <AssociationSet Name="INT_GP_RUT_EST_VIG" Association="Model.Store.INT_GP_RUT_EST_VIG">
-      <End Role="VIGENCIAS" EntitySet="VIGENCIAS" />
-      <End Role="INT_GP_RUT_EST" EntitySet="INT_GP_RUT_EST" />
-    </AssociationSet>
-    <AssociationSet Name="INT_GP_USU_ROL_USU_TER" Association="Model.Store.INT_GP_USU_ROL_USU_TER">
-      <End Role="TERCEROS" EntitySet="TERCEROS" />
-      <End Role="INT_GP_USU_ROL" EntitySet="INT_GP_USU_ROL" />
-    </AssociationSet>
     <AssociationSet Name="INT_INF_ID_ACT" Association="Model.Store.INT_INF_ID_ACT">
       <End Role="ESTCONTRATOS" EntitySet="ESTCONTRATOS" />
       <End Role="INT_INFOCONT" EntitySet="INT_INFOCONT" />
@@ -920,18 +938,6 @@
     <AssociationSet Name="INT_INFOCONT_R01" Association="Model.Store.INT_INFOCONT_R01">
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
       <End Role="INT_INFOCONT" EntitySet="INT_INFOCONT" />
-    </AssociationSet>
-    <AssociationSet Name="INT_PAGOSS_CC" Association="Model.Store.INT_PAGOSS_CC">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="INT_PAGOSS" EntitySet="INT_PAGOSS" />
-    </AssociationSet>
-    <AssociationSet Name="INT_PAGOSS_IF" Association="Model.Store.INT_PAGOSS_IF">
-      <End Role="INT_INFOCONT" EntitySet="INT_INFOCONT" />
-      <End Role="INT_PAGOSS" EntitySet="INT_PAGOSS" />
-    </AssociationSet>
-    <AssociationSet Name="INT_PAGOSS_TESS" Association="Model.Store.INT_PAGOSS_TESS">
-      <End Role="INTTIPO_ESS" EntitySet="INTTIPO_ESS" />
-      <End Role="INT_PAGOSS" EntitySet="INT_PAGOSS" />
     </AssociationSet>
     <AssociationSet Name="INT_PAGOSST_CC" Association="Model.Store.INT_PAGOSST_CC">
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
@@ -953,21 +959,9 @@
       <End Role="MENU2" EntitySet="MENU2" />
       <End Role="MENU21" EntitySet="MENU2" />
     </AssociationSet>
-    <AssociationSet Name="MNFK_PADRE" Association="Model.Store.MNFK_PADRE">
-      <End Role="MENU2" EntitySet="MENU2" />
-      <End Role="MENU21" EntitySet="MENU2" />
-    </AssociationSet>
-    <AssociationSet Name="MOD_CDP_CONTRATOS_FK1" Association="Model.Store.MOD_CDP_CONTRATOS_FK1">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_CDP_CONTRATOS" EntitySet="MOD_CDP_CONTRATOS" />
-    </AssociationSet>
     <AssociationSet Name="MOD_CDP_CONTRATOS_FK2" Association="Model.Store.MOD_CDP_CONTRATOS_FK2">
       <End Role="SOL_ADICIONES" EntitySet="SOL_ADICIONES" />
       <End Role="MOD_CDP_CONTRATOS" EntitySet="MOD_CDP_CONTRATOS" />
-    </AssociationSet>
-    <AssociationSet Name="MOD_CONMUN_R01" Association="Model.Store.MOD_CONMUN_R01">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_CONMUN" EntitySet="MOD_CONMUN" />
     </AssociationSet>
     <AssociationSet Name="MOD_CONTRATOS_SECTOR_FK1" Association="Model.Store.MOD_CONTRATOS_SECTOR_FK1">
       <End Role="SECTOR" EntitySet="SECTOR" />
@@ -1001,10 +995,6 @@
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="MOD_CONTRATOS" EntitySet="MOD_CONTRATOS" />
     </AssociationSet>
-    <AssociationSet Name="MOD_CPROYECTOS_FK01" Association="Model.Store.MOD_CPROYECTOS_FK01">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="MOD_CPROYECTOS" EntitySet="MOD_CPROYECTOS" />
-    </AssociationSet>
     <AssociationSet Name="MOD_CPROYECTOS_R01" Association="Model.Store.MOD_CPROYECTOS_R01">
       <End Role="PROYECTOS" EntitySet="PROYECTOS" />
       <End Role="MOD_CPROYECTOS" EntitySet="MOD_CPROYECTOS" />
@@ -1013,9 +1003,17 @@
       <End Role="SOL_ADICIONES" EntitySet="SOL_ADICIONES" />
       <End Role="MOD_CPROYECTOS" EntitySet="MOD_CPROYECTOS" />
     </AssociationSet>
+    <AssociationSet Name="MOD_TIPPLA_FK" Association="Model.Store.MOD_TIPPLA_FK">
+      <End Role="TIPOSPROC" EntitySet="TIPOSPROC" />
+      <End Role="MOD_TIP_PLA" EntitySet="MOD_TIP_PLA" />
+    </AssociationSet>
     <AssociationSet Name="NROCONVIG_CON3" Association="Model.Store.NROCONVIG_CON3">
       <End Role="TIPOSCONT" EntitySet="TIPOSCONT" />
       <End Role="NROCONVIG" EntitySet="NROCONVIG" />
+    </AssociationSet>
+    <AssociationSet Name="PAA_DEP_CON_FK" Association="Model.Store.PAA_DEP_CON_FK">
+      <End Role="DEPENDENCIA" EntitySet="DEPENDENCIA" />
+      <End Role="EP_PAA" EntitySet="EP_PAA" />
     </AssociationSet>
     <AssociationSet Name="PACTIVIDADES_R01" Association="Model.Store.PACTIVIDADES_R01">
       <End Role="TIPOSPROC" EntitySet="TIPOSPROC" />
@@ -1037,17 +1035,21 @@
       <End Role="DEPENDENCIA" EntitySet="DEPENDENCIA" />
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
     </AssociationSet>
-    <AssociationSet Name="PCON_FK_ENCTER" Association="Model.Store.PCON_FK_ENCTER">
-      <End Role="TERCEROS" EntitySet="TERCEROS" />
-      <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
-    </AssociationSet>
     <AssociationSet Name="PCON_FK_ESTADOS" Association="Model.Store.PCON_FK_ESTADOS">
       <End Role="PESTADOS" EntitySet="PESTADOS" />
+      <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
+    </AssociationSet>
+    <AssociationSet Name="PCON_TER" Association="Model.Store.PCON_TER">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="PCONMUN_R01" Association="Model.Store.PCONMUN_R01">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="PCONMUN" EntitySet="PCONMUN" />
+    </AssociationSet>
+    <AssociationSet Name="PCONTRATOS_FKSOL" Association="Model.Store.PCONTRATOS_FKSOL">
+      <End Role="PSOLICITUDES" EntitySet="PSOLICITUDES" />
+      <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="PCONTRATOS_R01" Association="Model.Store.PCONTRATOS_R01">
       <End Role="TIPOSPROC" EntitySet="TIPOSPROC" />
@@ -1081,6 +1083,14 @@
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="CONTRATOS" EntitySet="CONTRATOS" />
     </AssociationSet>
+    <AssociationSet Name="PL_PLANTILLA_TIP_FK" Association="Model.Store.PL_PLANTILLA_TIP_FK">
+      <End Role="PL_TIPOS_PLANTILLA" EntitySet="PL_TIPOS_PLANTILLA" />
+      <End Role="PL_PLANTILLA" EntitySet="PL_PLANTILLA" />
+    </AssociationSet>
+    <AssociationSet Name="PL_SECCIONES_FK" Association="Model.Store.PL_SECCIONES_FK">
+      <End Role="PL_PLANTILLA" EntitySet="PL_PLANTILLA" />
+      <End Role="PL_SECCIONES" EntitySet="PL_SECCIONES" />
+    </AssociationSet>
     <AssociationSet Name="POBLIGACIONES_R01" Association="Model.Store.POBLIGACIONES_R01">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="POBLIGACIONES" EntitySet="POBLIGACIONES" />
@@ -1092,6 +1102,18 @@
     <AssociationSet Name="PPROPONENTES_FK01" Association="Model.Store.PPROPONENTES_FK01">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="PPROPONENTES" EntitySet="PPROPONENTES" />
+    </AssociationSet>
+    <AssociationSet Name="PPROPONENTESS_FK_ASEG" Association="Model.Store.PPROPONENTESS_FK_ASEG">
+      <End Role="ASEGURADORAS" EntitySet="ASEGURADORAS" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
+    </AssociationSet>
+    <AssociationSet Name="PPROPONENTESS_FK_POL" Association="Model.Store.PPROPONENTESS_FK_POL">
+      <End Role="POLIZAS" EntitySet="POLIZAS" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
+    </AssociationSet>
+    <AssociationSet Name="PPROPONENTESS_FK01" Association="Model.Store.PPROPONENTESS_FK01">
+      <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
+      <End Role="PPROPONENTESS" EntitySet="PPROPONENTESS" />
     </AssociationSet>
     <AssociationSet Name="PROYECTOS_R01" Association="Model.Store.PROYECTOS_R01">
       <End Role="PROYECTOS" EntitySet="PROYECTOS" />
@@ -1117,57 +1139,57 @@
       <End Role="TERCEROS" EntitySet="TERCEROS" />
       <End Role="PSOLICITUDES" EntitySet="PSOLICITUDES" />
     </AssociationSet>
-    <AssociationSet Name="RP_CONTRATOS_CONTRATOS_FK1" Association="Model.Store.RP_CONTRATOS_CONTRATOS_FK1">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
+    <AssociationSet Name="RP_CONTRATOS_CDP" Association="Model.Store.RP_CONTRATOS_CDP">
+      <End Role="CDP_CONTRATOS" EntitySet="CDP_CONTRATOS" />
       <End Role="RP_CONTRATOS" EntitySet="RP_CONTRATOS" />
     </AssociationSet>
-    <AssociationSet Name="RUBROS_CONTRATOS_CONTRATO_FK1" Association="Model.Store.RUBROS_CONTRATOS_CONTRATO_FK1">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
+    <AssociationSet Name="RUBROS_CONTRATOS_FK_RP" Association="Model.Store.RUBROS_CONTRATOS_FK_RP">
+      <End Role="RP_CONTRATOS" EntitySet="RP_CONTRATOS" />
       <End Role="RUBROS_CONTRATOS" EntitySet="RUBROS_CONTRATOS" />
     </AssociationSet>
     <AssociationSet Name="RUBROS_PCONTRATOS_R01" Association="Model.Store.RUBROS_PCONTRATOS_R01">
       <End Role="PCONTRATOS" EntitySet="PCONTRATOS" />
       <End Role="RUBROS_PCONTRATOS" EntitySet="RUBROS_PCONTRATOS" />
     </AssociationSet>
-    <AssociationSet Name="SOL_ADICIONES_CODCON1" Association="Model.Store.SOL_ADICIONES_CODCON1">
-      <End Role="CONTRATOS" EntitySet="CONTRATOS" />
-      <End Role="SOL_ADICIONES" EntitySet="SOL_ADICIONES" />
-    </AssociationSet>
     <AssociationSet Name="SUBTIPOS_FK" Association="Model.Store.SUBTIPOS_FK">
       <End Role="TIPOSCONT" EntitySet="TIPOSCONT" />
       <End Role="SUBTIPOS" EntitySet="SUBTIPOS" />
     </AssociationSet>
-    <AssociationSet Name="SYS_C0024703" Association="Model.Store.SYS_C0024703">
-      <End Role="TERCEROS" EntitySet="TERCEROS" />
-      <End Role="CONSORCIOSUT" EntitySet="CONSORCIOSUT" />
-    </AssociationSet>
-    <AssociationSet Name="SYS_C0024714" Association="Model.Store.SYS_C0024714">
-      <End Role="TIPOSPROC" EntitySet="TIPOSPROC" />
-      <End Role="CONS_PROC" EntitySet="CONS_PROC" />
-    </AssociationSet>
-    <AssociationSet Name="SYS_C0024741" Association="Model.Store.SYS_C0024741">
-      <End Role="PESTADOS" EntitySet="PESTADOS" />
-      <End Role="GPROCESOS" EntitySet="GPROCESOS" />
-    </AssociationSet>
-    <AssociationSet Name="SYS_C0024777" Association="Model.Store.SYS_C0024777">
+    <AssociationSet Name="SYS_C0055696" Association="Model.Store.SYS_C0055696">
       <End Role="MENU2" EntitySet="MENU2" />
       <End Role="MENU_PERFIL" EntitySet="MENU_PERFIL" />
     </AssociationSet>
-    <AssociationSet Name="SYS_C0024827" Association="Model.Store.SYS_C0024827">
-      <End Role="EP_CDP" EntitySet="EP_CDP" />
-      <End Role="EP_RUBROS_CDP" EntitySet="EP_RUBROS_CDP" />
+    <AssociationSet Name="SYS_C0055697" Association="Model.Store.SYS_C0055697">
+      <End Role="TERCEROS" EntitySet="TERCEROS" />
+      <End Role="CONSORCIOSUT" EntitySet="CONSORCIOSUT" />
     </AssociationSet>
-    <AssociationSet Name="SYS_C0024852" Association="Model.Store.SYS_C0024852">
+    <AssociationSet Name="SYS_C0055706" Association="Model.Store.SYS_C0055706">
+      <End Role="TIPOSPROC" EntitySet="TIPOSPROC" />
+      <End Role="CONS_PROC" EntitySet="CONS_PROC" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C0055729" Association="Model.Store.SYS_C0055729">
+      <End Role="PESTADOS" EntitySet="PESTADOS" />
+      <End Role="GPROCESOS" EntitySet="GPROCESOS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C0055731" Association="Model.Store.SYS_C0055731">
+      <End Role="GPROCESOS" EntitySet="GPROCESOS" />
+      <End Role="CDP_GPROCESOS" EntitySet="CDP_GPROCESOS" />
+    </AssociationSet>
+    <AssociationSet Name="SYS_C0055735" Association="Model.Store.SYS_C0055735">
       <End Role="GPROCESOS" EntitySet="GPROCESOS" />
       <End Role="GPPROYECTOS" EntitySet="GPPROYECTOS" />
     </AssociationSet>
-    <AssociationSet Name="SYS_C0024856" Association="Model.Store.SYS_C0024856">
-      <End Role="GPROCESOS" EntitySet="GPROCESOS" />
-      <End Role="CDP_GPROCESOS" EntitySet="CDP_GPROCESOS" />
+    <AssociationSet Name="SYS_C0055864" Association="Model.Store.SYS_C0055864">
+      <End Role="EP_CDP" EntitySet="EP_CDP" />
+      <End Role="EP_RUBROS_CDP" EntitySet="EP_RUBROS_CDP" />
     </AssociationSet>
     <AssociationSet Name="TIP_DOC_R01" Association="Model.Store.TIP_DOC_R01">
       <End Role="ETAPAS" EntitySet="ETAPAS" />
       <End Role="TIP_DOC" EntitySet="TIP_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="TIP_TIPPLA_FK" Association="Model.Store.TIP_TIPPLA_FK">
+      <End Role="PL_TIPOS_PLANTILLA" EntitySet="PL_TIPOS_PLANTILLA" />
+      <End Role="MOD_TIP_PLA" EntitySet="MOD_TIP_PLA" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="ACTAPARCIAL">
@@ -1210,8 +1232,8 @@
     <Property Name="USAP" Type="varchar2" MaxLength="20" />
     <Property Name="USBD" Type="varchar2" MaxLength="20" />
     <Property Name="FEC_MOD" Type="date" />
-    <Property Name="USBD_M" Type="varchar2" MaxLength="20" />
     <Property Name="USAP_M" Type="varchar2" MaxLength="20" />
+    <Property Name="USBD_M" Type="varchar2" MaxLength="20" />
     <Property Name="DES_MOD" Type="varchar2" MaxLength="20" />
   </EntityType>
   <EntityType Name="AN_PCONTRATO">
@@ -1223,15 +1245,15 @@
   </EntityType>
   <EntityType Name="ANX_CONTRATOS">
     <Key>
-      <PropertyRef Name="IDE" />
+      <PropertyRef Name="TIP_DOC" />
+      <PropertyRef Name="COD_CON" />
     </Key>
     <Property Name="TIP_DOC" Type="varchar2" Nullable="false" MaxLength="2" />
     <Property Name="NOM_DOC" Type="varchar2" MaxLength="50" />
     <Property Name="OBS_DOC" Type="varchar2" />
-    <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="15" />
-    <Property Name="USUARIO" Type="varchar2" MaxLength="20" />
+    <Property Name="COD_CON" Type="varchar2" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar2" />
     <Property Name="FEC_REG" Type="date" Nullable="false" />
-    <Property Name="IDE" Type="number" Nullable="false" />
   </EntityType>
   <EntityType Name="ASEGURADORAS">
     <Key>
@@ -1295,6 +1317,21 @@
     <Property Name="GRUPO" Type="number" Precision="10" />
     <Property Name="COD_CON" Type="varchar2" MaxLength="10" />
   </EntityType>
+  <EntityType Name="C_RUBROS_CDP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NRO_CDP" Type="varchar2" MaxLength="20" />
+    <Property Name="COD_RUB" Type="varchar2" MaxLength="50" />
+    <Property Name="VALOR" Type="number" Precision="17" Scale="2" />
+    <Property Name="VIG_CDP" Type="number" Precision="4" />
+    <Property Name="COD_CON" Type="varchar2" MaxLength="15" />
+    <Property Name="FEC_REG" Type="date" />
+    <Property Name="USAP_REG" Type="varchar2" MaxLength="12" />
+    <Property Name="FEC_MOD" Type="date" />
+    <Property Name="USAP_MOD" Type="varchar2" MaxLength="12" />
+  </EntityType>
   <EntityType Name="CAL_VIG_POL">
     <Key>
       <PropertyRef Name="COD_CAL" />
@@ -1327,9 +1364,10 @@
     <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
     <Property Name="FEC_CDP" Type="date" Nullable="false" />
     <Property Name="VAL_CDP" Type="number" Precision="17" Scale="3" />
+    <Property Name="VIG_FUT" Type="varchar2" MaxLength="2" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.CDP_GPROCESOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.CDP_GPROCESOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CDP_GPROCESOS">
     <Key>
@@ -1344,7 +1382,7 @@
     <Property Name="GRUPO" Type="number" Precision="10" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.CDP_PCONTRATOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.CDP_PCONTRATOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CDP_PCONTRATOS">
     <Key>
@@ -1391,7 +1429,7 @@
     <Property Name="PAGA_GOBER" Type="char" MaxLength="1" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.CMINUTAS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.CMINUTAS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CMINUTAS">
     <Key>
@@ -1435,6 +1473,13 @@
     <Property Name="APARTIRDE" Type="varchar2" MaxLength="5" />
     <Property Name="TIPO" Type="varchar2" MaxLength="10" />
   </EntityType>
+  <EntityType Name="CONFIGURACION">
+    <Key>
+      <PropertyRef Name="PROPIEDAD" />
+    </Key>
+    <Property Name="PROPIEDAD" Type="varchar2" Nullable="false" MaxLength="20" />
+    <Property Name="VALOR" Type="varchar2" MaxLength="20" />
+  </EntityType>
   <EntityType Name="CONMUN">
     <Key>
       <PropertyRef Name="COD_MUN" />
@@ -1445,18 +1490,18 @@
   </EntityType>
   <EntityType Name="CONS_PROC">
     <Key>
-      <PropertyRef Name="VIGENCIA" />
       <PropertyRef Name="DEP_DEL" />
       <PropertyRef Name="TIP_PROC" />
+      <PropertyRef Name="VIGENCIA" />
     </Key>
-    <Property Name="VIGENCIA" Type="number" Nullable="false" Precision="4" />
     <Property Name="DEP_DEL" Type="varchar2" Nullable="false" MaxLength="2" />
     <Property Name="TIP_PROC" Type="varchar2" Nullable="false" MaxLength="4" />
     <Property Name="INICIAL" Type="number" />
     <Property Name="SIGUIENTE" Type="number" />
+    <Property Name="VIGENCIA" Type="number" Nullable="false" Precision="4" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.CONSORCIOSUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.CONSORCIOSUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CONSORCIOSUT">
     <Key>
@@ -1467,6 +1512,21 @@
     <Property Name="ID_MIEMBROS" Type="varchar2" Nullable="false" MaxLength="15" />
     <Property Name="ID_ESTADO" Type="varchar2" MaxLength="2" />
     <Property Name="PORC_PART" Type="number" Precision="10" Scale="4" />
+  </EntityType>
+  <EntityType Name="CONSORCIOSUTXC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="IDE_TER" Type="varchar2" MaxLength="15" />
+    <Property Name="ID_MIEMBROS" Type="varchar2" MaxLength="15" />
+    <Property Name="ID_ESTADO" Type="varchar2" MaxLength="2" />
+    <Property Name="PORC_PART" Type="number" Precision="10" Scale="4" />
+    <Property Name="COD_CON" Type="varchar2" MaxLength="10" />
+    <Property Name="FEC_REG" Type="date" />
+    <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="USAP" Type="varchar2" MaxLength="20" />
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ID_PROP" Type="number" />
   </EntityType>
   <EntityType Name="CONTRATOS">
     <Key>
@@ -1487,7 +1547,7 @@
     <Property Name="DOC_CON" Type="varchar2" MaxLength="255" />
     <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="15" />
     <Property Name="CAN_ADI" Type="number" Nullable="false" Precision="10" />
-    <Property Name="VAL_ADI" Type="number" Nullable="false" Precision="10" />
+    <Property Name="VAL_ADI" Type="number" Nullable="false" Precision="17" Scale="2" />
     <Property Name="COD_SEC" Type="varchar2" Nullable="false" MaxLength="5" />
     <Property Name="TIP_FOR" Type="varchar2" Nullable="false" MaxLength="15" />
     <Property Name="OTR_CNS" Type="varchar2" MaxLength="200" />
@@ -1534,7 +1594,7 @@
     <Property Name="DEP_SUP" Type="varchar2" MaxLength="2" />
     <Property Name="TIPO_FP" Type="varchar2" MaxLength="2" />
     <Property Name="ANTI_PORC" Type="number" Precision="17" Scale="2" />
-    <Property Name="PLIQ_EP" Type="number" />
+    <Property Name="PLIQ_EP" Type="number" Precision="17" Scale="2" />
     <Property Name="OBLIGC" Type="clob" />
     <Property Name="OBLIGE" Type="clob" />
   </EntityType>
@@ -1569,7 +1629,7 @@
     <Property Name="ID" Type="number" Nullable="false" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.CTRL_ENTIDAD' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.CTRL_ENTIDAD' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CTRL_ENTIDAD">
     <Key>
@@ -1611,6 +1671,31 @@
     <Property Name="CARGO_ENC" Type="varchar2" MaxLength="30" />
     <Property Name="INT_PRO" Type="varchar2" MaxLength="1" />
   </EntityType>
+  <EntityType Name="DOC_PLANTILLA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NRO_DOC" Type="varchar2" MaxLength="20" />
+    <Property Name="COD_TIP" Type="varchar2" MaxLength="2" />
+    <Property Name="TITULO" Type="varchar2" MaxLength="200" />
+    <Property Name="FEC_REV" Type="date" />
+    <Property Name="NRO_REV" Type="varchar2" MaxLength="20" />
+    <Property Name="EST_DOC" Type="varchar2" MaxLength="2" />
+    <Property Name="FEC_DOC" Type="date" />
+    <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
+    <Property Name="ID_PLA" Type="number" />
+    <Property Name="EST_COMPLETADO" Type="varchar2" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="DOC_SECCIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ID_DOC" Type="number" />
+    <Property Name="HTML" Type="clob" />
+    <Property Name="CRUZADO" Type="clob" />
+  </EntityType>
   <EntityType Name="DOCPCONTRATOS">
     <Key>
       <PropertyRef Name="NUM_PROC" />
@@ -1641,12 +1726,14 @@
     <Property Name="DOC_OBLIG" Type="varchar2" Nullable="false" MaxLength="1" />
     <Property Name="DOC_EST" Type="varchar2" Nullable="false" MaxLength="2" />
   </EntityType>
-  <EntityType Name="DT_UNIDADES">
+  <EntityType Name="DT_PARAMETROS">
     <Key>
-      <PropertyRef Name="COD_UNI" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="COD_UNI" Type="varchar2" Nullable="false" MaxLength="2" />
-    <Property Name="NOM_UNI" Type="varchar2" MaxLength="30" />
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="100" />
+    <Property Name="VALOR" Type="varchar2" MaxLength="100" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="200" />
   </EntityType>
   <EntityType Name="EP_CAP_JUR">
     <Key>
@@ -1693,13 +1780,23 @@
     <Property Name="CLA_NUM" Type="number" />
     <Property Name="CLA_CAM" Type="varchar2" MaxLength="200" />
     <Property Name="CLA_PAR" Type="varchar2" MaxLength="200" />
-    <Property Name="CLA_TEXTO" Type="varchar2" />
     <Property Name="IDE_PMIN" Type="number" />
     <Property Name="TIP_PAR" Type="varchar2" MaxLength="2" />
     <Property Name="IS_ENTER_FINAL" Type="varchar2" MaxLength="1" />
     <Property Name="ORDEN" Type="number" Precision="2" />
     <Property Name="ID_EP" Type="number" />
-    <Property Name="CLA_CRUZADA" Type="varchar2" />
+    <Property Name="CLA_TEXTO" Type="clob" />
+    <Property Name="CLA_CRUZADA" Type="clob" />
+  </EntityType>
+  <EntityType Name="EP_CODIGOSUNSPSC">
+    <Key>
+      <PropertyRef Name="UNSPSC" />
+    </Key>
+    <Property Name="UNSPSC" Type="varchar2" Nullable="false" MaxLength="8" />
+    <Property Name="CODIGO" Type="varchar2" MaxLength="8" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="300" />
+    <Property Name="CLASIFICADOR" Type="varchar2" MaxLength="1" />
+    <Property Name="PADRE" Type="varchar2" MaxLength="8" />
   </EntityType>
   <EntityType Name="EP_CONMUN">
     <Key>
@@ -1786,6 +1883,18 @@
     <Property Name="TIP_EP" Type="varchar2" MaxLength="2" />
     <Property Name="EST_EP" Type="varchar2" MaxLength="2" />
   </EntityType>
+  <EntityType Name="EP_MPAA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="VIGENCIA" Type="number" Precision="4" />
+    <Property Name="OBSERV" Type="varchar2" MaxLength="300" />
+    <Property Name="FEC_INI" Type="date" />
+    <Property Name="FEC_FIN" Type="date" />
+    <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
+    <Property Name="COD_SECOP" Type="varchar2" MaxLength="20" />
+  </EntityType>
   <EntityType Name="EP_OBLIGACIONESC">
     <Key>
       <PropertyRef Name="ID" />
@@ -1803,6 +1912,36 @@
     <Property Name="ID_EP" Type="number" />
     <Property Name="DES_OBLIG" Type="clob" />
     <Property Name="GRUPO" Type="number" />
+  </EntityType>
+  <EntityType Name="EP_PAA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+    <Property Name="VIGENCIA" Type="number" Precision="4" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="400" />
+    <Property Name="FEC_EST_INI" Type="date" />
+    <Property Name="PLA1_EJE" Type="number" />
+    <Property Name="TIP1_PLA" Type="varchar2" MaxLength="10" />
+    <Property Name="PLA2_EJE" Type="number" />
+    <Property Name="TIP2_PLA" Type="varchar2" MaxLength="10" />
+    <Property Name="MOD_SEL" Type="varchar2" MaxLength="10" />
+    <Property Name="FUE_SEL" Type="varchar2" MaxLength="2" />
+    <Property Name="VAL_TOT_EST" Type="number" Precision="17" Scale="2" />
+    <Property Name="VAL_VIG_EST" Type="number" Precision="17" Scale="2" />
+    <Property Name="VIG_FUT" Type="varchar2" MaxLength="2" />
+    <Property Name="EST_SOL_VF" Type="varchar2" MaxLength="2" />
+    <Property Name="DAT_RESPONSABLE" Type="varchar2" MaxLength="200" />
+    <Property Name="COD_DEP" Type="varchar2" MaxLength="2" />
+    <Property Name="ID_EP_MPAA" Type="number" />
+  </EntityType>
+  <EntityType Name="EP_PAA_UNSPSC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" Precision="10" />
+    <Property Name="ID_EP_PAA" Type="number" Precision="10" />
+    <Property Name="UNSPSC" Type="varchar2" MaxLength="8" />
   </EntityType>
   <EntityType Name="EP_POLIZAS">
     <Key>
@@ -1842,6 +1981,36 @@
     <Property Name="FEC_MOD" Type="date" />
     <Property Name="USAP_MOD" Type="varchar2" MaxLength="12" />
   </EntityType>
+  <EntityType Name="EP_RIESGOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="N" Type="number" />
+    <Property Name="ID_EP" Type="number" />
+    <Property Name="CLASE" Type="varchar2" MaxLength="20" />
+    <Property Name="FUENTE" Type="varchar2" MaxLength="10" />
+    <Property Name="ETAPA" Type="varchar2" MaxLength="20" />
+    <Property Name="TIPO" Type="varchar2" MaxLength="50" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="100" />
+    <Property Name="CONSECUENCIAS" Type="varchar2" MaxLength="100" />
+    <Property Name="PROBABILIDAD_R" Type="number" Precision="1" />
+    <Property Name="IMPACTO_R" Type="number" Precision="1" />
+    <Property Name="VALORACION_R" Type="number" Precision="2" />
+    <Property Name="CATEGORIA_R" Type="varchar2" MaxLength="50" />
+    <Property Name="AQUIENSEASIGNA" Type="varchar2" MaxLength="50" />
+    <Property Name="TRATAMIENTO" Type="varchar2" MaxLength="100" />
+    <Property Name="PROBABILIDAD_T" Type="number" Precision="1" />
+    <Property Name="IMPACTO_T" Type="number" Precision="1" />
+    <Property Name="VALORACION_T" Type="number" Precision="2" />
+    <Property Name="CATEGORIA_T" Type="varchar2" MaxLength="50" />
+    <Property Name="AFECTAEJECUCIONCTO" Type="varchar2" MaxLength="2" />
+    <Property Name="RESPONSABLE" Type="varchar2" MaxLength="100" />
+    <Property Name="FECHAINICIO" Type="date" />
+    <Property Name="FECHACOMPLETA" Type="date" />
+    <Property Name="FORMA_MONITOREO" Type="varchar2" MaxLength="100" />
+    <Property Name="PERIOCIDAD" Type="varchar2" MaxLength="50" />
+  </EntityType>
   <EntityType Name="EP_RUBROS_CDP">
     <Key>
       <PropertyRef Name="ID" />
@@ -1859,6 +2028,14 @@
     <Property Name="USAP_MOD" Type="varchar2" MaxLength="12" />
     <Property Name="ID_EP_CDP" Type="number" />
   </EntityType>
+  <EntityType Name="EP_UNSPSC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ID_EP" Type="number" />
+    <Property Name="UNSPSC" Type="varchar2" MaxLength="8" />
+  </EntityType>
   <EntityType Name="EST_RUTA">
     <Key>
       <PropertyRef Name="EST_INI" />
@@ -1866,7 +2043,6 @@
     </Key>
     <Property Name="EST_INI" Type="varchar2" Nullable="false" MaxLength="3" />
     <Property Name="EST_FIN" Type="varchar2" Nullable="false" MaxLength="3" />
-    <Property Name="ID" Type="number" />
   </EntityType>
   <EntityType Name="ESTADOS">
     <Key>
@@ -1969,6 +2145,47 @@
     <Property Name="TIPO_FP" Type="varchar2" MaxLength="2" />
     <Property Name="IDE_CON_EP" Type="varchar2" MaxLength="12" />
     <Property Name="IDE_REP_EP" Type="varchar2" MaxLength="12" />
+    <Property Name="NEC_EP" Type="clob" />
+    <Property Name="OBLIGGRC" Type="clob" />
+    <Property Name="OBLIGGRE" Type="clob" />
+    <Property Name="JUST_VALOR_EP" Type="clob" />
+    <Property Name="CAP_JURIDICA_EP" Type="clob" />
+    <Property Name="CAP_FINANCIERA_EP" Type="clob" />
+    <Property Name="CAP_RESIDUAL_EP" Type="clob" />
+    <Property Name="PERS_LEGAL_EP" Type="clob" />
+    <Property Name="PERS_ORGA_EP" Type="clob" />
+    <Property Name="CAP_EXPERIENCA_EP" Type="clob" />
+    <Property Name="NEC_CONT_INT_EP" Type="clob" />
+    <Property Name="SOM_ACUE_COMER_EP" Type="clob" />
+    <Property Name="CONST_CUMP_DEBERES_EP" Type="clob" />
+    <Property Name="IDE_SUP_EP" Type="varchar2" MaxLength="12" />
+    <Property Name="CAR_SUP_EP" Type="varchar2" MaxLength="100" />
+    <Property Name="COD_UNSPSC_EP" Type="varchar2" MaxLength="100" />
+    <Property Name="DES_UNSPSC_EP" Type="varchar2" MaxLength="2000" />
+    <Property Name="ESP_OBJ_EP" Type="clob" />
+    <Property Name="AUTPERLIC_EP" Type="clob" />
+    <Property Name="DOCTECNICOS_EP" Type="clob" />
+    <Property Name="VARIABLESPPTO_EP" Type="clob" />
+    <Property Name="IDONEIDAD_EP" Type="clob" />
+    <Property Name="CAP_ORGANIZACIONAL_EP" Type="clob" />
+    <Property Name="FACTORES_EVALUACION_EP" Type="clob" />
+    <Property Name="REGLAS_DESEMPATE_EP" Type="clob" />
+    <Property Name="TIPO_PPTO" Type="varchar2" MaxLength="1" />
+    <Property Name="PAAID" Type="number" Precision="10" />
+    <Property Name="PAADESC" Type="varchar2" MaxLength="400" />
+    <Property Name="FUN_JUR_MOD" Type="clob" />
+    <Property Name="CONSIDERACIONES_EP" Type="clob" />
+    <Property Name="ACT_CONT_EP" Type="clob" />
+    <Property Name="DESC_APORTES_PROPIOS_EP" Type="clob" />
+    <Property Name="REQ_CDP_EP" Type="varchar2" MaxLength="1" />
+    <Property Name="OBS_CDP_EP" Type="clob" />
+    <Property Name="OBS_POL_EP" Type="clob" />
+    <Property Name="REQ_POL_EP" Type="varchar2" MaxLength="1" />
+    <Property Name="INICIO_APARTIR_DE_EP" Type="varchar2" MaxLength="3" />
+    <Property Name="FEC_INICIO_EP" Type="date" />
+    <Property Name="FEC_FIN_EP" Type="date" />
+    <Property Name="FEC_SUS_EP" Type="date" />
+    <Property Name="CAR_RES_EP" Type="varchar2" MaxLength="12" />
   </EntityType>
   <EntityType Name="ETAPAS">
     <Key>
@@ -1978,6 +2195,16 @@
     <Property Name="NOM_ETA" Type="varchar2" Nullable="false" MaxLength="100" />
     <Property Name="ESTADO" Type="varchar2" Nullable="false" MaxLength="2" />
     <Property Name="PROCESO" Type="varchar2" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="GD_CT_OFICIOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="FEC_OFI" Type="date" />
+    <Property Name="COD_CON" Type="varchar2" MaxLength="10" />
+    <Property Name="TIP_OFI" Type="varchar2" MaxLength="2" />
+    <Property Name="EST_OFI" Type="varchar2" MaxLength="2" />
+    <Property Name="ID" Type="number" Nullable="false" />
   </EntityType>
   <EntityType Name="GD_DDOCUMENTOS">
     <Key>
@@ -2163,8 +2390,16 @@
     <Property Name="OBS_CDP" Type="clob" />
     <Property Name="OBS_POLIZAS" Type="clob" />
   </EntityType>
+  <EntityType Name="GR_TIP_OFI">
+    <Key>
+      <PropertyRef Name="TIP_OFI" />
+    </Key>
+    <Property Name="TIP_OFI" Type="varchar2" Nullable="false" MaxLength="2" />
+    <Property Name="NOM_OFI" Type="varchar2" MaxLength="100" />
+    <Property Name="ETA_OFI" Type="varchar2" MaxLength="2" />
+  </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.HAUDITORIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.HAUDITORIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="HAUDITORIA">
     <Key>
@@ -2272,7 +2507,7 @@
     <Property Name="IDE" Type="number" Nullable="false" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.HREVSOLADI' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.HREVSOLADI' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="HREVSOLADI">
     <Key>
@@ -2296,7 +2531,7 @@
     <Property Name="FEC_MOD" Type="date" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.IMP_ADICIONES' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.IMP_ADICIONES' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="IMP_ADICIONES">
     <Key>
@@ -2320,16 +2555,16 @@
     <Property Name="COD_SOP" Type="varchar2" MaxLength="20" />
     <Property Name="FEC_REG" Type="date" />
     <Property Name="USER_REG" Type="varchar2" MaxLength="20" />
-    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ID" Type="number" Nullable="false" Precision="17" Scale="2" />
   </EntityType>
   <EntityType Name="IMPUESTOS">
     <Key>
       <PropertyRef Name="NRO_IMP" />
     </Key>
-    <Property Name="NRO_IMP" Type="varchar2" Nullable="false" MaxLength="10" />
     <Property Name="NOM_IMP" Type="varchar2" Nullable="false" MaxLength="100" />
     <Property Name="COD_PCT" Type="number" Precision="10" />
     <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
+    <Property Name="NRO_IMP" Type="varchar2" Nullable="false" MaxLength="10" />
   </EntityType>
   <EntityType Name="INT_CONTROL_DOC">
     <Key>
@@ -2383,117 +2618,6 @@
     <Property Name="EST_TRA" Type="varchar2" MaxLength="2" />
     <Property Name="ID_CTRDOC2" Type="number" />
   </EntityType>
-  <EntityType Name="INT_GP_CLA_EST">
-    <Key>
-      <PropertyRef Name="COD_CLA" />
-    </Key>
-    <Property Name="COD_CLA" Type="varchar2" Nullable="false" MaxLength="2" />
-    <Property Name="NOM_CLA" Type="varchar2" MaxLength="20" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="USAPM" Type="varchar2" MaxLength="20" />
-    <Property Name="USBDM" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="EST_EST" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INT_GP_EST">
-    <Key>
-      <PropertyRef Name="COD_EST" />
-    </Key>
-    <Property Name="COD_EST" Type="varchar2" Nullable="false" MaxLength="2" />
-    <Property Name="NOM_EST" Type="varchar2" MaxLength="20" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="USAPM" Type="varchar2" MaxLength="20" />
-    <Property Name="USBDM" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="EST_EST" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INT_GP_RP_OP">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="number" Nullable="false" />
-    <Property Name="ID_DOC" Type="number" />
-    <Property Name="NRO_RP" Type="number" />
-    <Property Name="VIG_RP" Type="number" />
-    <Property Name="NRO_ORD" Type="number" />
-    <Property Name="FEC_ORD" Type="date" />
-    <Property Name="NRO_EGR" Type="number" />
-    <Property Name="FEC_EGR" Type="date" />
-    <Property Name="EST_ORD" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INT_GP_RUT_EST">
-    <Key>
-      <PropertyRef Name="VIG_RUT" />
-      <PropertyRef Name="ID_RUT" />
-    </Key>
-    <Property Name="VIG_RUT" Type="number" Nullable="false" Precision="4" />
-    <Property Name="EST_DE" Type="varchar2" MaxLength="2" />
-    <Property Name="EST_PARA" Type="varchar2" MaxLength="2" />
-    <Property Name="CLA_RUT" Type="varchar2" MaxLength="2" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="USBDM" Type="varchar2" MaxLength="20" />
-    <Property Name="USAPM" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="EST_RUT" Type="varchar2" MaxLength="2" />
-    <Property Name="ID_RUT" Type="number" Nullable="false" />
-    <Property Name="ID" Type="number" />
-  </EntityType>
-  <EntityType Name="INT_GP_SEG_DOC">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="number" Nullable="false" />
-    <Property Name="ID_DOC" Type="number" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="EST_INI" Type="varchar2" MaxLength="2" />
-    <Property Name="EST_FIN" Type="varchar2" MaxLength="2" />
-    <Property Name="OBS_SEG" Type="varchar2" MaxLength="400" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-  </EntityType>
-  <EntityType Name="INT_GP_USU_ROL">
-    <Key>
-      <PropertyRef Name="ID_ROL" />
-    </Key>
-    <Property Name="VIG_RUT" Type="varchar2" MaxLength="4" />
-    <Property Name="USUARIO" Type="varchar2" MaxLength="20" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="USAPM" Type="varchar2" MaxLength="20" />
-    <Property Name="USBDM" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="EST_ROL" Type="varchar2" MaxLength="2" />
-    <Property Name="ID_ROL" Type="number" Nullable="false" />
-    <Property Name="ID_RUT" Type="number" />
-  </EntityType>
-  <EntityType Name="INT_INCO_SOP">
-    <Key>
-      <PropertyRef Name="COD_CON" />
-      <PropertyRef Name="NUM_INF" />
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
-    <Property Name="NUM_INF" Type="number" Nullable="false" />
-    <Property Name="SOPORTE" Type="blob" />
-    <Property Name="CONTENT" Type="varchar2" MaxLength="100" />
-    <Property Name="ICONO" Type="varchar2" MaxLength="100" />
-    <Property Name="NOMARC" Type="varchar2" MaxLength="256" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="USAP_M" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD_M" Type="varchar2" MaxLength="20" />
-    <Property Name="SOP_EST" Type="varchar2" MaxLength="2" />
-    <Property Name="ID" Type="number" Nullable="false" Precision="10" />
-  </EntityType>
   <EntityType Name="INT_INFOCONT">
     <Key>
       <PropertyRef Name="ID" />
@@ -2515,30 +2639,6 @@
     <Property Name="OBL_FAC" Type="varchar2" MaxLength="2" />
     <Property Name="NOT2_INF" Type="varchar2" MaxLength="200" />
     <Property Name="ID_ACTA" Type="number" Precision="10" />
-    <Property Name="TIP_INF" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INT_PAGOSS">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="COD_CON" Type="varchar2" MaxLength="10" />
-    <Property Name="COD_TIP_ESS" Type="varchar2" MaxLength="2" />
-    <Property Name="PLANILLAN" Type="varchar2" MaxLength="20" />
-    <Property Name="VAL_APO" Type="number" Precision="17" Scale="2" />
-    <Property Name="MES_PAGO" Type="varchar2" MaxLength="10" />
-    <Property Name="YEAR_PAGO" Type="varchar2" MaxLength="4" />
-    <Property Name="TIPO_PLA" Type="varchar2" MaxLength="2" />
-    <Property Name="NRO_DOC" Type="number" />
-    <Property Name="ID" Type="number" Nullable="false" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="FEC_REG" Type="date" />
-    <Property Name="OBS" Type="varchar2" MaxLength="200" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="USBDM" Type="varchar2" MaxLength="20" />
-    <Property Name="USAPM" Type="varchar2" MaxLength="20" />
-    <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
-    <Property Name="IDE_INF" Type="number" />
   </EntityType>
   <EntityType Name="INT_PAGOSST">
     <Key>
@@ -2594,47 +2694,6 @@
     <Property Name="EST_TRA" Type="varchar2" MaxLength="2" />
     <Property Name="OBS_TRA" Type="varchar2" MaxLength="200" />
   </EntityType>
-  <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.INTANT_CONT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
-      -->
-  <EntityType Name="INTANT_CONT">
-    <Key>
-      <PropertyRef Name="COD_INVAN" />
-      <PropertyRef Name="VAL_INVAN" />
-      <PropertyRef Name="VPORCENT" />
-    </Key>
-    <Property Name="ID_CONT" Type="number" Precision="10" />
-    <Property Name="COD_INVAN" Type="varchar2" Nullable="false" MaxLength="20" />
-    <Property Name="VAL_INVAN" Type="number" Nullable="false" Precision="17" Scale="2" />
-    <Property Name="VPORCENT" Type="number" Nullable="false" Precision="5" Scale="2" />
-    <Property Name="EST_INVAN_CONT" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INTDOCACTAS">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="number" Nullable="false" />
-    <Property Name="IDE_ACTA" Type="number" />
-    <Property Name="DOC_DOC" Type="blob" />
-    <Property Name="DOC_PDF" Type="blob" />
-    <Property Name="DOC_BAS" Type="blob" />
-    <Property Name="FEC_CRE" Type="date" />
-    <Property Name="FEC_MOD" Type="date" />
-    <Property Name="USAP" Type="varchar2" MaxLength="20" />
-    <Property Name="USBD" Type="varchar2" MaxLength="20" />
-    <Property Name="USAPMOD" Type="varchar2" MaxLength="20" />
-    <Property Name="USBDMOD" Type="varchar2" MaxLength="20" />
-    <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
-  </EntityType>
-  <EntityType Name="INTENTSEGSOCIAL">
-    <Key>
-      <PropertyRef Name="COD_ENT" />
-    </Key>
-    <Property Name="COD_ENT" Type="varchar2" Nullable="false" MaxLength="20" />
-    <Property Name="NOM_ENT" Type="varchar2" Nullable="false" MaxLength="20" />
-    <Property Name="TIPO_ENT" Type="varchar2" Nullable="false" MaxLength="2" />
-    <Property Name="EST_ENT" Type="varchar2" MaxLength="2" />
-  </EntityType>
   <EntityType Name="INTERVENTORES_CONTRATO">
     <Key>
       <PropertyRef Name="IDE" />
@@ -2648,14 +2707,6 @@
     <Property Name="OBS_INT" Type="varchar2" MaxLength="200" />
     <Property Name="COD_CON_INT" Type="varchar2" MaxLength="20" />
     <Property Name="IDE" Type="number" Nullable="false" />
-  </EntityType>
-  <EntityType Name="INTINVAN">
-    <Key>
-      <PropertyRef Name="COD_INVAN" />
-    </Key>
-    <Property Name="COD_INVAN" Type="varchar2" Nullable="false" MaxLength="20" />
-    <Property Name="NOM_INVAN" Type="varchar2" Nullable="false" MaxLength="200" />
-    <Property Name="EST_INVAN" Type="varchar2" MaxLength="2" />
   </EntityType>
   <EntityType Name="INTTIPO_ESS">
     <Key>
@@ -2894,7 +2945,7 @@
     <Property Name="REVISADOPOR" Type="varchar2" MaxLength="15" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.MOD_CPROYECTOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.MOD_CPROYECTOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="MOD_CPROYECTOS">
     <Key>
@@ -2964,6 +3015,15 @@
     <Property Name="DENOMINACION" Type="varchar2" MaxLength="100" />
     <Property Name="APORTES" Type="clob" />
     <Property Name="SQL_UPDATE" Type="varchar2" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="MOD_TIP_PLA">
+    <Key>
+      <PropertyRef Name="COD_MOD" />
+      <PropertyRef Name="COD_TIP" />
+    </Key>
+    <Property Name="COD_MOD" Type="varchar2" Nullable="false" MaxLength="5" />
+    <Property Name="COD_TIP" Type="varchar2" Nullable="false" MaxLength="2" />
+    <Property Name="EST" Type="varchar2" MaxLength="2" />
   </EntityType>
   <EntityType Name="MODULOS">
     <Key>
@@ -3046,7 +3106,7 @@
     <Property Name="LOWEREDPATH" Type="nvarchar2" Nullable="false" MaxLength="256" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.ORA_ASPNET_PERSONALIZNALLUSERS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.ORA_ASPNET_PERSONALIZNALLUSERS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="ORA_ASPNET_PERSONALIZNALLUSERS">
     <Key>
@@ -3165,9 +3225,11 @@
     <Property Name="MFECFIN" Type="varchar2" MaxLength="2" />
     <Property Name="MHORFIN" Type="varchar2" MaxLength="2" />
     <Property Name="UBICACION" Type="varchar2" MaxLength="1000" />
+    <Property Name="TIPO" Type="varchar2" MaxLength="2" />
+    <Property Name="TIP_PLA" Type="varchar2" MaxLength="2" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.PAGAUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.PAGAUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="PAGAUT">
     <Key>
@@ -3332,6 +3394,8 @@
     <Property Name="MFECFIN" Type="varchar2" MaxLength="2" />
     <Property Name="MHORFIN" Type="varchar2" MaxLength="2" />
     <Property Name="ORDEN" Type="number" Precision="10" />
+    <Property Name="TIPO" Type="varchar2" MaxLength="2" />
+    <Property Name="TIP_PLA" Type="varchar2" MaxLength="2" />
   </EntityType>
   <EntityType Name="PESTADOS">
     <Key>
@@ -3371,6 +3435,33 @@
     <Property Name="MINUTABASE" Type="blob" />
     <Property Name="EDITABLE" Type="char" MaxLength="1" />
     <Property Name="MINUTAPDF" Type="blob" />
+  </EntityType>
+  <EntityType Name="PL_PLANTILLA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="COD_TIP" Type="varchar2" MaxLength="2" />
+    <Property Name="TITULO" Type="varchar2" MaxLength="200" />
+    <Property Name="FEC_REV" Type="date" />
+    <Property Name="NRO_REV" Type="varchar2" MaxLength="20" />
+    <Property Name="EST_PLA" Type="varchar2" MaxLength="2" />
+    <Property Name="DOC_MAX" Type="number" />
+  </EntityType>
+  <EntityType Name="PL_SECCIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ID_PLA" Type="number" />
+    <Property Name="HTML" Type="clob" />
+  </EntityType>
+  <EntityType Name="PL_TIPOS_PLANTILLA">
+    <Key>
+      <PropertyRef Name="COD_TIP" />
+    </Key>
+    <Property Name="COD_TIP" Type="varchar2" Nullable="false" MaxLength="2" />
+    <Property Name="NOM_TIP" Type="varchar2" MaxLength="200" />
   </EntityType>
   <EntityType Name="PLANTILLAPPAL">
     <Key>
@@ -3435,7 +3526,7 @@
     </Key>
     <Property Name="IDE_PLA" Type="number" Nullable="false" />
     <Property Name="TIP_PLA" Type="varchar2" MaxLength="20" />
-    <Property Name="NOM_PLA" Type="varchar2" MaxLength="100" />
+    <Property Name="NOM_PLA" Type="varchar2" MaxLength="20" />
     <Property Name="PLANTILLA" Type="blob" />
     <Property Name="EXT" Type="varchar2" MaxLength="10" />
     <Property Name="EST_PLA" Type="varchar2" MaxLength="2" />
@@ -3539,6 +3630,53 @@
     <Property Name="NOM_REP_LEGAL" Type="varchar2" MaxLength="100" />
     <Property Name="MUNICIPIO" Type="varchar2" MaxLength="100" />
   </EntityType>
+  <EntityType Name="PPROPONENTESS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="TIPO_PROP" Type="varchar2" MaxLength="2" />
+    <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
+    <Property Name="FEC_PROP" Type="date" />
+    <Property Name="VAL_PROP" Type="number" Precision="17" Scale="2" />
+    <Property Name="NUM_FOLIO" Type="number" />
+    <Property Name="IDE_PROP" Type="varchar2" MaxLength="30" />
+    <Property Name="TIP_IDE_PROP" Type="char" MaxLength="3" />
+    <Property Name="EXP_IDE_PROP" Type="varchar2" MaxLength="50" />
+    <Property Name="DV_PROP" Type="varchar2" MaxLength="1" />
+    <Property Name="TIP_PER_PROP" Type="varchar2" MaxLength="10" />
+    <Property Name="APE1_PROP" Type="varchar2" MaxLength="1000" />
+    <Property Name="APE2_PROP" Type="varchar2" MaxLength="100" />
+    <Property Name="NOM1_PROP" Type="varchar2" MaxLength="15" />
+    <Property Name="NOM2_PROP" Type="varchar2" MaxLength="15" />
+    <Property Name="RAZ_SOC" Type="varchar2" MaxLength="500" />
+    <Property Name="DIR_PROP" Type="varchar2" MaxLength="50" />
+    <Property Name="TEL_PROP" Type="varchar2" MaxLength="50" />
+    <Property Name="EMA_PROP" Type="varchar2" MaxLength="50" />
+    <Property Name="FEC_NAC" Type="date" />
+    <Property Name="ADJUDICADO" Type="varchar2" MaxLength="1" />
+    <Property Name="FEC_ADJUDICACION" Type="date" />
+    <Property Name="OBS_ADJUDICACION" Type="varchar2" MaxLength="300" />
+    <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
+    <Property Name="COD_AUX" Type="varchar2" MaxLength="6" />
+    <Property Name="ID_REP_LEGAL" Type="varchar2" MaxLength="20" />
+    <Property Name="MUNICIPIO" Type="varchar2" MaxLength="100" />
+    <Property Name="FEC_REG" Type="date" />
+    <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="USAP" Type="varchar2" MaxLength="20" />
+    <Property Name="FEC_MOD" Type="date" />
+    <Property Name="USBD_MOD" Type="varchar2" MaxLength="20" />
+    <Property Name="USAP_MOD" Type="varchar2" MaxLength="20" />
+    <Property Name="APORTES" Type="clob" />
+    <Property Name="NUMPOLIZA" Type="varchar2" MaxLength="20" />
+    <Property Name="FECHA_INICIAL" Type="date" />
+    <Property Name="FECHA_FINAL" Type="date" />
+    <Property Name="ASEGURADORA" Type="number" Precision="10" />
+    <Property Name="NOM_POLIZA" Type="number" Precision="10" />
+    <Property Name="VALOR_POLIZA" Type="number" Precision="17" Scale="2" />
+    <Property Name="DENOMINACION" Type="varchar2" MaxLength="100" />
+    <Property Name="VAL_SIN_IVA" Type="number" Precision="17" Scale="2" />
+  </EntityType>
   <EntityType Name="PR_DB_CLAUSULAS">
     <Key>
       <PropertyRef Name="ID" />
@@ -3563,6 +3701,13 @@
     <Property Name="COMITE" Type="varchar2" MaxLength="20" />
     <Property Name="VALOR" Type="number" Precision="17" Scale="2" />
     <Property Name="ESTADO" Type="varchar2" MaxLength="30" />
+    <Property Name="APORTES_PROPIOS" Type="number" />
+    <Property Name="NOM_MUN" Type="varchar2" MaxLength="50" />
+    <Property Name="DEP_NOM" Type="varchar2" MaxLength="50" />
+    <Property Name="TIP_PRO" Type="varchar2" MaxLength="3" />
+    <Property Name="IDE_APORTANTE" Type="varchar2" MaxLength="15" />
+    <Property Name="NECESIDAD" Type="clob" />
+    <Property Name="BPIN" Type="varchar2" MaxLength="10" />
   </EntityType>
   <EntityType Name="PSOLICITUDES">
     <Key>
@@ -3586,9 +3731,9 @@
     <Property Name="NUM_PLA" Type="number" />
     <Property Name="FEC_RECIBIDO" Type="date" />
     <Property Name="VAL_CON" Type="number" Precision="17" Scale="2" />
+    <Property Name="COD_EP" Type="varchar2" MaxLength="10" />
     <Property Name="USAP_MOD" Type="varchar2" MaxLength="20" />
     <Property Name="ID_HREV" Type="number" />
-    <Property Name="COD_EP" Type="varchar2" MaxLength="10" />
     <Property Name="IDE_CON" Type="varchar2" MaxLength="20" />
   </EntityType>
   <EntityType Name="PUNIDADES">
@@ -3599,7 +3744,7 @@
     <Property Name="NOM_UNIDAD" Type="varchar2" MaxLength="30" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.RP' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC2.RP' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="RP">
     <Key>
@@ -3620,10 +3765,11 @@
   <EntityType Name="RP_CONTRATOS">
     <Key>
       <PropertyRef Name="NRO_RP" />
+      <PropertyRef Name="COD_CON" />
       <PropertyRef Name="VIGENCIA" />
     </Key>
     <Property Name="NRO_RP" Type="varchar2" Nullable="false" MaxLength="10" />
-    <Property Name="COD_CON" Type="varchar2" MaxLength="10" />
+    <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
     <Property Name="FEC_RP" Type="date" Nullable="false" />
     <Property Name="VIGENCIA" Type="number" Nullable="false" Precision="4" />
     <Property Name="DOC_SOP" Type="varchar2" MaxLength="20" />
@@ -3632,6 +3778,7 @@
     <Property Name="USAP" Type="varchar2" MaxLength="20" />
     <Property Name="FEC_REG" Type="date" />
     <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="NRO_CDP" Type="varchar2" MaxLength="10" />
   </EntityType>
   <EntityType Name="RP_CONTRATOS_A">
     <Key>
@@ -3679,21 +3826,55 @@
     <Property Name="NOM_RUB" Type="varchar2" MaxLength="50" />
     <Property Name="VAL_COMPROMISO" Type="number" Precision="17" Scale="2" />
   </EntityType>
-  <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC.RUBROS_CONTRATOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
-      -->
   <EntityType Name="RUBROS_CONTRATOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="COD_RUB" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
+    <Property Name="NOM_RUB" Type="varchar2" MaxLength="400" />
+    <Property Name="VAL_COMPROMISO" Type="number" Precision="17" Scale="2" />
+    <Property Name="NRO_RP" Type="varchar2" MaxLength="20" />
+    <Property Name="FEC_REG" Type="date" />
+    <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="VIGENCIA" Type="number" Precision="4" />
+    <Property Name="ID" Type="number" Nullable="false" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SIRCC2.RUBROS_CONTRATOS_2008_2010' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="RUBROS_CONTRATOS_2008_2010">
     <Key>
       <PropertyRef Name="COD_RUB" />
       <PropertyRef Name="COD_CON" />
     </Key>
     <Property Name="COD_RUB" Type="varchar2" Nullable="false" MaxLength="50" />
     <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
-    <Property Name="NOM_RUB" Type="varchar2" MaxLength="200" />
+    <Property Name="NOM_RUB" Type="varchar2" MaxLength="400" />
     <Property Name="VAL_COMPROMISO" Type="number" Precision="17" Scale="2" />
     <Property Name="NRO_RP" Type="varchar2" MaxLength="20" />
     <Property Name="FEC_REG" Type="date" />
     <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="VIGENCIA" Type="number" Precision="4" />
+    <Property Name="ID" Type="number" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SIRCC2.RUBROS_CONTRATOS_X' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="RUBROS_CONTRATOS_X">
+    <Key>
+      <PropertyRef Name="COD_RUB" />
+      <PropertyRef Name="COD_CON" />
+    </Key>
+    <Property Name="COD_RUB" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="COD_CON" Type="varchar2" Nullable="false" MaxLength="10" />
+    <Property Name="NOM_RUB" Type="varchar2" MaxLength="400" />
+    <Property Name="VAL_COMPROMISO" Type="number" Precision="17" Scale="2" />
+    <Property Name="NRO_RP" Type="varchar2" MaxLength="20" />
+    <Property Name="FEC_REG" Type="date" />
+    <Property Name="USBD" Type="varchar2" MaxLength="20" />
+    <Property Name="VIGENCIA" Type="number" Precision="4" />
+    <Property Name="ID" Type="number" />
   </EntityType>
   <EntityType Name="RUBROS_GPROCESOS">
     <Key>
@@ -3824,6 +4005,7 @@
     <Property Name="EST_TIP" Type="varchar2" MaxLength="2" />
     <Property Name="COD_ETAPA" Type="varchar2" MaxLength="2" />
     <Property Name="ORIGEN" Type="varchar2" MaxLength="1" />
+    <Property Name="DOC_OBLIG" Type="varchar2" MaxLength="1" />
   </EntityType>
   <EntityType Name="TIPO_ADCIONES">
     <Key>
@@ -3851,7 +4033,7 @@
     </Key>
     <Property Name="ID" Type="number" Nullable="false" />
     <Property Name="COD_TIP" Type="varchar2" MaxLength="1" />
-    <Property Name="NOM_TIP" Type="varchar2" MaxLength="50" />
+    <Property Name="NOM_TIP" Type="varchar2" MaxLength="30" />
   </EntityType>
   <EntityType Name="TIPO_PAGO">
     <Key>
@@ -3897,7 +4079,7 @@
     <Property Name="NOM_TPROC" Type="varchar2" Nullable="false" MaxLength="100" />
     <Property Name="ABRE_TPROC" Type="varchar2" MaxLength="4" />
     <Property Name="ESTA_TPROC" Type="varchar2" Nullable="false" MaxLength="2" />
-    <Property Name="COD_CTR" Type="varchar2" MaxLength="30" />
+    <Property Name="COD_CTR" Type="varchar2" MaxLength="2" />
     <Property Name="CTR_F20_1A" Type="varchar2" MaxLength="30" />
   </EntityType>
   <EntityType Name="TIPPLANTILLAS">
@@ -3973,18 +4155,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ANX_CONTRATOS_CONTRATOS_FK1">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="ANX_CONTRATOS" Type="Model.Store.ANX_CONTRATOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="ANX_CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="ANX_CONTRATOS_TIP_DOC_FK1">
     <End Role="TIP_DOC" Type="Model.Store.TIP_DOC" Multiplicity="1" />
     <End Role="ANX_CONTRATOS" Type="Model.Store.ANX_CONTRATOS" Multiplicity="*" />
@@ -4045,6 +4215,34 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="C_RUBROS_CDP_FK">
+    <End Role="RUBROS" Type="Model.Store.RUBROS" Multiplicity="0..1" />
+    <End Role="C_RUBROS_CDP" Type="Model.Store.C_RUBROS_CDP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUBROS">
+        <PropertyRef Name="COD_RUB" />
+        <PropertyRef Name="VIGENCIA" />
+      </Principal>
+      <Dependent Role="C_RUBROS_CDP">
+        <PropertyRef Name="COD_RUB" />
+        <PropertyRef Name="VIG_CDP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_RUBROS_CDP_FKCDP">
+    <End Role="CDP_CONTRATOS" Type="Model.Store.CDP_CONTRATOS" Multiplicity="0..1" />
+    <End Role="C_RUBROS_CDP" Type="Model.Store.C_RUBROS_CDP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CDP_CONTRATOS">
+        <PropertyRef Name="NRO_CDP" />
+        <PropertyRef Name="COD_CON" />
+      </Principal>
+      <Dependent Role="C_RUBROS_CDP">
+        <PropertyRef Name="NRO_CDP" />
+        <PropertyRef Name="COD_CON" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="CDP_CONTRATOS_CONTRATOS_FK1">
     <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
     <End Role="CDP_CONTRATOS" Type="Model.Store.CDP_CONTRATOS" Multiplicity="*" />
@@ -4069,18 +4267,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="CESIONES_R01">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="CESIONES" Type="Model.Store.CESIONES" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="CESIONES">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="COD_ASE">
     <End Role="ASEGURADORAS" Type="Model.Store.ASEGURADORAS" Multiplicity="1" />
     <End Role="POLIZAS_CONTRATO" Type="Model.Store.POLIZAS_CONTRATO" Multiplicity="*" />
@@ -4102,18 +4288,6 @@
       </Principal>
       <Dependent Role="POLIZAS_ADICIONES">
         <PropertyRef Name="COD_ASE" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="COD_CON">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="POLIZAS_CONTRATO" Type="Model.Store.POLIZAS_CONTRATO" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="POLIZAS_CONTRATO">
-        <PropertyRef Name="COD_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -4153,18 +4327,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="CONMUN_R01">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="CONMUN" Type="Model.Store.CONMUN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="CONMUN">
-        <PropertyRef Name="NRO_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="CONS_PROC_R01">
     <End Role="DEPENDENCIA" Type="Model.Store.DEPENDENCIA" Multiplicity="1" />
     <End Role="CONS_PROC" Type="Model.Store.CONS_PROC" Multiplicity="*" />
@@ -4177,15 +4339,39 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="CONS_PROC_R02">
-    <End Role="VIGENCIAS" Type="Model.Store.VIGENCIAS" Multiplicity="1" />
-    <End Role="CONS_PROC" Type="Model.Store.CONS_PROC" Multiplicity="*" />
+  <Association Name="CONSORCIOSUTXC_MIEM">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="CONSORCIOSUTXC" Type="Model.Store.CONSORCIOSUTXC" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="VIGENCIAS">
-        <PropertyRef Name="YEAR_VIG" />
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
       </Principal>
-      <Dependent Role="CONS_PROC">
-        <PropertyRef Name="VIGENCIA" />
+      <Dependent Role="CONSORCIOSUTXC">
+        <PropertyRef Name="ID_MIEMBROS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CONSORCIOSUTXC_PROP">
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="0..1" />
+    <End Role="CONSORCIOSUTXC" Type="Model.Store.CONSORCIOSUTXC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPROPONENTESS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CONSORCIOSUTXC">
+        <PropertyRef Name="ID_PROP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CONSORCIOSUTXC_TER">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="CONSORCIOSUTXC" Type="Model.Store.CONSORCIOSUTXC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
+      </Principal>
+      <Dependent Role="CONSORCIOSUTXC">
+        <PropertyRef Name="IDE_TER" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -4309,6 +4495,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="DOC_PLANTILLA_TIP_FK">
+    <End Role="PL_TIPOS_PLANTILLA" Type="Model.Store.PL_TIPOS_PLANTILLA" Multiplicity="0..1" />
+    <End Role="DOC_PLANTILLA" Type="Model.Store.DOC_PLANTILLA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PL_TIPOS_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Principal>
+      <Dependent Role="DOC_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DOC_PLANTILLLA_PCON_FK">
+    <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="0..1" />
+    <End Role="DOC_PLANTILLA" Type="Model.Store.DOC_PLANTILLA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PCONTRATOS">
+        <PropertyRef Name="PRO_SEL_NRO" />
+      </Principal>
+      <Dependent Role="DOC_PLANTILLA">
+        <PropertyRef Name="NUM_PROC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DOC_SECCIONES_FK">
+    <End Role="DOC_PLANTILLA" Type="Model.Store.DOC_PLANTILLA" Multiplicity="0..1" />
+    <End Role="DOC_SECCIONES" Type="Model.Store.DOC_SECCIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DOC_PLANTILLA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DOC_SECCIONES">
+        <PropertyRef Name="ID_DOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="EP_APR_EP">
     <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
     <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="*" />
@@ -4378,6 +4600,18 @@
       </Principal>
       <Dependent Role="EP_CLAUSULAS">
         <PropertyRef Name="ID_EP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EP_CODIGOSUNSPSC_R01">
+    <End Role="EP_CODIGOSUNSPSC" Type="Model.Store.EP_CODIGOSUNSPSC" Multiplicity="0..1" />
+    <End Role="EP_CODIGOSUNSPSC1" Type="Model.Store.EP_CODIGOSUNSPSC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_CODIGOSUNSPSC">
+        <PropertyRef Name="UNSPSC" />
+      </Principal>
+      <Dependent Role="EP_CODIGOSUNSPSC1">
+        <PropertyRef Name="PADRE" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -4561,6 +4795,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="EP_PAA_R02">
+    <End Role="EP_MPAA" Type="Model.Store.EP_MPAA" Multiplicity="0..1" />
+    <End Role="EP_PAA" Type="Model.Store.EP_PAA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_MPAA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EP_PAA">
+        <PropertyRef Name="ID_EP_MPAA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EP_PAA_UNSPSC_FK">
+    <End Role="EP_CODIGOSUNSPSC" Type="Model.Store.EP_CODIGOSUNSPSC" Multiplicity="0..1" />
+    <End Role="EP_PAA_UNSPSC" Type="Model.Store.EP_PAA_UNSPSC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_CODIGOSUNSPSC">
+        <PropertyRef Name="UNSPSC" />
+      </Principal>
+      <Dependent Role="EP_PAA_UNSPSC">
+        <PropertyRef Name="UNSPSC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EP_PAA_UNSPSC_FK_EP_PAA">
+    <End Role="EP_PAA" Type="Model.Store.EP_PAA" Multiplicity="0..1" />
+    <End Role="EP_PAA_UNSPSC" Type="Model.Store.EP_PAA_UNSPSC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_PAA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EP_PAA_UNSPSC">
+        <PropertyRef Name="ID_EP_PAA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="EP_PO_CALPOL">
     <End Role="CALCULOPOL" Type="Model.Store.CALCULOPOL" Multiplicity="0..1" />
     <End Role="EP_POLIZAS" Type="Model.Store.EP_POLIZAS" Multiplicity="*" />
@@ -4681,6 +4951,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="EP_RIESGOS_FK_ESTPREV">
+    <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="0..1" />
+    <End Role="EP_RIESGOS" Type="Model.Store.EP_RIESGOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTPREV">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EP_RIESGOS">
+        <PropertyRef Name="ID_EP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="EP_RUBROS_CDP_R02">
     <End Role="RUBROS" Type="Model.Store.RUBROS" Multiplicity="0..1" />
     <End Role="EP_RUBROS_CDP" Type="Model.Store.EP_RUBROS_CDP" Multiplicity="*" />
@@ -4728,6 +5010,30 @@
       </Principal>
       <Dependent Role="ESTPREV">
         <PropertyRef Name="TPLA2_EP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EP_UNSPSC_FK">
+    <End Role="EP_CODIGOSUNSPSC" Type="Model.Store.EP_CODIGOSUNSPSC" Multiplicity="0..1" />
+    <End Role="EP_UNSPSC" Type="Model.Store.EP_UNSPSC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_CODIGOSUNSPSC">
+        <PropertyRef Name="UNSPSC" />
+      </Principal>
+      <Dependent Role="EP_UNSPSC">
+        <PropertyRef Name="UNSPSC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EP_UNSPSC_FK_EP">
+    <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="0..1" />
+    <End Role="EP_UNSPSC" Type="Model.Store.EP_UNSPSC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTPREV">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EP_UNSPSC">
+        <PropertyRef Name="ID_EP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -4824,6 +5130,30 @@
       </Principal>
       <Dependent Role="ESTPREV">
         <PropertyRef Name="EST_FLU_EP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ESTPREV_PAA">
+    <End Role="EP_PAA" Type="Model.Store.EP_PAA" Multiplicity="0..1" />
+    <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EP_PAA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ESTPREV">
+        <PropertyRef Name="PAAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ESTPREV_R01">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
+      </Principal>
+      <Dependent Role="ESTPREV">
+        <PropertyRef Name="IDE_SUP_EP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -4935,18 +5265,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_C_OBLIGACIONES">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="COBLIGACIONES" Type="Model.Store.COBLIGACIONES" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="COBLIGACIONES">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_CFORMA_PAGO">
     <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
     <End Role="CFORMA_PAGO" Type="Model.Store.CFORMA_PAGO" Multiplicity="*" />
@@ -4980,18 +5298,6 @@
       </Principal>
       <Dependent Role="PSOLICITUDES">
         <PropertyRef Name="DEP_PSOL" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_CON_POLIZAS">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="CON_POLIZAS" Type="Model.Store.CON_POLIZAS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="CON_POLIZAS">
-        <PropertyRef Name="COD_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5031,15 +5337,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_ENTSEGSOCIAL2">
-    <End Role="INTTIPO_ESS" Type="Model.Store.INTTIPO_ESS" Multiplicity="1" />
-    <End Role="INTENTSEGSOCIAL" Type="Model.Store.INTENTSEGSOCIAL" Multiplicity="*" />
+  <Association Name="FK_DOC_PLA">
+    <End Role="PL_PLANTILLA" Type="Model.Store.PL_PLANTILLA" Multiplicity="0..1" />
+    <End Role="DOC_PLANTILLA" Type="Model.Store.DOC_PLANTILLA" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="INTTIPO_ESS">
-        <PropertyRef Name="COD_TIP" />
+      <Principal Role="PL_PLANTILLA">
+        <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="INTENTSEGSOCIAL">
-        <PropertyRef Name="TIPO_ENT" />
+      <Dependent Role="DOC_PLANTILLA">
+        <PropertyRef Name="ID_PLA" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5183,30 +5489,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_MOD_CFORMA_PAGO">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="MOD_CFORMA_PAGO" Type="Model.Store.MOD_CFORMA_PAGO" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="MOD_CFORMA_PAGO">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_MOD_COBLIGACIONES">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="MOD_COBLIGACIONES" Type="Model.Store.MOD_COBLIGACIONES" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="MOD_COBLIGACIONES">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_MOD_COBLIGACIONES1">
     <End Role="SOL_ADICIONES" Type="Model.Store.SOL_ADICIONES" Multiplicity="1" />
     <End Role="MOD_COBLIGACIONES" Type="Model.Store.MOD_COBLIGACIONES" Multiplicity="*" />
@@ -5219,15 +5501,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_MOD_CON_POLIZAS">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="MOD_CON_POLIZAS" Type="Model.Store.MOD_CON_POLIZAS" Multiplicity="*" />
+  <Association Name="FK_PACTI_TIP_PLA">
+    <End Role="PL_TIPOS_PLANTILLA" Type="Model.Store.PL_TIPOS_PLANTILLA" Multiplicity="0..1" />
+    <End Role="PACTIVIDADES" Type="Model.Store.PACTIVIDADES" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
+      <Principal Role="PL_TIPOS_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
       </Principal>
-      <Dependent Role="MOD_CON_POLIZAS">
-        <PropertyRef Name="COD_CON" />
+      <Dependent Role="PACTIVIDADES">
+        <PropertyRef Name="TIP_PLA" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5257,6 +5539,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_PCRONO_TIP_PLA">
+    <End Role="PL_TIPOS_PLANTILLA" Type="Model.Store.PL_TIPOS_PLANTILLA" Multiplicity="0..1" />
+    <End Role="PCRONOGRAMAS" Type="Model.Store.PCRONOGRAMAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PL_TIPOS_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Principal>
+      <Dependent Role="PCRONOGRAMAS">
+        <PropertyRef Name="TIP_PLA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_PROCESOS">
     <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="1" />
     <End Role="PPOLIZAS" Type="Model.Store.PPOLIZAS" Multiplicity="*" />
@@ -5278,18 +5572,6 @@
       </Principal>
       <Dependent Role="ORA_ASPNET_PROFILE">
         <PropertyRef Name="USERID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_RCON">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="RUBROS_RCONTRATOS" Type="Model.Store.RUBROS_RCONTRATOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="RUBROS_RCONTRATOS">
-        <PropertyRef Name="COD_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5357,18 +5639,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FKINTINVAN_CONT1">
-    <End Role="INTINVAN" Type="Model.Store.INTINVAN" Multiplicity="1" />
-    <End Role="INTANT_CONT" Type="Model.Store.INTANT_CONT" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INTINVAN">
-        <PropertyRef Name="COD_INVAN" />
-      </Principal>
-      <Dependent Role="INTANT_CONT">
-        <PropertyRef Name="COD_INVAN" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FKNGPROP">
     <End Role="TIPPROPONENTE" Type="Model.Store.TIPPROPONENTE" Multiplicity="0..1" />
     <End Role="GPPROPONENTES" Type="Model.Store.GPPROPONENTES" Multiplicity="*" />
@@ -5390,6 +5660,42 @@
       </Principal>
       <Dependent Role="PPROPONENTES">
         <PropertyRef Name="TIPO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKNPROPTIPO">
+    <End Role="TIPPROPONENTE" Type="Model.Store.TIPPROPONENTE" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPPROPONENTE">
+        <PropertyRef Name="COD_TIPPROP" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
+        <PropertyRef Name="TIPO_PROP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKNTERCEROS">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
+        <PropertyRef Name="IDE_PROP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKNTERCEROS_RP">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
+        <PropertyRef Name="ID_REP_LEGAL" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5477,30 +5783,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="HESTADOEP_FK">
-    <End Role="ESTPREV" Type="Model.Store.ESTPREV" Multiplicity="0..1" />
-    <End Role="EP_HESTADOEP" Type="Model.Store.EP_HESTADOEP" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ESTPREV">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="EP_HESTADOEP">
-        <PropertyRef Name="ID_EP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="HESTADOEP_TERCEROS">
-    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
-    <End Role="EP_HESTADOEP" Type="Model.Store.EP_HESTADOEP" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TERCEROS">
-        <PropertyRef Name="IDE_TER" />
-      </Principal>
-      <Dependent Role="EP_HESTADOEP">
-        <PropertyRef Name="USAP_EP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="HREV_FK_TER">
     <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
     <End Role="HREVISADO" Type="Model.Store.HREVISADO" Multiplicity="*" />
@@ -5546,18 +5828,6 @@
       </Principal>
       <Dependent Role="SUPERVISORES_CONTRATO">
         <PropertyRef Name="IDE_SUP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="IMP_CON_CC_FK">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="IMP_CONTRATOS" Type="Model.Store.IMP_CONTRATOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="IMP_CONTRATOS">
-        <PropertyRef Name="COD_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5621,20 +5891,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="INT_DETCUENTA_RP">
-    <End Role="RP_CONTRATOS" Type="Model.Store.RP_CONTRATOS" Multiplicity="0..1" />
-    <End Role="INT_DETCUENTA" Type="Model.Store.INT_DETCUENTA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="RP_CONTRATOS">
-        <PropertyRef Name="NRO_RP" />
-        <PropertyRef Name="VIGENCIA" />
-      </Principal>
-      <Dependent Role="INT_DETCUENTA">
-        <PropertyRef Name="NRO_RP" />
-        <PropertyRef Name="VIG_RP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="INT_DETTRAS_FK">
     <End Role="INT_CONTROL_DOC" Type="Model.Store.INT_CONTROL_DOC" Multiplicity="0..1" />
     <End Role="INT_DETTRASLADO" Type="Model.Store.INT_DETTRASLADO" Multiplicity="*" />
@@ -5683,66 +5939,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="INT_GP_RUT_EST_CLA_RUT">
-    <End Role="INT_GP_CLA_EST" Type="Model.Store.INT_GP_CLA_EST" Multiplicity="0..1" />
-    <End Role="INT_GP_RUT_EST" Type="Model.Store.INT_GP_RUT_EST" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INT_GP_CLA_EST">
-        <PropertyRef Name="COD_CLA" />
-      </Principal>
-      <Dependent Role="INT_GP_RUT_EST">
-        <PropertyRef Name="CLA_RUT" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_GP_RUT_EST_ESTDE">
-    <End Role="INT_GP_EST" Type="Model.Store.INT_GP_EST" Multiplicity="0..1" />
-    <End Role="INT_GP_RUT_EST" Type="Model.Store.INT_GP_RUT_EST" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INT_GP_EST">
-        <PropertyRef Name="COD_EST" />
-      </Principal>
-      <Dependent Role="INT_GP_RUT_EST">
-        <PropertyRef Name="EST_DE" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_GP_RUT_EST_ESTPARA">
-    <End Role="INT_GP_EST" Type="Model.Store.INT_GP_EST" Multiplicity="0..1" />
-    <End Role="INT_GP_RUT_EST" Type="Model.Store.INT_GP_RUT_EST" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INT_GP_EST">
-        <PropertyRef Name="COD_EST" />
-      </Principal>
-      <Dependent Role="INT_GP_RUT_EST">
-        <PropertyRef Name="EST_PARA" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_GP_RUT_EST_VIG">
-    <End Role="VIGENCIAS" Type="Model.Store.VIGENCIAS" Multiplicity="1" />
-    <End Role="INT_GP_RUT_EST" Type="Model.Store.INT_GP_RUT_EST" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="VIGENCIAS">
-        <PropertyRef Name="YEAR_VIG" />
-      </Principal>
-      <Dependent Role="INT_GP_RUT_EST">
-        <PropertyRef Name="VIG_RUT" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_GP_USU_ROL_USU_TER">
-    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
-    <End Role="INT_GP_USU_ROL" Type="Model.Store.INT_GP_USU_ROL" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TERCEROS">
-        <PropertyRef Name="IDE_TER" />
-      </Principal>
-      <Dependent Role="INT_GP_USU_ROL">
-        <PropertyRef Name="USUARIO" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="INT_INF_ID_ACT">
     <End Role="ESTCONTRATOS" Type="Model.Store.ESTCONTRATOS" Multiplicity="0..1" />
     <End Role="INT_INFOCONT" Type="Model.Store.INT_INFOCONT" Multiplicity="*" />
@@ -5764,42 +5960,6 @@
       </Principal>
       <Dependent Role="INT_INFOCONT">
         <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_PAGOSS_CC">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="0..1" />
-    <End Role="INT_PAGOSS" Type="Model.Store.INT_PAGOSS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="INT_PAGOSS">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_PAGOSS_IF">
-    <End Role="INT_INFOCONT" Type="Model.Store.INT_INFOCONT" Multiplicity="0..1" />
-    <End Role="INT_PAGOSS" Type="Model.Store.INT_PAGOSS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INT_INFOCONT">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="INT_PAGOSS">
-        <PropertyRef Name="IDE_INF" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="INT_PAGOSS_TESS">
-    <End Role="INTTIPO_ESS" Type="Model.Store.INTTIPO_ESS" Multiplicity="0..1" />
-    <End Role="INT_PAGOSS" Type="Model.Store.INT_PAGOSS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="INTTIPO_ESS">
-        <PropertyRef Name="COD_TIP" />
-      </Principal>
-      <Dependent Role="INT_PAGOSS">
-        <PropertyRef Name="COD_TIP_ESS" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -5865,32 +6025,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="MNFK_PADRE">
-    <End Role="MENU2" Type="Model.Store.MENU2" Multiplicity="1" />
-    <End Role="MENU21" Type="Model.Store.MENU2" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="MENU2">
-        <PropertyRef Name="MODULO" />
-        <PropertyRef Name="MENUID" />
-      </Principal>
-      <Dependent Role="MENU21">
-        <PropertyRef Name="MODULO" />
-        <PropertyRef Name="PADREID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="MOD_CDP_CONTRATOS_FK1">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="MOD_CDP_CONTRATOS" Type="Model.Store.MOD_CDP_CONTRATOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="MOD_CDP_CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="MOD_CDP_CONTRATOS_FK2">
     <End Role="SOL_ADICIONES" Type="Model.Store.SOL_ADICIONES" Multiplicity="1" />
     <End Role="MOD_CDP_CONTRATOS" Type="Model.Store.MOD_CDP_CONTRATOS" Multiplicity="*" />
@@ -5900,18 +6034,6 @@
       </Principal>
       <Dependent Role="MOD_CDP_CONTRATOS">
         <PropertyRef Name="NUM_SOL_ADI" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="MOD_CONMUN_R01">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="MOD_CONMUN" Type="Model.Store.MOD_CONMUN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="MOD_CONMUN">
-        <PropertyRef Name="NRO_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -6011,18 +6133,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="MOD_CPROYECTOS_FK01">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="0..1" />
-    <End Role="MOD_CPROYECTOS" Type="Model.Store.MOD_CPROYECTOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="MOD_CPROYECTOS">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="MOD_CPROYECTOS_R01">
     <End Role="PROYECTOS" Type="Model.Store.PROYECTOS" Multiplicity="0..1" />
     <End Role="MOD_CPROYECTOS" Type="Model.Store.MOD_CPROYECTOS" Multiplicity="*" />
@@ -6047,6 +6157,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="MOD_TIPPLA_FK">
+    <End Role="TIPOSPROC" Type="Model.Store.TIPOSPROC" Multiplicity="1" />
+    <End Role="MOD_TIP_PLA" Type="Model.Store.MOD_TIP_PLA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOSPROC">
+        <PropertyRef Name="COD_TPROC" />
+      </Principal>
+      <Dependent Role="MOD_TIP_PLA">
+        <PropertyRef Name="COD_MOD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="NROCONVIG_CON3">
     <End Role="TIPOSCONT" Type="Model.Store.TIPOSCONT" Multiplicity="1" />
     <End Role="NROCONVIG" Type="Model.Store.NROCONVIG" Multiplicity="*" />
@@ -6056,6 +6178,18 @@
       </Principal>
       <Dependent Role="NROCONVIG">
         <PropertyRef Name="COD_TIP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAA_DEP_CON_FK">
+    <End Role="DEPENDENCIA" Type="Model.Store.DEPENDENCIA" Multiplicity="0..1" />
+    <End Role="EP_PAA" Type="Model.Store.EP_PAA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPENDENCIA">
+        <PropertyRef Name="COD_DEP" />
+      </Principal>
+      <Dependent Role="EP_PAA">
+        <PropertyRef Name="COD_DEP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -6119,18 +6253,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="PCON_FK_ENCTER">
-    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
-    <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TERCEROS">
-        <PropertyRef Name="IDE_TER" />
-      </Principal>
-      <Dependent Role="PCONTRATOS">
-        <PropertyRef Name="USUENCARGADO" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="PCON_FK_ESTADOS">
     <End Role="PESTADOS" Type="Model.Store.PESTADOS" Multiplicity="1" />
     <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="*" />
@@ -6143,6 +6265,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="PCON_TER">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="0..1" />
+    <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
+      </Principal>
+      <Dependent Role="PCONTRATOS">
+        <PropertyRef Name="USUENCARGADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="PCONMUN_R01">
     <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="1" />
     <End Role="PCONMUN" Type="Model.Store.PCONMUN" Multiplicity="*" />
@@ -6152,6 +6286,18 @@
       </Principal>
       <Dependent Role="PCONMUN">
         <PropertyRef Name="NRO_PCON" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PCONTRATOS_FKSOL">
+    <End Role="PSOLICITUDES" Type="Model.Store.PSOLICITUDES" Multiplicity="0..1" />
+    <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PSOLICITUDES">
+        <PropertyRef Name="COD_SOL" />
+      </Principal>
+      <Dependent Role="PCONTRATOS">
+        <PropertyRef Name="NUM_SOL" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -6253,6 +6399,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="PL_PLANTILLA_TIP_FK">
+    <End Role="PL_TIPOS_PLANTILLA" Type="Model.Store.PL_TIPOS_PLANTILLA" Multiplicity="0..1" />
+    <End Role="PL_PLANTILLA" Type="Model.Store.PL_PLANTILLA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PL_TIPOS_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Principal>
+      <Dependent Role="PL_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PL_SECCIONES_FK">
+    <End Role="PL_PLANTILLA" Type="Model.Store.PL_PLANTILLA" Multiplicity="0..1" />
+    <End Role="PL_SECCIONES" Type="Model.Store.PL_SECCIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PL_PLANTILLA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PL_SECCIONES">
+        <PropertyRef Name="ID_PLA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="POBLIGACIONES_R01">
     <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="1" />
     <End Role="POBLIGACIONES" Type="Model.Store.POBLIGACIONES" Multiplicity="*" />
@@ -6285,6 +6455,42 @@
         <PropertyRef Name="PRO_SEL_NRO" />
       </Principal>
       <Dependent Role="PPROPONENTES">
+        <PropertyRef Name="NUM_PROC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PPROPONENTESS_FK_ASEG">
+    <End Role="ASEGURADORAS" Type="Model.Store.ASEGURADORAS" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASEGURADORAS">
+        <PropertyRef Name="COD_ASE" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
+        <PropertyRef Name="ASEGURADORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PPROPONENTESS_FK_POL">
+    <End Role="POLIZAS" Type="Model.Store.POLIZAS" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="POLIZAS">
+        <PropertyRef Name="COD_POL" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
+        <PropertyRef Name="NOM_POLIZA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PPROPONENTESS_FK01">
+    <End Role="PCONTRATOS" Type="Model.Store.PCONTRATOS" Multiplicity="0..1" />
+    <End Role="PPROPONENTESS" Type="Model.Store.PPROPONENTESS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PCONTRATOS">
+        <PropertyRef Name="PRO_SEL_NRO" />
+      </Principal>
+      <Dependent Role="PPROPONENTESS">
         <PropertyRef Name="NUM_PROC" />
       </Dependent>
     </ReferentialConstraint>
@@ -6361,27 +6567,33 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="RP_CONTRATOS_CONTRATOS_FK1">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="0..1" />
+  <Association Name="RP_CONTRATOS_CDP">
+    <End Role="CDP_CONTRATOS" Type="Model.Store.CDP_CONTRATOS" Multiplicity="0..1" />
     <End Role="RP_CONTRATOS" Type="Model.Store.RP_CONTRATOS" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
+      <Principal Role="CDP_CONTRATOS">
+        <PropertyRef Name="NRO_CDP" />
         <PropertyRef Name="COD_CON" />
       </Principal>
       <Dependent Role="RP_CONTRATOS">
+        <PropertyRef Name="NRO_CDP" />
         <PropertyRef Name="COD_CON" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="RUBROS_CONTRATOS_CONTRATO_FK1">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
+  <Association Name="RUBROS_CONTRATOS_FK_RP">
+    <End Role="RP_CONTRATOS" Type="Model.Store.RP_CONTRATOS" Multiplicity="0..1" />
     <End Role="RUBROS_CONTRATOS" Type="Model.Store.RUBROS_CONTRATOS" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
+      <Principal Role="RP_CONTRATOS">
+        <PropertyRef Name="VIGENCIA" />
         <PropertyRef Name="COD_CON" />
+        <PropertyRef Name="NRO_RP" />
       </Principal>
       <Dependent Role="RUBROS_CONTRATOS">
+        <PropertyRef Name="VIGENCIA" />
         <PropertyRef Name="COD_CON" />
+        <PropertyRef Name="NRO_RP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -6397,18 +6609,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="SOL_ADICIONES_CODCON1">
-    <End Role="CONTRATOS" Type="Model.Store.CONTRATOS" Multiplicity="1" />
-    <End Role="SOL_ADICIONES" Type="Model.Store.SOL_ADICIONES" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="CONTRATOS">
-        <PropertyRef Name="COD_CON" />
-      </Principal>
-      <Dependent Role="SOL_ADICIONES">
-        <PropertyRef Name="COD_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="SUBTIPOS_FK">
     <End Role="TIPOSCONT" Type="Model.Store.TIPOSCONT" Multiplicity="1" />
     <End Role="SUBTIPOS" Type="Model.Store.SUBTIPOS" Multiplicity="*" />
@@ -6421,43 +6621,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="SYS_C0024703">
-    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="1" />
-    <End Role="CONSORCIOSUT" Type="Model.Store.CONSORCIOSUT" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TERCEROS">
-        <PropertyRef Name="IDE_TER" />
-      </Principal>
-      <Dependent Role="CONSORCIOSUT">
-        <PropertyRef Name="ID_MIEMBROS" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="SYS_C0024714">
-    <End Role="TIPOSPROC" Type="Model.Store.TIPOSPROC" Multiplicity="1" />
-    <End Role="CONS_PROC" Type="Model.Store.CONS_PROC" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TIPOSPROC">
-        <PropertyRef Name="COD_TPROC" />
-      </Principal>
-      <Dependent Role="CONS_PROC">
-        <PropertyRef Name="TIP_PROC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="SYS_C0024741">
-    <End Role="PESTADOS" Type="Model.Store.PESTADOS" Multiplicity="1" />
-    <End Role="GPROCESOS" Type="Model.Store.GPROCESOS" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="PESTADOS">
-        <PropertyRef Name="COD_EST" />
-      </Principal>
-      <Dependent Role="GPROCESOS">
-        <PropertyRef Name="EST_CON" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="SYS_C0024777">
+  <Association Name="SYS_C0055696">
     <End Role="MENU2" Type="Model.Store.MENU2" Multiplicity="1" />
     <End Role="MENU_PERFIL" Type="Model.Store.MENU_PERFIL" Multiplicity="*" />
     <ReferentialConstraint>
@@ -6471,19 +6635,57 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="SYS_C0024827">
-    <End Role="EP_CDP" Type="Model.Store.EP_CDP" Multiplicity="0..1" />
-    <End Role="EP_RUBROS_CDP" Type="Model.Store.EP_RUBROS_CDP" Multiplicity="*" />
+  <Association Name="SYS_C0055697">
+    <End Role="TERCEROS" Type="Model.Store.TERCEROS" Multiplicity="1" />
+    <End Role="CONSORCIOSUT" Type="Model.Store.CONSORCIOSUT" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="EP_CDP">
-        <PropertyRef Name="ID" />
+      <Principal Role="TERCEROS">
+        <PropertyRef Name="IDE_TER" />
       </Principal>
-      <Dependent Role="EP_RUBROS_CDP">
-        <PropertyRef Name="ID_EP_CDP" />
+      <Dependent Role="CONSORCIOSUT">
+        <PropertyRef Name="ID_MIEMBROS" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="SYS_C0024852">
+  <Association Name="SYS_C0055706">
+    <End Role="TIPOSPROC" Type="Model.Store.TIPOSPROC" Multiplicity="1" />
+    <End Role="CONS_PROC" Type="Model.Store.CONS_PROC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOSPROC">
+        <PropertyRef Name="COD_TPROC" />
+      </Principal>
+      <Dependent Role="CONS_PROC">
+        <PropertyRef Name="TIP_PROC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C0055729">
+    <End Role="PESTADOS" Type="Model.Store.PESTADOS" Multiplicity="1" />
+    <End Role="GPROCESOS" Type="Model.Store.GPROCESOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PESTADOS">
+        <PropertyRef Name="COD_EST" />
+      </Principal>
+      <Dependent Role="GPROCESOS">
+        <PropertyRef Name="EST_CON" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C0055731">
+    <End Role="GPROCESOS" Type="Model.Store.GPROCESOS" Multiplicity="0..1" />
+    <End Role="CDP_GPROCESOS" Type="Model.Store.CDP_GPROCESOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GPROCESOS">
+        <PropertyRef Name="PRO_SEL_NRO" />
+        <PropertyRef Name="GRUPO" />
+      </Principal>
+      <Dependent Role="CDP_GPROCESOS">
+        <PropertyRef Name="NUM_GPROC" />
+        <PropertyRef Name="GRUPO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SYS_C0055735">
     <End Role="GPROCESOS" Type="Model.Store.GPROCESOS" Multiplicity="1" />
     <End Role="GPPROYECTOS" Type="Model.Store.GPPROYECTOS" Multiplicity="*" />
     <ReferentialConstraint>
@@ -6497,17 +6699,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="SYS_C0024856">
-    <End Role="GPROCESOS" Type="Model.Store.GPROCESOS" Multiplicity="0..1" />
-    <End Role="CDP_GPROCESOS" Type="Model.Store.CDP_GPROCESOS" Multiplicity="*" />
+  <Association Name="SYS_C0055864">
+    <End Role="EP_CDP" Type="Model.Store.EP_CDP" Multiplicity="0..1" />
+    <End Role="EP_RUBROS_CDP" Type="Model.Store.EP_RUBROS_CDP" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="GPROCESOS">
-        <PropertyRef Name="PRO_SEL_NRO" />
-        <PropertyRef Name="GRUPO" />
+      <Principal Role="EP_CDP">
+        <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="CDP_GPROCESOS">
-        <PropertyRef Name="NUM_GPROC" />
-        <PropertyRef Name="GRUPO" />
+      <Dependent Role="EP_RUBROS_CDP">
+        <PropertyRef Name="ID_EP_CDP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -6523,4 +6723,241 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="TIP_TIPPLA_FK">
+    <End Role="PL_TIPOS_PLANTILLA" Type="Model.Store.PL_TIPOS_PLANTILLA" Multiplicity="1" />
+    <End Role="MOD_TIP_PLA" Type="Model.Store.MOD_TIP_PLA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PL_TIPOS_PLANTILLA">
+        <PropertyRef Name="COD_TIP" />
+      </Principal>
+      <Dependent Role="MOD_TIP_PLA">
+        <PropertyRef Name="COD_TIP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.ALERTAS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="ALERTAS">
+        <Property Name="VIGENCIA" Type="varchar2" MaxLength="4" />
+        <Property Name="CODIGO" Type="number" Precision="10" />
+        <Property Name="INFORMES" Type="varchar2" MaxLength="50" />
+        <Property Name="DESCRIPCION" Type="varchar2" MaxLength="200" />
+        <Property Name="FECHAI" Type="date" />
+        <Property Name="FECHAF" Type="date" />
+        <Property Name="TIPORECORDATORIO" Type="varchar2" MaxLength="1" />
+        <Property Name="RECORDATORIO" Type="date" />
+        <Property Name="DESTINATARIO" Type="varchar2" MaxLength="100" />
+        <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
+        <Property Name="USAP" Type="varchar2" MaxLength="20" />
+        <Property Name="USBD" Type="varchar2" MaxLength="20" />
+        <Property Name="FREG" Type="date" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.AUDTRIGGER' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="AUDTRIGGER">
+        <Property Name="TABLA" Type="varchar2" MaxLength="50" />
+        <Property Name="OPERACION" Type="varchar2" MaxLength="10" />
+        <Property Name="DESCRIPCION" Type="varchar2" MaxLength="100" />
+        <Property Name="FECHA" Type="date" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.CERT_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="CERT_CONTRATOS">
+        <Property Name="VIG_CERT" Type="varchar2" MaxLength="4" />
+        <Property Name="NRO_CERT" Type="number" />
+        <Property Name="IDE_CON" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_CERT" Type="date" />
+        <Property Name="DOC_DOC" Type="blob" />
+        <Property Name="DOC_PDF" Type="blob" />
+        <Property Name="LST_CONT" Type="varchar2" />
+        <Property Name="USAP" Type="varchar2" MaxLength="29" />
+        <Property Name="USBD" Type="varchar2" MaxLength="29" />
+        <Property Name="FREG" Type="varchar2" MaxLength="29" />
+        <Property Name="NRO_IMP" Type="number" />
+        <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.CONS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="CONS">
+        <Property Name="TIPOS" Type="number" Precision="10" />
+        <Property Name="STIPOS" Type="number" Precision="10" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.FESTIVOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="FESTIVOS">
+        <Property Name="FECHA" Type="date" />
+        <Property Name="NOMBRE" Type="varchar2" MaxLength="50" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HESTACT' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HESTACT">
+        <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
+        <Property Name="ID_CRONO" Type="number" Precision="20" />
+        <Property Name="OBS_EST" Type="varchar2" />
+        <Property Name="ESTADO" Type="varchar2" MaxLength="4" />
+        <Property Name="USBD" Type="varchar2" MaxLength="20" />
+        <Property Name="USAP" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="EST_ANT" Type="varchar2" MaxLength="4" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HRSOLPRO' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HRSOLPRO">
+        <Property Name="COD_SOL" Type="varchar2" MaxLength="20" />
+        <Property Name="COD_TIP" Type="varchar2" MaxLength="2" />
+        <Property Name="FEC_DOC" Type="date" />
+        <Property Name="IDE_DOC" Type="varchar2" MaxLength="20" />
+        <Property Name="USAP" Type="varchar2" MaxLength="20" />
+        <Property Name="USBD" Type="varchar2" MaxLength="20" />
+        <Property Name="FECREG" Type="date" />
+        <Property Name="USAP_M" Type="varchar2" MaxLength="20" />
+        <Property Name="USBD_M" Type="varchar2" MaxLength="20" />
+        <Property Name="FECMOD" Type="date" />
+        <Property Name="FOLIOS" Type="number" Precision="10" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_CON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HUSUENC_CON">
+        <Property Name="COD_CON" Type="varchar2" MaxLength="15" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="15" />
+        <Property Name="USAP" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_NEW" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_OLD" Type="varchar2" MaxLength="15" />
+        <Property Name="OBS" Type="varchar2" MaxLength="200" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_PCON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HUSUENC_PCON">
+        <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="15" />
+        <Property Name="USAP" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_NEW" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_OLD" Type="varchar2" MaxLength="15" />
+        <Property Name="OBS" Type="varchar2" MaxLength="200" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_PSOL' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HUSUENC_PSOL">
+        <Property Name="NUM_PSOL" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="15" />
+        <Property Name="USAP" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_NEW" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_OLD" Type="varchar2" MaxLength="15" />
+        <Property Name="RECIBIDO" Type="varchar2" MaxLength="1" />
+        <Property Name="OBS" Type="varchar2" MaxLength="200" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_SOL_ADI' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="HUSUENC_SOL_ADI">
+        <Property Name="NUM_SOL_ADI" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="15" />
+        <Property Name="USAP" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_NEW" Type="varchar2" MaxLength="15" />
+        <Property Name="USUENC_OLD" Type="varchar2" MaxLength="15" />
+        <Property Name="RECIBIDO" Type="varchar2" MaxLength="1" />
+        <Property Name="OBS" Type="varchar2" MaxLength="200" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.MOD_RUBROS_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="MOD_RUBROS_CONTRATOS">
+        <Property Name="NUM_SOL_ADI" Type="varchar2" MaxLength="15" />
+        <Property Name="COD_CON" Type="varchar2" MaxLength="15" />
+        <Property Name="COD_RUB" Type="varchar2" MaxLength="50" />
+        <Property Name="VALOR" Type="number" Precision="17" Scale="2" />
+        <Property Name="NRO_CDP" Type="varchar2" MaxLength="20" />
+        <Property Name="VIGENCIA_CDP" Type="varchar2" MaxLength="4" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="20" />
+        <Property Name="USAP" Type="varchar2" MaxLength="20" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.ORA_ASPNET_WEBEVENTS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="ORA_ASPNET_WEBEVENTS">
+        <Property Name="EVENTID" Type="char" MaxLength="32" />
+        <Property Name="EVENTTIMEUTC" Type="date" />
+        <Property Name="EVENTTIME" Type="date" />
+        <Property Name="EVENTTYPE" Type="nvarchar2" MaxLength="256" />
+        <Property Name="EVENTSEQUENCE" Type="number" Precision="19" />
+        <Property Name="EVENTOCCURENCE" Type="number" Precision="19" />
+        <Property Name="EVENTCODE" Type="number" Precision="10" />
+        <Property Name="EVENTDETAILCODE" Type="number" Precision="10" />
+        <Property Name="MESSAGE" Type="nvarchar2" MaxLength="1000" />
+        <Property Name="APPLICATIONPATH" Type="nvarchar2" MaxLength="256" />
+        <Property Name="APPLICATIONVIRTUALPATH" Type="nvarchar2" MaxLength="256" />
+        <Property Name="MACHINENAME" Type="nvarchar2" MaxLength="256" />
+        <Property Name="REQUESTURL" Type="nvarchar2" MaxLength="256" />
+        <Property Name="EXCEPTIONTYPE" Type="nvarchar2" MaxLength="256" />
+        <Property Name="DETAILS" Type="nclob" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.POBJETOS_ITEMS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="POBJETOS_ITEMS">
+        <Property Name="NUM_GPROC" Type="varchar2" MaxLength="20" />
+        <Property Name="GRUPO" Type="number" Precision="10" />
+        <Property Name="ID_ITEM" Type="number" />
+        <Property Name="DESC_ITEM" Type="varchar2" MaxLength="200" />
+        <Property Name="CAN_ITEM" Type="number" Precision="10" Scale="2" />
+        <Property Name="UNI_ITEM" Type="varchar2" MaxLength="2" />
+        <Property Name="VAL_UNI_ITEM" Type="number" Precision="17" Scale="2" />
+        <Property Name="IVA_ITEM" Type="number" Precision="5" Scale="2" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.PPROYECTOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="PPROYECTOS">
+        <Property Name="PROYECTO" Type="varchar2" MaxLength="30" />
+        <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_REG" Type="date" />
+        <Property Name="USBD" Type="varchar2" MaxLength="20" />
+        <Property Name="USAP" Type="varchar2" MaxLength="20" />
+        <Property Name="FEC_MOD" Type="date" />
+        <Property Name="USBD_MOD" Type="varchar2" MaxLength="20" />
+        <Property Name="USAP_MOD" Type="varchar2" MaxLength="20" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.REC_REG' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="REC_REG">
+        <Property Name="VIGENCIA" Type="varchar2" MaxLength="4" />
+        <Property Name="TIP_REC" Type="varchar2" MaxLength="4" />
+        <Property Name="RECURSOS" Type="varchar2" MaxLength="2" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.TDOC_IDE' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="TDOC_IDE">
+        <Property Name="TDOC_COD" Type="varchar2" MaxLength="2" />
+        <Property Name="TDOC_NOM" Type="varchar2" MaxLength="30" />
+        <Property Name="TDOC_USAP" Type="varchar2" MaxLength="10" />
+        <Property Name="TDOC_USBD" Type="varchar2" MaxLength="10" />
+        <Property Name="TDOC_FREG" Type="date" />
+        <Property Name="TDOC_FNOV" Type="date" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'SIRCC2.VERSIONM' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="VERSIONM">
+        <Property Name="MOD_COD" Type="varchar2" MaxLength="2" />
+        <Property Name="MOD_NOM" Type="varchar2" MaxLength="10" />
+        <Property Name="MOD_VER" Type="varchar2" MaxLength="5" />
+        <Property Name="MOD_FEC" Type="date" />
+      </EntityType>-->
 </Schema>
