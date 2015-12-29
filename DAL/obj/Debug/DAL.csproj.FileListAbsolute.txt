@@ -86,3 +86,11 @@ D:\Dev\_Sircc4\_Sircc4\DAL\bin\Debug\Entidades.pdb
 D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.dll
 D:\Dev\_Sircc4\_Sircc4\DAL\obj\Debug\DAL.pdb
+D:\Dev\Sircc4\DAL\bin\Debug\DAL.dll.config
+D:\Dev\Sircc4\DAL\bin\Debug\DAL.dll
+D:\Dev\Sircc4\DAL\bin\Debug\DAL.pdb
+D:\Dev\Sircc4\DAL\bin\Debug\Entidades.dll
+D:\Dev\Sircc4\DAL\bin\Debug\Entidades.pdb
+D:\Dev\Sircc4\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dev\Sircc4\DAL\obj\Debug\DAL.dll
+D:\Dev\Sircc4\DAL\obj\Debug\DAL.pdb

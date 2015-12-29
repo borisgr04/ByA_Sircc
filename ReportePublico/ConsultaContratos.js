@@ -5,7 +5,11 @@
     var lContratos = [];
     var _addHandlers = function () {
         $("#BtnConsulta").click(function () {
-            _realizarConsulta();
+            if (_esValidoConsultaContratos()) {
+                _realizarConsulta();
+            } else {
+                alert("Atención: Debe seleccionar por lo menos dos criterios de busqueda para realizar la consulta");
+            }
         });
         $("#btnExportar").click(function () {
             $("#tblConsulta").battatech_excelexport({
@@ -130,9 +134,9 @@
         cadena = "" + cadena + "";
         $("#tblConsulta tbody").html("");
         var con = 0;
-        $.each(lContratos, function (index, item) {     
+        $.each(lContratos, function (index, item) {
             if (
-                (("" + item.VIG_CON + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1)||
+                (("" + item.VIG_CON + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
                 (("" + item.OBJ_CON + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
                 (("" + item.COD_CON + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
                 (("" + item.IDE_CON + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
@@ -142,8 +146,7 @@
                 (("" + item.SUB_TIPO + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
                 (("" + item.NOM_TER_SUP + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1) ||
                 (("" + item.DEPENDENCIA + "").toUpperCase().indexOf(cadena.toUpperCase()) != -1)
-                )
-            {
+                ) {
                 con = con + 1;
                 $("#tblConsulta tbody").append("<tr>" +
                 "<td class='text-left'>" + ifNull(item.VIG_CON) + "</td>" +
@@ -161,10 +164,23 @@
                 "<td>" + ifNullDate(item.FECHA_INICIAL) + "</td>" +
                 "<td>" + ifNullDate(item.FECHA_FINAL) + "</td>" +
                 "</tr>");
-                }
+            }
         });
         $("#dvdNumeroContratos").html("<strong>Resultado: " + con + " Contratos</strong>");
-    }
+    };
+    var _esValidoConsultaContratos = function () {
+        var contadorFiltros = 0;
+        if ($("#chkVigencia").is(':checked')) contadorFiltros = contadorFiltros + 1;
+        if($("#chkNumeroContrato").is(':checked')) contadorFiltros = contadorFiltros +1;
+        if ($("#chkTipoContrato").is(':checked')) contadorFiltros = contadorFiltros + 1;    
+        if($("#chkCedulaNitContratista").is(':checked')) contadorFiltros = contadorFiltros + 1;
+        if ($("#chkNombreContratista").is(':checked')) contadorFiltros = contadorFiltros + 1;
+        if($("#chkDependenciaNecesidad").is(':checked')) contadorFiltros = contadorFiltros +1;
+        if ($("#chkObjeto").is(':checked')) contadorFiltros = contadorFiltros + 1;
+
+        if (contadorFiltros >= 2) return true;
+        else return false;
+    };
     return {
         init: function () {
             _addHandlers();

@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="ModelStoreContainer">
-    <EntitySet Name="ACTAPARCIAL" EntityType="Model.Store.ACTAPARCIAL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ADICIONES" EntityType="Model.Store.ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="AN_PCONTRATO" EntityType="Model.Store.AN_PCONTRATO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ANX_CONTRATOS" EntityType="Model.Store.ANX_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ASEGURADORAS" EntityType="Model.Store.ASEGURADORAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="AUDI_CONTRATOS" EntityType="Model.Store.AUDI_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="AUDITORIA" EntityType="Model.Store.AUDITORIA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="C_FORMA_PAGO" EntityType="Model.Store.C_FORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="C_POLIZAS2" EntityType="Model.Store.C_POLIZAS2" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="C_RUBROS_CDP" EntityType="Model.Store.C_RUBROS_CDP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CAL_VIG_POL" EntityType="Model.Store.CAL_VIG_POL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CALCULOPOL" EntityType="Model.Store.CALCULOPOL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CDP_ADICIONES" EntityType="Model.Store.CDP_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CDP_CONTRATOS" EntityType="Model.Store.CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CDP_GPROCESOS" EntityType="Model.Store.CDP_GPROCESOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CDP_GPROCESOS">
+    <EntitySet Name="ACTAPARCIAL" EntityType="Model.Store.ACTAPARCIAL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ADICIONES" EntityType="Model.Store.ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="AN_PCONTRATO" EntityType="Model.Store.AN_PCONTRATO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ANX_CONTRATOS" EntityType="Model.Store.ANX_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ASEGURADORAS" EntityType="Model.Store.ASEGURADORAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="AUDI_CONTRATOS" EntityType="Model.Store.AUDI_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="AUDITORIA" EntityType="Model.Store.AUDITORIA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="C_FORMA_PAGO" EntityType="Model.Store.C_FORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="C_POLIZAS2" EntityType="Model.Store.C_POLIZAS2" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="C_RUBROS_CDP" EntityType="Model.Store.C_RUBROS_CDP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CAL_VIG_POL" EntityType="Model.Store.CAL_VIG_POL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CALCULOPOL" EntityType="Model.Store.CALCULOPOL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CDP_ADICIONES" EntityType="Model.Store.CDP_ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CDP_CONTRATOS" EntityType="Model.Store.CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CDP_GPROCESOS" EntityType="Model.Store.CDP_GPROCESOS" store:Type="Tables" store:Schema="SIRCC" store:Name="CDP_GPROCESOS">
       <DefiningQuery>SELECT 
       "CDP_GPROCESOS"."NRO_CDP" AS "NRO_CDP", 
       "CDP_GPROCESOS"."NUM_GPROC" AS "NUM_GPROC", 
       "CDP_GPROCESOS"."FEC_CDP" AS "FEC_CDP", 
       "CDP_GPROCESOS"."VAL_CDP" AS "VAL_CDP", 
       "CDP_GPROCESOS"."GRUPO" AS "GRUPO"
-      FROM "SIRCC2"."CDP_GPROCESOS" "CDP_GPROCESOS"</DefiningQuery>
+      FROM "SIRCC"."CDP_GPROCESOS" "CDP_GPROCESOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CDP_PCONTRATOS" EntityType="Model.Store.CDP_PCONTRATOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CDP_PCONTRATOS">
+    <EntitySet Name="CDP_PCONTRATOS" EntityType="Model.Store.CDP_PCONTRATOS" store:Type="Tables" store:Schema="SIRCC" store:Name="CDP_PCONTRATOS">
       <DefiningQuery>SELECT 
       "CDP_PCONTRATOS"."NRO_CDP" AS "NRO_CDP", 
       "CDP_PCONTRATOS"."NUM_PCON" AS "NUM_PCON", 
       "CDP_PCONTRATOS"."FEC_CDP" AS "FEC_CDP", 
       "CDP_PCONTRATOS"."VAL_CDP" AS "VAL_CDP"
-      FROM "SIRCC2"."CDP_PCONTRATOS" "CDP_PCONTRATOS"</DefiningQuery>
+      FROM "SIRCC"."CDP_PCONTRATOS" "CDP_PCONTRATOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CESIONES" EntityType="Model.Store.CESIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CFORMA_PAGO" EntityType="Model.Store.CFORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CMINUTAS" EntityType="Model.Store.CMINUTAS" store:Type="Tables" store:Schema="SIRCC2" store:Name="CMINUTAS">
+    <EntitySet Name="CESIONES" EntityType="Model.Store.CESIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CFORMA_PAGO" EntityType="Model.Store.CFORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CMINUTAS" EntityType="Model.Store.CMINUTAS" store:Type="Tables" store:Schema="SIRCC" store:Name="CMINUTAS">
       <DefiningQuery>SELECT 
       "CMINUTAS"."CMIN_CODI" AS "CMIN_CODI", 
       "CMINUTAS"."CMIN_NOMB" AS "CMIN_NOMB", 
@@ -48,26 +48,26 @@
       "CMINUTAS"."CMIN_ESTA" AS "CMIN_ESTA", 
       "CMINUTAS"."CMIN_FREG" AS "CMIN_FREG", 
       "CMINUTAS"."CMIN_FNOV" AS "CMIN_FNOV"
-      FROM "SIRCC2"."CMINUTAS" "CMINUTAS"</DefiningQuery>
+      FROM "SIRCC"."CMINUTAS" "CMINUTAS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="COBLIGACIONES" EntityType="Model.Store.COBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CON_POLIZAS" EntityType="Model.Store.CON_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CONFIGURACION" EntityType="Model.Store.CONFIGURACION" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CONMUN" EntityType="Model.Store.CONMUN" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CONS_PROC" EntityType="Model.Store.CONS_PROC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CONSORCIOSUT" EntityType="Model.Store.CONSORCIOSUT" store:Type="Tables" store:Schema="SIRCC2" store:Name="CONSORCIOSUT">
+    <EntitySet Name="COBLIGACIONES" EntityType="Model.Store.COBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CON_POLIZAS" EntityType="Model.Store.CON_POLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CONFIGURACION" EntityType="Model.Store.CONFIGURACION" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CONMUN" EntityType="Model.Store.CONMUN" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CONS_PROC" EntityType="Model.Store.CONS_PROC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CONSORCIOSUT" EntityType="Model.Store.CONSORCIOSUT" store:Type="Tables" store:Schema="SIRCC" store:Name="CONSORCIOSUT">
       <DefiningQuery>SELECT 
       "CONSORCIOSUT"."IDE_TER" AS "IDE_TER", 
       "CONSORCIOSUT"."ID_MIEMBROS" AS "ID_MIEMBROS", 
       "CONSORCIOSUT"."ID_ESTADO" AS "ID_ESTADO", 
       "CONSORCIOSUT"."PORC_PART" AS "PORC_PART"
-      FROM "SIRCC2"."CONSORCIOSUT" "CONSORCIOSUT"</DefiningQuery>
+      FROM "SIRCC"."CONSORCIOSUT" "CONSORCIOSUT"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CONSORCIOSUTXC" EntityType="Model.Store.CONSORCIOSUTXC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CONTRATOS" EntityType="Model.Store.CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CORREOSE" EntityType="Model.Store.CORREOSE" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CPROYECTOS" EntityType="Model.Store.CPROYECTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="CTRL_ENTIDAD" EntityType="Model.Store.CTRL_ENTIDAD" store:Type="Tables" store:Schema="SIRCC2" store:Name="CTRL_ENTIDAD">
+    <EntitySet Name="CONSORCIOSUTXC" EntityType="Model.Store.CONSORCIOSUTXC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CONTRATOS" EntityType="Model.Store.CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CORREOSE" EntityType="Model.Store.CORREOSE" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CPROYECTOS" EntityType="Model.Store.CPROYECTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="CTRL_ENTIDAD" EntityType="Model.Store.CTRL_ENTIDAD" store:Type="Tables" store:Schema="SIRCC" store:Name="CTRL_ENTIDAD">
       <DefiningQuery>SELECT 
       "CTRL_ENTIDAD"."COD_SECPRINCIPAL" AS "COD_SECPRINCIPAL", 
       "CTRL_ENTIDAD"."NOM_SECPRINCIPAL" AS "NOM_SECPRINCIPAL", 
@@ -82,56 +82,56 @@
       "CTRL_ENTIDAD"."CIUDAD" AS "CIUDAD", 
       "CTRL_ENTIDAD"."MUNICIPIO" AS "MUNICIPIO", 
       "CTRL_ENTIDAD"."LOGO_RPT" AS "LOGO_RPT"
-      FROM "SIRCC2"."CTRL_ENTIDAD" "CTRL_ENTIDAD"</DefiningQuery>
+      FROM "SIRCC"."CTRL_ENTIDAD" "CTRL_ENTIDAD"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="CUBRIMIENTO" EntityType="Model.Store.CUBRIMIENTO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DEPENDENCIA" EntityType="Model.Store.DEPENDENCIA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DOC_PLANTILLA" EntityType="Model.Store.DOC_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DOC_SECCIONES" EntityType="Model.Store.DOC_SECCIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DOCPCONTRATOS" EntityType="Model.Store.DOCPCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DOCU_PROC" EntityType="Model.Store.DOCU_PROC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="DT_PARAMETROS" EntityType="Model.Store.DT_PARAMETROS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CAP_JUR" EntityType="Model.Store.EP_CAP_JUR" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CARGO" EntityType="Model.Store.EP_CARGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CDP" EntityType="Model.Store.EP_CDP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CLAUSULAS" EntityType="Model.Store.EP_CLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CODIGOSUNSPSC" EntityType="Model.Store.EP_CODIGOSUNSPSC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_CONMUN" EntityType="Model.Store.EP_CONMUN" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_DT_CAP_JUR" EntityType="Model.Store.EP_DT_CAP_JUR" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_DT_UNIDADES" EntityType="Model.Store.EP_DT_UNIDADES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_ESPTEC" EntityType="Model.Store.EP_ESPTEC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_ESTADOS" EntityType="Model.Store.EP_ESTADOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_ESTFLU" EntityType="Model.Store.EP_ESTFLU" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_FORMA_PAGO" EntityType="Model.Store.EP_FORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_HESTADOEP" EntityType="Model.Store.EP_HESTADOEP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_MPAA" EntityType="Model.Store.EP_MPAA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_OBLIGACIONESC" EntityType="Model.Store.EP_OBLIGACIONESC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_OBLIGACIONESE" EntityType="Model.Store.EP_OBLIGACIONESE" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_PAA" EntityType="Model.Store.EP_PAA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_PAA_UNSPSC" EntityType="Model.Store.EP_PAA_UNSPSC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_POLIZAS" EntityType="Model.Store.EP_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_POLIZAS2" EntityType="Model.Store.EP_POLIZAS2" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_PROYECTOS" EntityType="Model.Store.EP_PROYECTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_RIESGOS" EntityType="Model.Store.EP_RIESGOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_RUBROS_CDP" EntityType="Model.Store.EP_RUBROS_CDP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EP_UNSPSC" EntityType="Model.Store.EP_UNSPSC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="EST_RUTA" EntityType="Model.Store.EST_RUTA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ESTADOS" EntityType="Model.Store.ESTADOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ESTADOSGENERALES" EntityType="Model.Store.ESTADOSGENERALES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ESTCONTRATOS" EntityType="Model.Store.ESTCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ESTPREV" EntityType="Model.Store.ESTPREV" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ETAPAS" EntityType="Model.Store.ETAPAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GD_CT_OFICIOS" EntityType="Model.Store.GD_CT_OFICIOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GD_DDOCUMENTOS" EntityType="Model.Store.GD_DDOCUMENTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GD_DOC_ACTAS" EntityType="Model.Store.GD_DOC_ACTAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GD_DOCUMENTOS" EntityType="Model.Store.GD_DOCUMENTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GPOBLIGACIONES" EntityType="Model.Store.GPOBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GPPOLIZAS" EntityType="Model.Store.GPPOLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GPPROPONENTES" EntityType="Model.Store.GPPROPONENTES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GPPROYECTOS" EntityType="Model.Store.GPPROYECTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GPROCESOS" EntityType="Model.Store.GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="GR_TIP_OFI" EntityType="Model.Store.GR_TIP_OFI" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HAUDITORIA" EntityType="Model.Store.HAUDITORIA" store:Type="Tables" store:Schema="SIRCC2" store:Name="HAUDITORIA">
+    <EntitySet Name="CUBRIMIENTO" EntityType="Model.Store.CUBRIMIENTO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DEPENDENCIA" EntityType="Model.Store.DEPENDENCIA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DOC_PLANTILLA" EntityType="Model.Store.DOC_PLANTILLA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DOC_SECCIONES" EntityType="Model.Store.DOC_SECCIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DOCPCONTRATOS" EntityType="Model.Store.DOCPCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DOCU_PROC" EntityType="Model.Store.DOCU_PROC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="DT_PARAMETROS" EntityType="Model.Store.DT_PARAMETROS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CAP_JUR" EntityType="Model.Store.EP_CAP_JUR" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CARGO" EntityType="Model.Store.EP_CARGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CDP" EntityType="Model.Store.EP_CDP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CLAUSULAS" EntityType="Model.Store.EP_CLAUSULAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CODIGOSUNSPSC" EntityType="Model.Store.EP_CODIGOSUNSPSC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_CONMUN" EntityType="Model.Store.EP_CONMUN" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_DT_CAP_JUR" EntityType="Model.Store.EP_DT_CAP_JUR" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_DT_UNIDADES" EntityType="Model.Store.EP_DT_UNIDADES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_ESPTEC" EntityType="Model.Store.EP_ESPTEC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_ESTADOS" EntityType="Model.Store.EP_ESTADOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_ESTFLU" EntityType="Model.Store.EP_ESTFLU" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_FORMA_PAGO" EntityType="Model.Store.EP_FORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_HESTADOEP" EntityType="Model.Store.EP_HESTADOEP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_MPAA" EntityType="Model.Store.EP_MPAA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_OBLIGACIONESC" EntityType="Model.Store.EP_OBLIGACIONESC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_OBLIGACIONESE" EntityType="Model.Store.EP_OBLIGACIONESE" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_PAA" EntityType="Model.Store.EP_PAA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_PAA_UNSPSC" EntityType="Model.Store.EP_PAA_UNSPSC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_POLIZAS" EntityType="Model.Store.EP_POLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_POLIZAS2" EntityType="Model.Store.EP_POLIZAS2" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_PROYECTOS" EntityType="Model.Store.EP_PROYECTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_RIESGOS" EntityType="Model.Store.EP_RIESGOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_RUBROS_CDP" EntityType="Model.Store.EP_RUBROS_CDP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EP_UNSPSC" EntityType="Model.Store.EP_UNSPSC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="EST_RUTA" EntityType="Model.Store.EST_RUTA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ESTADOS" EntityType="Model.Store.ESTADOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ESTADOSGENERALES" EntityType="Model.Store.ESTADOSGENERALES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ESTCONTRATOS" EntityType="Model.Store.ESTCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ESTPREV" EntityType="Model.Store.ESTPREV" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ETAPAS" EntityType="Model.Store.ETAPAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GD_CT_OFICIOS" EntityType="Model.Store.GD_CT_OFICIOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GD_DDOCUMENTOS" EntityType="Model.Store.GD_DDOCUMENTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GD_DOC_ACTAS" EntityType="Model.Store.GD_DOC_ACTAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GD_DOCUMENTOS" EntityType="Model.Store.GD_DOCUMENTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GPOBLIGACIONES" EntityType="Model.Store.GPOBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GPPOLIZAS" EntityType="Model.Store.GPPOLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GPPROPONENTES" EntityType="Model.Store.GPPROPONENTES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GPPROYECTOS" EntityType="Model.Store.GPPROYECTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GPROCESOS" EntityType="Model.Store.GPROCESOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="GR_TIP_OFI" EntityType="Model.Store.GR_TIP_OFI" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HAUDITORIA" EntityType="Model.Store.HAUDITORIA" store:Type="Tables" store:Schema="SIRCC" store:Name="HAUDITORIA">
       <DefiningQuery>SELECT 
       "HAUDITORIA"."HAUDCODI" AS "HAUDCODI", 
       "HAUDITORIA"."HAUDTABL" AS "HAUDTABL", 
@@ -141,15 +141,15 @@
       "HAUDITORIA"."HAUDUSER" AS "HAUDUSER", 
       "HAUDITORIA"."HAUDFESI" AS "HAUDFESI", 
       "HAUDITORIA"."HAUDUSBD" AS "HAUDUSBD"
-      FROM "SIRCC2"."HAUDITORIA" "HAUDITORIA"</DefiningQuery>
+      FROM "SIRCC"."HAUDITORIA" "HAUDITORIA"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="HCONTRATOS" EntityType="Model.Store.HCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HDEP_ABOGADOS" EntityType="Model.Store.HDEP_ABOGADOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HMOD_CONTRATOS" EntityType="Model.Store.HMOD_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HOJAS_RUTAS" EntityType="Model.Store.HOJAS_RUTAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HORAS" EntityType="Model.Store.HORAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HREVISADO" EntityType="Model.Store.HREVISADO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="HREVSOLADI" EntityType="Model.Store.HREVSOLADI" store:Type="Tables" store:Schema="SIRCC2" store:Name="HREVSOLADI">
+    <EntitySet Name="HCONTRATOS" EntityType="Model.Store.HCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HDEP_ABOGADOS" EntityType="Model.Store.HDEP_ABOGADOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HMOD_CONTRATOS" EntityType="Model.Store.HMOD_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HOJAS_RUTAS" EntityType="Model.Store.HOJAS_RUTAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HORAS" EntityType="Model.Store.HORAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HREVISADO" EntityType="Model.Store.HREVISADO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="HREVSOLADI" EntityType="Model.Store.HREVSOLADI" store:Type="Tables" store:Schema="SIRCC" store:Name="HREVSOLADI">
       <DefiningQuery>SELECT 
       "HREVSOLADI"."NUM_SOL_ADI" AS "NUM_SOL_ADI", 
       "HREVSOLADI"."FECHA_RECIBIDO" AS "FECHA_RECIBIDO", 
@@ -167,38 +167,38 @@
       "HREVSOLADI"."USAP" AS "USAP", 
       "HREVSOLADI"."USBD" AS "USBD", 
       "HREVSOLADI"."FEC_MOD" AS "FEC_MOD"
-      FROM "SIRCC2"."HREVSOLADI" "HREVSOLADI"</DefiningQuery>
+      FROM "SIRCC"."HREVSOLADI" "HREVSOLADI"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="IMP_ADICIONES" EntityType="Model.Store.IMP_ADICIONES" store:Type="Tables" store:Schema="SIRCC2" store:Name="IMP_ADICIONES">
+    <EntitySet Name="IMP_ADICIONES" EntityType="Model.Store.IMP_ADICIONES" store:Type="Tables" store:Schema="SIRCC" store:Name="IMP_ADICIONES">
       <DefiningQuery>SELECT 
       "IMP_ADICIONES"."NRO_ADI" AS "NRO_ADI", 
       "IMP_ADICIONES"."NRO_IMP" AS "NRO_IMP", 
       "IMP_ADICIONES"."NRO_COM" AS "NRO_COM"
-      FROM "SIRCC2"."IMP_ADICIONES" "IMP_ADICIONES"</DefiningQuery>
+      FROM "SIRCC"."IMP_ADICIONES" "IMP_ADICIONES"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="IMP_CONTRATOS" EntityType="Model.Store.IMP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="IMPUESTOS" EntityType="Model.Store.IMPUESTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_CONTROL_DOC" EntityType="Model.Store.INT_CONTROL_DOC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_DETCUENTA" EntityType="Model.Store.INT_DETCUENTA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_DETTRASLADO" EntityType="Model.Store.INT_DETTRASLADO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_INFOCONT" EntityType="Model.Store.INT_INFOCONT" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_PAGOSST" EntityType="Model.Store.INT_PAGOSST" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_PPLANTILLAS_URL" EntityType="Model.Store.INT_PPLANTILLAS_URL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INT_TRASLADOS" EntityType="Model.Store.INT_TRASLADOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INTERVENTORES_CONTRATO" EntityType="Model.Store.INTERVENTORES_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="INTTIPO_ESS" EntityType="Model.Store.INTTIPO_ESS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MENU" EntityType="Model.Store.MENU" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MENU_PERFIL" EntityType="Model.Store.MENU_PERFIL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MENU2" EntityType="Model.Store.MENU2" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MENUMB" EntityType="Model.Store.MENUMB" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MIN_MOD_CONTRATO" EntityType="Model.Store.MIN_MOD_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CDP_CONTRATOS" EntityType="Model.Store.MOD_CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CFORMA_PAGO" EntityType="Model.Store.MOD_CFORMA_PAGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_COBLIGACIONES" EntityType="Model.Store.MOD_COBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CON_POLIZAS" EntityType="Model.Store.MOD_CON_POLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CONMUN" EntityType="Model.Store.MOD_CONMUN" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CONTRATOS" EntityType="Model.Store.MOD_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_CPROYECTOS" EntityType="Model.Store.MOD_CPROYECTOS" store:Type="Tables" store:Schema="SIRCC2" store:Name="MOD_CPROYECTOS">
+    <EntitySet Name="IMP_CONTRATOS" EntityType="Model.Store.IMP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="IMPUESTOS" EntityType="Model.Store.IMPUESTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_CONTROL_DOC" EntityType="Model.Store.INT_CONTROL_DOC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_DETCUENTA" EntityType="Model.Store.INT_DETCUENTA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_DETTRASLADO" EntityType="Model.Store.INT_DETTRASLADO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_INFOCONT" EntityType="Model.Store.INT_INFOCONT" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_PAGOSST" EntityType="Model.Store.INT_PAGOSST" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_PPLANTILLAS_URL" EntityType="Model.Store.INT_PPLANTILLAS_URL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INT_TRASLADOS" EntityType="Model.Store.INT_TRASLADOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INTERVENTORES_CONTRATO" EntityType="Model.Store.INTERVENTORES_CONTRATO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="INTTIPO_ESS" EntityType="Model.Store.INTTIPO_ESS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MENU" EntityType="Model.Store.MENU" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MENU_PERFIL" EntityType="Model.Store.MENU_PERFIL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MENU2" EntityType="Model.Store.MENU2" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MENUMB" EntityType="Model.Store.MENUMB" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MIN_MOD_CONTRATO" EntityType="Model.Store.MIN_MOD_CONTRATO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CDP_CONTRATOS" EntityType="Model.Store.MOD_CDP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CFORMA_PAGO" EntityType="Model.Store.MOD_CFORMA_PAGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_COBLIGACIONES" EntityType="Model.Store.MOD_COBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CON_POLIZAS" EntityType="Model.Store.MOD_CON_POLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CONMUN" EntityType="Model.Store.MOD_CONMUN" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CONTRATOS" EntityType="Model.Store.MOD_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_CPROYECTOS" EntityType="Model.Store.MOD_CPROYECTOS" store:Type="Tables" store:Schema="SIRCC" store:Name="MOD_CPROYECTOS">
       <DefiningQuery>SELECT 
       "MOD_CPROYECTOS"."NUM_SOL_ADI" AS "NUM_SOL_ADI", 
       "MOD_CPROYECTOS"."PROYECTO" AS "PROYECTO", 
@@ -209,81 +209,81 @@
       "MOD_CPROYECTOS"."FEC_MOD" AS "FEC_MOD", 
       "MOD_CPROYECTOS"."USBD_MOD" AS "USBD_MOD", 
       "MOD_CPROYECTOS"."USAP_MOD" AS "USAP_MOD"
-      FROM "SIRCC2"."MOD_CPROYECTOS" "MOD_CPROYECTOS"</DefiningQuery>
+      FROM "SIRCC"."MOD_CPROYECTOS" "MOD_CPROYECTOS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="MOD_PROPONENTES" EntityType="Model.Store.MOD_PROPONENTES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MOD_TIP_PLA" EntityType="Model.Store.MOD_TIP_PLA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MODULOS" EntityType="Model.Store.MODULOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="MUNICIPIOS" EntityType="Model.Store.MUNICIPIOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="NROCONVIG" EntityType="Model.Store.NROCONVIG" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="NUMPROP" EntityType="Model.Store.NUMPROP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_APPLICATIONS" EntityType="Model.Store.ORA_ASPNET_APPLICATIONS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_MEMBERSHIP" EntityType="Model.Store.ORA_ASPNET_MEMBERSHIP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_PATHS" EntityType="Model.Store.ORA_ASPNET_PATHS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_PERSONALIZNALLUSERS" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNALLUSERS" store:Type="Tables" store:Schema="SIRCC2" store:Name="ORA_ASPNET_PERSONALIZNALLUSERS">
+    <EntitySet Name="MOD_PROPONENTES" EntityType="Model.Store.MOD_PROPONENTES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MOD_TIP_PLA" EntityType="Model.Store.MOD_TIP_PLA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MODULOS" EntityType="Model.Store.MODULOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="MUNICIPIOS" EntityType="Model.Store.MUNICIPIOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="NROCONVIG" EntityType="Model.Store.NROCONVIG" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="NUMPROP" EntityType="Model.Store.NUMPROP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_APPLICATIONS" EntityType="Model.Store.ORA_ASPNET_APPLICATIONS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_MEMBERSHIP" EntityType="Model.Store.ORA_ASPNET_MEMBERSHIP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_PATHS" EntityType="Model.Store.ORA_ASPNET_PATHS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_PERSONALIZNALLUSERS" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNALLUSERS" store:Type="Tables" store:Schema="SIRCC" store:Name="ORA_ASPNET_PERSONALIZNALLUSERS">
       <DefiningQuery>SELECT 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."PATHID" AS "PATHID", 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."PAGESETTINGS" AS "PAGESETTINGS", 
       "ORA_ASPNET_PERSONALIZNALLUSERS"."LASTUPDATEDDATE" AS "LASTUPDATEDDATE"
-      FROM "SIRCC2"."ORA_ASPNET_PERSONALIZNALLUSERS" "ORA_ASPNET_PERSONALIZNALLUSERS"</DefiningQuery>
+      FROM "SIRCC"."ORA_ASPNET_PERSONALIZNALLUSERS" "ORA_ASPNET_PERSONALIZNALLUSERS"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="ORA_ASPNET_PERSONALIZNPERUSER" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNPERUSER" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_PROFILE" EntityType="Model.Store.ORA_ASPNET_PROFILE" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_ROLES" EntityType="Model.Store.ORA_ASPNET_ROLES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_SESSIONAPPLICATIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONAPPLICATIONS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_SESSIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_SITEMAP" EntityType="Model.Store.ORA_ASPNET_SITEMAP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_USERS" EntityType="Model.Store.ORA_ASPNET_USERS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="ORA_ASPNET_USERSINROLES" EntityType="Model.Store.ORA_ASPNET_USERSINROLES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PACTIVIDADES" EntityType="Model.Store.PACTIVIDADES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PAGAUT" EntityType="Model.Store.PAGAUT" store:Type="Tables" store:Schema="SIRCC2" store:Name="PAGAUT">
+    <EntitySet Name="ORA_ASPNET_PERSONALIZNPERUSER" EntityType="Model.Store.ORA_ASPNET_PERSONALIZNPERUSER" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_PROFILE" EntityType="Model.Store.ORA_ASPNET_PROFILE" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_ROLES" EntityType="Model.Store.ORA_ASPNET_ROLES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_SESSIONAPPLICATIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONAPPLICATIONS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_SESSIONS" EntityType="Model.Store.ORA_ASPNET_SESSIONS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_SITEMAP" EntityType="Model.Store.ORA_ASPNET_SITEMAP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_USERS" EntityType="Model.Store.ORA_ASPNET_USERS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="ORA_ASPNET_USERSINROLES" EntityType="Model.Store.ORA_ASPNET_USERSINROLES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PACTIVIDADES" EntityType="Model.Store.PACTIVIDADES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PAGAUT" EntityType="Model.Store.PAGAUT" store:Type="Tables" store:Schema="SIRCC" store:Name="PAGAUT">
       <DefiningQuery>SELECT 
       "PAGAUT"."MENUID" AS "MENUID", 
       "PAGAUT"."NOMPAG" AS "NOMPAG"
-      FROM "SIRCC2"."PAGAUT" "PAGAUT"</DefiningQuery>
+      FROM "SIRCC"."PAGAUT" "PAGAUT"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="PAGOS_GPROCESOS" EntityType="Model.Store.PAGOS_GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PAGOS_PARCIALES" EntityType="Model.Store.PAGOS_PARCIALES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PCLAUSULAS" EntityType="Model.Store.PCLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PCONMUN" EntityType="Model.Store.PCONMUN" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PCONTRATOS" EntityType="Model.Store.PCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PCRONO_DIAS" EntityType="Model.Store.PCRONO_DIAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PCRONOGRAMAS" EntityType="Model.Store.PCRONOGRAMAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PESTADOS" EntityType="Model.Store.PESTADOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PESTADOSACT" EntityType="Model.Store.PESTADOSACT" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PGCONTRATOSM" EntityType="Model.Store.PGCONTRATOSM" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PL_PLANTILLA" EntityType="Model.Store.PL_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PL_SECCIONES" EntityType="Model.Store.PL_SECCIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PL_TIPOS_PLANTILLA" EntityType="Model.Store.PL_TIPOS_PLANTILLA" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PLANTILLAPPAL" EntityType="Model.Store.PLANTILLAPPAL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="POBLIGACIONES" EntityType="Model.Store.POBLIGACIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="POLIZAS" EntityType="Model.Store.POLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="POLIZAS_ADICIONES" EntityType="Model.Store.POLIZAS_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="POLIZAS_CONTRATO" EntityType="Model.Store.POLIZAS_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPLANTILLAS" EntityType="Model.Store.PPLANTILLAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPLANTILLAS_CAMPOS" EntityType="Model.Store.PPLANTILLAS_CAMPOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPLANTILLAS_FORMATO_TABLAS" EntityType="Model.Store.PPLANTILLAS_FORMATO_TABLAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPOLIZAS" EntityType="Model.Store.PPOLIZAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPROPONENTES" EntityType="Model.Store.PPROPONENTES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PPROPONENTESS" EntityType="Model.Store.PPROPONENTESS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PR_DB_CLAUSULAS" EntityType="Model.Store.PR_DB_CLAUSULAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PROYECTOS" EntityType="Model.Store.PROYECTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PSOLICITUDES" EntityType="Model.Store.PSOLICITUDES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="PUNIDADES" EntityType="Model.Store.PUNIDADES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RP" EntityType="Model.Store.RP" store:Type="Tables" store:Schema="SIRCC2" store:Name="RP">
+    <EntitySet Name="PAGOS_GPROCESOS" EntityType="Model.Store.PAGOS_GPROCESOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PAGOS_PARCIALES" EntityType="Model.Store.PAGOS_PARCIALES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PCLAUSULAS" EntityType="Model.Store.PCLAUSULAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PCONMUN" EntityType="Model.Store.PCONMUN" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PCONTRATOS" EntityType="Model.Store.PCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PCRONO_DIAS" EntityType="Model.Store.PCRONO_DIAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PCRONOGRAMAS" EntityType="Model.Store.PCRONOGRAMAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PESTADOS" EntityType="Model.Store.PESTADOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PESTADOSACT" EntityType="Model.Store.PESTADOSACT" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PGCONTRATOSM" EntityType="Model.Store.PGCONTRATOSM" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PL_PLANTILLA" EntityType="Model.Store.PL_PLANTILLA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PL_SECCIONES" EntityType="Model.Store.PL_SECCIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PL_TIPOS_PLANTILLA" EntityType="Model.Store.PL_TIPOS_PLANTILLA" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PLANTILLAPPAL" EntityType="Model.Store.PLANTILLAPPAL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="POBLIGACIONES" EntityType="Model.Store.POBLIGACIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="POLIZAS" EntityType="Model.Store.POLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="POLIZAS_ADICIONES" EntityType="Model.Store.POLIZAS_ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="POLIZAS_CONTRATO" EntityType="Model.Store.POLIZAS_CONTRATO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPLANTILLAS" EntityType="Model.Store.PPLANTILLAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPLANTILLAS_CAMPOS" EntityType="Model.Store.PPLANTILLAS_CAMPOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPLANTILLAS_FORMATO_TABLAS" EntityType="Model.Store.PPLANTILLAS_FORMATO_TABLAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPOLIZAS" EntityType="Model.Store.PPOLIZAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPROPONENTES" EntityType="Model.Store.PPROPONENTES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PPROPONENTESS" EntityType="Model.Store.PPROPONENTESS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PR_DB_CLAUSULAS" EntityType="Model.Store.PR_DB_CLAUSULAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PROYECTOS" EntityType="Model.Store.PROYECTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PSOLICITUDES" EntityType="Model.Store.PSOLICITUDES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="PUNIDADES" EntityType="Model.Store.PUNIDADES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RP" EntityType="Model.Store.RP" store:Type="Tables" store:Schema="SIRCC" store:Name="RP">
       <DefiningQuery>SELECT 
       "RP"."NRO_RP" AS "NRO_RP", 
       "RP"."TIP_RP" AS "TIP_RP"
-      FROM "SIRCC2"."RP" "RP"</DefiningQuery>
+      FROM "SIRCC"."RP" "RP"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="RP_ADICIONES" EntityType="Model.Store.RP_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RP_CONTRATOS" EntityType="Model.Store.RP_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RP_CONTRATOS_A" EntityType="Model.Store.RP_CONTRATOS_A" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RPT_CONTROL" EntityType="Model.Store.RPT_CONTROL" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS" EntityType="Model.Store.RUBROS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS_ADICIONES" EntityType="Model.Store.RUBROS_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS_CONTRATOS" EntityType="Model.Store.RUBROS_CONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS_CONTRATOS_2008_2010" EntityType="Model.Store.RUBROS_CONTRATOS_2008_2010" store:Type="Tables" store:Schema="SIRCC2" store:Name="RUBROS_CONTRATOS_2008_2010">
+    <EntitySet Name="RP_ADICIONES" EntityType="Model.Store.RP_ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RP_CONTRATOS" EntityType="Model.Store.RP_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RP_CONTRATOS_A" EntityType="Model.Store.RP_CONTRATOS_A" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RPT_CONTROL" EntityType="Model.Store.RPT_CONTROL" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS" EntityType="Model.Store.RUBROS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_ADICIONES" EntityType="Model.Store.RUBROS_ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_CONTRATOS" EntityType="Model.Store.RUBROS_CONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_CONTRATOS_2008_2010" EntityType="Model.Store.RUBROS_CONTRATOS_2008_2010" store:Type="Tables" store:Schema="SIRCC" store:Name="RUBROS_CONTRATOS_2008_2010">
       <DefiningQuery>SELECT 
       "RUBROS_CONTRATOS_2008_2010"."COD_RUB" AS "COD_RUB", 
       "RUBROS_CONTRATOS_2008_2010"."COD_CON" AS "COD_CON", 
@@ -294,9 +294,9 @@
       "RUBROS_CONTRATOS_2008_2010"."USBD" AS "USBD", 
       "RUBROS_CONTRATOS_2008_2010"."VIGENCIA" AS "VIGENCIA", 
       "RUBROS_CONTRATOS_2008_2010"."ID" AS "ID"
-      FROM "SIRCC2"."RUBROS_CONTRATOS_2008_2010" "RUBROS_CONTRATOS_2008_2010"</DefiningQuery>
+      FROM "SIRCC"."RUBROS_CONTRATOS_2008_2010" "RUBROS_CONTRATOS_2008_2010"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="RUBROS_CONTRATOS_X" EntityType="Model.Store.RUBROS_CONTRATOS_X" store:Type="Tables" store:Schema="SIRCC2" store:Name="RUBROS_CONTRATOS_X">
+    <EntitySet Name="RUBROS_CONTRATOS_X" EntityType="Model.Store.RUBROS_CONTRATOS_X" store:Type="Tables" store:Schema="SIRCC" store:Name="RUBROS_CONTRATOS_X">
       <DefiningQuery>SELECT 
       "RUBROS_CONTRATOS_X"."COD_RUB" AS "COD_RUB", 
       "RUBROS_CONTRATOS_X"."COD_CON" AS "COD_CON", 
@@ -307,30 +307,30 @@
       "RUBROS_CONTRATOS_X"."USBD" AS "USBD", 
       "RUBROS_CONTRATOS_X"."VIGENCIA" AS "VIGENCIA", 
       "RUBROS_CONTRATOS_X"."ID" AS "ID"
-      FROM "SIRCC2"."RUBROS_CONTRATOS_X" "RUBROS_CONTRATOS_X"</DefiningQuery>
+      FROM "SIRCC"."RUBROS_CONTRATOS_X" "RUBROS_CONTRATOS_X"</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="RUBROS_GPROCESOS" EntityType="Model.Store.RUBROS_GPROCESOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS_PCONTRATOS" EntityType="Model.Store.RUBROS_PCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="RUBROS_RCONTRATOS" EntityType="Model.Store.RUBROS_RCONTRATOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="SOL_ADICIONES" EntityType="Model.Store.SOL_ADICIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="SUBTIPOS" EntityType="Model.Store.SUBTIPOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="SUPERVISORES_CONTRATO" EntityType="Model.Store.SUPERVISORES_CONTRATO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TERCEROS" EntityType="Model.Store.TERCEROS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TERCEROSDESKTOP" EntityType="Model.Store.TERCEROSDESKTOP" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIP_DOC" EntityType="Model.Store.TIP_DOC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPO_ADCIONES" EntityType="Model.Store.TIPO_ADCIONES" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPO_AGENT" EntityType="Model.Store.TIPO_AGENT" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPO_INTERVENTOR" EntityType="Model.Store.TIPO_INTERVENTOR" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPO_PAGO" EntityType="Model.Store.TIPO_PAGO" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPO_PLAZOS" EntityType="Model.Store.TIPO_PLAZOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPOSCONT" EntityType="Model.Store.TIPOSCONT" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPOSGASTOS" EntityType="Model.Store.TIPOSGASTOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPOSPROC" EntityType="Model.Store.TIPOSPROC" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPPLANTILLAS" EntityType="Model.Store.TIPPLANTILLAS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="TIPPROPONENTE" EntityType="Model.Store.TIPPROPONENTE" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="USUARIOS" EntityType="Model.Store.USUARIOS" store:Type="Tables" Schema="SIRCC2" />
-    <EntitySet Name="VIGENCIAS" EntityType="Model.Store.VIGENCIAS" store:Type="Tables" Schema="SIRCC2" />
+    <EntitySet Name="RUBROS_GPROCESOS" EntityType="Model.Store.RUBROS_GPROCESOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_PCONTRATOS" EntityType="Model.Store.RUBROS_PCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="RUBROS_RCONTRATOS" EntityType="Model.Store.RUBROS_RCONTRATOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="SOL_ADICIONES" EntityType="Model.Store.SOL_ADICIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="SUBTIPOS" EntityType="Model.Store.SUBTIPOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="SUPERVISORES_CONTRATO" EntityType="Model.Store.SUPERVISORES_CONTRATO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TERCEROS" EntityType="Model.Store.TERCEROS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TERCEROSDESKTOP" EntityType="Model.Store.TERCEROSDESKTOP" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIP_DOC" EntityType="Model.Store.TIP_DOC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPO_ADCIONES" EntityType="Model.Store.TIPO_ADCIONES" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPO_AGENT" EntityType="Model.Store.TIPO_AGENT" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPO_INTERVENTOR" EntityType="Model.Store.TIPO_INTERVENTOR" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPO_PAGO" EntityType="Model.Store.TIPO_PAGO" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPO_PLAZOS" EntityType="Model.Store.TIPO_PLAZOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPOSCONT" EntityType="Model.Store.TIPOSCONT" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPOSGASTOS" EntityType="Model.Store.TIPOSGASTOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPOSPROC" EntityType="Model.Store.TIPOSPROC" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPPLANTILLAS" EntityType="Model.Store.TIPPLANTILLAS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="TIPPROPONENTE" EntityType="Model.Store.TIPPROPONENTE" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="USUARIOS" EntityType="Model.Store.USUARIOS" store:Type="Tables" Schema="SIRCC" />
+    <EntitySet Name="VIGENCIAS" EntityType="Model.Store.VIGENCIAS" store:Type="Tables" Schema="SIRCC" />
     <AssociationSet Name="ACTAPARCIAL_FK" Association="Model.Store.ACTAPARCIAL_FK">
       <End Role="ESTCONTRATOS" EntitySet="ESTCONTRATOS" />
       <End Role="ACTAPARCIAL" EntitySet="ACTAPARCIAL" />
@@ -1367,7 +1367,7 @@
     <Property Name="VIG_FUT" Type="varchar2" MaxLength="2" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.CDP_GPROCESOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.CDP_GPROCESOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CDP_GPROCESOS">
     <Key>
@@ -1382,7 +1382,7 @@
     <Property Name="GRUPO" Type="number" Precision="10" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.CDP_PCONTRATOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.CDP_PCONTRATOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CDP_PCONTRATOS">
     <Key>
@@ -1429,7 +1429,7 @@
     <Property Name="PAGA_GOBER" Type="char" MaxLength="1" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.CMINUTAS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.CMINUTAS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CMINUTAS">
     <Key>
@@ -1501,7 +1501,7 @@
     <Property Name="VIGENCIA" Type="number" Nullable="false" Precision="4" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.CONSORCIOSUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.CONSORCIOSUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CONSORCIOSUT">
     <Key>
@@ -1629,7 +1629,7 @@
     <Property Name="ID" Type="number" Nullable="false" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.CTRL_ENTIDAD' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.CTRL_ENTIDAD' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="CTRL_ENTIDAD">
     <Key>
@@ -2399,7 +2399,7 @@
     <Property Name="ETA_OFI" Type="varchar2" MaxLength="2" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.HAUDITORIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.HAUDITORIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="HAUDITORIA">
     <Key>
@@ -2507,7 +2507,7 @@
     <Property Name="IDE" Type="number" Nullable="false" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.HREVSOLADI' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.HREVSOLADI' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="HREVSOLADI">
     <Key>
@@ -2531,7 +2531,7 @@
     <Property Name="FEC_MOD" Type="date" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.IMP_ADICIONES' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.IMP_ADICIONES' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="IMP_ADICIONES">
     <Key>
@@ -2945,7 +2945,7 @@
     <Property Name="REVISADOPOR" Type="varchar2" MaxLength="15" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.MOD_CPROYECTOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.MOD_CPROYECTOS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="MOD_CPROYECTOS">
     <Key>
@@ -3106,7 +3106,7 @@
     <Property Name="LOWEREDPATH" Type="nvarchar2" Nullable="false" MaxLength="256" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.ORA_ASPNET_PERSONALIZNALLUSERS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.ORA_ASPNET_PERSONALIZNALLUSERS' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="ORA_ASPNET_PERSONALIZNALLUSERS">
     <Key>
@@ -3229,7 +3229,7 @@
     <Property Name="TIP_PLA" Type="varchar2" MaxLength="2" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.PAGAUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.PAGAUT' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="PAGAUT">
     <Key>
@@ -3744,7 +3744,7 @@
     <Property Name="NOM_UNIDAD" Type="varchar2" MaxLength="30" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.RP' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.RP' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="RP">
     <Key>
@@ -3841,7 +3841,7 @@
     <Property Name="ID" Type="number" Nullable="false" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.RUBROS_CONTRATOS_2008_2010' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.RUBROS_CONTRATOS_2008_2010' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="RUBROS_CONTRATOS_2008_2010">
     <Key>
@@ -3859,7 +3859,7 @@
     <Property Name="ID" Type="number" />
   </EntityType>
   <!--Se encontraron errores durante la generación:
-      advertencia 6002: La tabla o vista 'SIRCC2.RUBROS_CONTRATOS_X' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      advertencia 6002: La tabla o vista 'SIRCC.RUBROS_CONTRATOS_X' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
       -->
   <EntityType Name="RUBROS_CONTRATOS_X">
     <Key>
@@ -6736,7 +6736,7 @@
     </ReferentialConstraint>
   </Association>
   <!--Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.ALERTAS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.ALERTAS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="ALERTAS">
         <Property Name="VIGENCIA" Type="varchar2" MaxLength="4" />
@@ -6754,7 +6754,7 @@
         <Property Name="FREG" Type="date" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.AUDTRIGGER' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.AUDTRIGGER' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="AUDTRIGGER">
         <Property Name="TABLA" Type="varchar2" MaxLength="50" />
@@ -6763,7 +6763,7 @@
         <Property Name="FECHA" Type="date" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.CERT_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.CERT_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="CERT_CONTRATOS">
         <Property Name="VIG_CERT" Type="varchar2" MaxLength="4" />
@@ -6780,21 +6780,21 @@
         <Property Name="ESTADO" Type="varchar2" MaxLength="2" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.CONS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.CONS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="CONS">
         <Property Name="TIPOS" Type="number" Precision="10" />
         <Property Name="STIPOS" Type="number" Precision="10" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.FESTIVOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.FESTIVOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="FESTIVOS">
         <Property Name="FECHA" Type="date" />
         <Property Name="NOMBRE" Type="varchar2" MaxLength="50" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HESTACT' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HESTACT' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HESTACT">
         <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
@@ -6807,7 +6807,7 @@
         <Property Name="EST_ANT" Type="varchar2" MaxLength="4" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HRSOLPRO' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HRSOLPRO' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HRSOLPRO">
         <Property Name="COD_SOL" Type="varchar2" MaxLength="20" />
@@ -6823,7 +6823,7 @@
         <Property Name="FOLIOS" Type="number" Precision="10" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_CON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HUSUENC_CON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HUSUENC_CON">
         <Property Name="COD_CON" Type="varchar2" MaxLength="15" />
@@ -6835,7 +6835,7 @@
         <Property Name="OBS" Type="varchar2" MaxLength="200" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_PCON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HUSUENC_PCON' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HUSUENC_PCON">
         <Property Name="NUM_PROC" Type="varchar2" MaxLength="20" />
@@ -6847,7 +6847,7 @@
         <Property Name="OBS" Type="varchar2" MaxLength="200" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_PSOL' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HUSUENC_PSOL' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HUSUENC_PSOL">
         <Property Name="NUM_PSOL" Type="varchar2" MaxLength="20" />
@@ -6860,7 +6860,7 @@
         <Property Name="OBS" Type="varchar2" MaxLength="200" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.HUSUENC_SOL_ADI' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.HUSUENC_SOL_ADI' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="HUSUENC_SOL_ADI">
         <Property Name="NUM_SOL_ADI" Type="varchar2" MaxLength="20" />
@@ -6873,7 +6873,7 @@
         <Property Name="OBS" Type="varchar2" MaxLength="200" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.MOD_RUBROS_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.MOD_RUBROS_CONTRATOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="MOD_RUBROS_CONTRATOS">
         <Property Name="NUM_SOL_ADI" Type="varchar2" MaxLength="15" />
@@ -6887,7 +6887,7 @@
         <Property Name="USAP" Type="varchar2" MaxLength="20" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.ORA_ASPNET_WEBEVENTS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.ORA_ASPNET_WEBEVENTS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="ORA_ASPNET_WEBEVENTS">
         <Property Name="EVENTID" Type="char" MaxLength="32" />
@@ -6907,7 +6907,7 @@
         <Property Name="DETAILS" Type="nclob" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.POBJETOS_ITEMS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.POBJETOS_ITEMS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="POBJETOS_ITEMS">
         <Property Name="NUM_GPROC" Type="varchar2" MaxLength="20" />
@@ -6920,7 +6920,7 @@
         <Property Name="IVA_ITEM" Type="number" Precision="5" Scale="2" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.PPROYECTOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.PPROYECTOS' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="PPROYECTOS">
         <Property Name="PROYECTO" Type="varchar2" MaxLength="30" />
@@ -6933,7 +6933,7 @@
         <Property Name="USAP_MOD" Type="varchar2" MaxLength="20" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.REC_REG' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.REC_REG' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="REC_REG">
         <Property Name="VIGENCIA" Type="varchar2" MaxLength="4" />
@@ -6941,7 +6941,7 @@
         <Property Name="RECURSOS" Type="varchar2" MaxLength="2" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.TDOC_IDE' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.TDOC_IDE' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="TDOC_IDE">
         <Property Name="TDOC_COD" Type="varchar2" MaxLength="2" />
@@ -6952,7 +6952,7 @@
         <Property Name="TDOC_FNOV" Type="date" />
       </EntityType>
       Se encontraron errores durante la generación:
-      advertencia 6013: La tabla o vista 'SIRCC2.VERSIONM' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      advertencia 6013: La tabla o vista 'SIRCC.VERSIONM' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
       
       <EntityType Name="VERSIONM">
         <Property Name="MOD_COD" Type="varchar2" MaxLength="2" />
